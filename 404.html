@@ -11,10 +11,10 @@
       name="description"
       content="Page introuvable. Trouvez rapidement les pages Solutions, Réassurance, Risques Climatiques, ESG ou Contact de Riskalia."
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Tajawal:wght@400;700&display=swap"
@@ -25,15 +25,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Navigation Component Styles -->
-    <link rel="stylesheet" href="/assets/css/components/navigation.css" />
+    <link rel="stylesheet" href="assets/css/components/navigation.css" />
 
     <!-- Footer Component Styles -->
-    <link rel="stylesheet" href="/assets/css/components/footer.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
 
     <!-- Chatbot Component Styles -->
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="/assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
   </head>
   <body class="bg-white text-gray-800 overflow-x-hidden">
     <!-- Navigation Component Container -->
@@ -84,14 +84,14 @@
             class="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <a
-              href="/index.html"
+              href="index.html"
               class="bg-gradient-to-r from-[var(--c3)] to-[var(--c2)] hover:from-[var(--c2)] hover:to-[var(--c1)] text-white px-8 py-4 rounded-xl font-semibold text-lg no-underline hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
               data-i18n="error.homeBtn"
             >
               Retour à l'accueil
             </a>
             <a
-              href="/contact.html"
+              href="contact.html"
               class="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 hover:border-white/50 text-white px-8 py-4 rounded-xl font-semibold text-lg no-underline hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
               data-i18n="error.contactBtn"
             >
@@ -122,7 +122,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           <!-- Solutions Card -->
           <a
-            href="/solutions.html"
+            href="solutions.html"
             class="group block p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 hover:border-[var(--c3)] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             <div class="text-center">
@@ -145,7 +145,7 @@
 
           <!-- Réassurance Card -->
           <a
-            href="/reinsurance.html"
+            href="reinsurance.html"
             class="group block p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 hover:border-[var(--c3)] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             <div class="text-center">
@@ -171,7 +171,7 @@
 
           <!-- Risques Climatiques Card -->
           <a
-            href="/climate.html"
+            href="climate.html"
             class="group block p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 hover:border-[var(--c3)] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             <div class="text-center">
@@ -194,7 +194,7 @@
 
           <!-- ESG Card -->
           <a
-            href="/esg.html"
+            href="esg.html"
             class="group block p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 hover:border-[var(--c3)] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             <div class="text-center">
@@ -217,7 +217,7 @@
 
           <!-- Contact Card -->
           <a
-            href="/contact.html"
+            href="contact.html"
             class="group block p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 hover:border-[var(--c3)] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             <div class="text-center">
@@ -240,7 +240,7 @@
 
           <!-- Services Card -->
           <a
-            href="/services.html"
+            href="services.html"
             class="group block p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 hover:border-[var(--c3)] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             <div class="text-center">
@@ -300,7 +300,7 @@
     <div id="footer-container"></div>
 
     <!-- Scripts -->
-    <script src="/assets/js/i18n.js"></script>
+    <script src="assets/js/i18n.js"></script>
     <script>
       // Use the global lang variable from i18n.js
       // lang is already available globally from i18n.js
@@ -312,7 +312,7 @@
         // Smart redirect functionality
         function trySmartRedirect() {
           const path = (location.pathname || "").toLowerCase();
-          const slug = path.split("/").filter(Boolean).pop() || "";
+          const slug = path.split("").filter(Boolean).pop() || "";
           const key = slug
             .replace(".html", "")
             .replace(".htm", "")
@@ -340,7 +340,7 @@
 
           const maybe = redirects[key];
           if (maybe) {
-            location.replace("/" + maybe);
+            location.replace("" + maybe);
           }
         }
 
@@ -380,12 +380,13 @@
     </script>
 
     <!-- Search Component Script -->
-    <script src="/assets/js/components/SearchComponent.js"></script>
+    <script src="assets/js/components/SearchComponent.js"></script>
 
     <!-- Navigation Component Script -->
-    <script src="/assets/js/components/NavigationComponent.js"></script>
+    <script src="assets/js/components/NavigationComponent.js"></script>
 
     <!-- Footer Component Script -->
-    <script src="/assets/js/components/FooterComponent.js"></script>
+    <script src="assets/js/components/FooterComponent.js"></script>
   </body>
 </html>
+
