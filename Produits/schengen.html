@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>
+      Riskalia — Voyage Schengen — Assurance voyage conforme visa avec
+      attestation
+    </title>
+    <meta
+      name="description"
+      content="Assurance Voyage Schengen : attestation conforme visa, frais médicaux dès 30 000 €, hospitalisation, assistance & rapatriement, bagages, options annulation."
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts + global CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="/assets/css/components/navigation.css" />
+    <link rel="stylesheet" href="/assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+
+    <style>
+      /* Tab panel display logic */
+      .tabpanel {
+        display: none;
+      }
+      .tabpanel.active {
+        display: block;
+      }
+
+      /* Sticky tabs */
+      @media (min-width: 768px) {
+        .tabs.sticky {
+          top: 66px;
+        }
+      }
+    </style>
+
+    <noscript
+      ><style>
+        .tabpanel {
+          display: block;
+        }
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style></noscript
+    >
+  </head>
+  <body class="spacious">
+    <!-- Navigation Container -->
+    <div id="navigation-container"></div>
+
+    <!-- HERO -->
+    <section
+      class="hero hero--product min-h-[35vh] bg-cover bg-center bg-no-repeat flex items-center text-center py-12"
+      style="
+        background: linear-gradient(
+            rgba(0, 92, 115, 0.85),
+            rgba(0, 92, 115, 0.85)
+          ),
+          url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=1200&q=60')
+            center/cover no-repeat;
+      "
+    >
+      <div class="container mx-auto">
+        <h1
+          class="text-white text-4xl md:text-5xl font-bold mb-4"
+          data-i18n="schengen.title"
+        >
+          Voyage Schengen
+        </h1>
+        <p
+          class="text-white text-lg md:text-xl mb-6 max-w-4xl mx-auto"
+          data-i18n="schengen.subtitle"
+        >
+          Attestation conforme visa • Frais médicaux & hospitalisation •
+          Assistance & rapatriement • Bagages • Options annulation.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 mt-4">
+          <span
+            class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/30"
+            data-i18n="schengen.badges.0"
+            >Certificat visa</span
+          >
+          <span
+            class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/30"
+            data-i18n="schengen.badges.1"
+            >24/7 assistance</span
+          >
+          <span
+            class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/30"
+            data-i18n="schengen.badges.2"
+            >Rapatriement</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="py-8 max-w-7xl mx-auto">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <!-- Onglets -->
+        <nav
+          class="tabs top-16 z-30 bg-white p-2 border border-gray-200 rounded-xl overflow-x-auto whitespace-nowrap shadow-lg mb-4"
+          role="tablist"
+          aria-label="Schengen tabs"
+        >
+          <button
+            class="tab active flex-shrink-0 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 cursor-pointer hover:bg-gray-200"
+            style="background-color: rgba(0, 92, 115, 0.9)"
+            id="tab-over"
+            role="tab"
+            aria-selected="true"
+            data-tab="over"
+            data-i18n="schengen.tabs.over"
+          >
+            Aperçu
+          </button>
+          <button
+            class="tab flex-shrink-0 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium transition-colors duration-200 cursor-pointer hover:bg-gray-200"
+            id="tab-cov"
+            role="tab"
+            aria-selected="false"
+            data-tab="cov"
+            data-i18n="schengen.tabs.cov"
+          >
+            Garanties
+          </button>
+          <button
+            class="tab flex-shrink-0 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium transition-colors duration-200 cursor-pointer hover:bg-gray-200"
+            id="tab-doc"
+            role="tab"
+            aria-selected="false"
+            data-tab="doc"
+            data-i18n="schengen.tabs.doc"
+          >
+            Documents & process
+          </button>
+          <button
+            class="tab flex-shrink-0 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium transition-colors duration-200 cursor-pointer hover:bg-gray-200"
+            id="tab-lim"
+            role="tab"
+            aria-selected="false"
+            data-tab="lim"
+            data-i18n="schengen.tabs.lim"
+          >
+            Exclusions & limites
+          </button>
+          <button
+            class="tab flex-shrink-0 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium transition-colors duration-200 cursor-pointer hover:bg-gray-200"
+            id="tab-claim"
+            role="tab"
+            aria-selected="false"
+            data-tab="claim"
+            data-i18n="schengen.tabs.claim"
+          >
+            Frais & sinistres
+          </button>
+          <button
+            class="tab flex-shrink-0 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium transition-colors duration-200 cursor-pointer hover:bg-gray-200"
+            id="tab-faq"
+            role="tab"
+            aria-selected="false"
+            data-tab="faq"
+            data-i18n="schengen.tabs.faq"
+          >
+            FAQ
+          </button>
+        </nav>
+
+        <!-- Aperçu -->
+        <article
+          id="over"
+          class="tabpanel active bg-white rounded-xl shadow-lg border border-gray-200 p-6"
+          role="tabpanel"
+          aria-labelledby="tab-over"
+        >
+          <h2
+            class="text-2xl font-bold text-gray-900 mb-6"
+            data-i18n="schengen.over.t"
+          >
+            1. Aperçu
+          </h2>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="lg:col-span-2">
+              <p
+                class="text-gray-600 text-lg leading-relaxed mb-6"
+                data-i18n="schengen.over.p"
+              >
+                Assurance de voyage conforme aux exigences du visa Schengen :
+                prise en charge des <strong>frais médicaux d'urgence</strong>,
+                <strong>hospitalisation</strong> et
+                <strong>rapatriement</strong>, avec attestation nominative.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >✓</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.over.li.0"
+                    >Couverture dès 30 000 € de frais médicaux (minimum
+                    Schengen) ou plus selon formule.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >✓</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.over.li.1"
+                    >Période courte/longue durée, multi-entrées en option.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >✓</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.over.li.2"
+                    >Livraison de l'attestation pour dépôt du dossier
+                    visa.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="rounded-xl p-4 border"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(0, 92, 115, 0.1),
+                    rgba(0, 92, 115, 0.05)
+                  );
+                  border-color: rgba(0, 92, 115, 0.2);
+                "
+              >
+                <div
+                  class="text-lg font-semibold mb-2"
+                  style="color: rgba(0, 92, 115, 0.9)"
+                  data-i18n="schengen.over.k0"
+                >
+                  Zone
+                </div>
+                <div
+                  class="text-gray-600 text-sm"
+                  data-i18n="schengen.over.k0l"
+                >
+                  Espace Schengen
+                </div>
+              </div>
+              <div
+                class="rounded-xl p-4 border"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(0, 92, 115, 0.1),
+                    rgba(0, 92, 115, 0.05)
+                  );
+                  border-color: rgba(0, 92, 115, 0.2);
+                "
+              >
+                <div
+                  class="text-lg font-semibold mb-2"
+                  style="color: rgba(0, 92, 115, 0.9)"
+                  data-i18n="schengen.over.k1"
+                >
+                  Plafond
+                </div>
+                <div
+                  class="text-gray-600 text-sm"
+                  data-i18n="schengen.over.k1l"
+                >
+                  ≥ 30 000 €
+                </div>
+              </div>
+              <div
+                class="rounded-xl p-4 border"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(0, 92, 115, 0.1),
+                    rgba(0, 92, 115, 0.05)
+                  );
+                  border-color: rgba(0, 92, 115, 0.2);
+                "
+              >
+                <div
+                  class="text-lg font-semibold mb-2"
+                  style="color: rgba(0, 92, 115, 0.9)"
+                  data-i18n="schengen.over.k2"
+                >
+                  Service
+                </div>
+                <div
+                  class="text-gray-600 text-sm"
+                  data-i18n="schengen.over.k2l"
+                >
+                  Assistance 24/7
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Garanties -->
+        <article
+          id="cov"
+          class="tabpanel bg-white rounded-xl shadow-lg border border-gray-200 p-6"
+          role="tabpanel"
+          aria-labelledby="tab-cov"
+        >
+          <h2
+            class="text-2xl font-bold text-gray-900 mb-6"
+            data-i18n="schengen.cov.t"
+          >
+            2. Garanties principales
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <h3
+                class="text-xl font-semibold mb-4"
+                style="color: rgba(0, 92, 115, 0.9)"
+                data-i18n="schengen.cov.c0.t"
+              >
+                Frais médicaux & hospitalisation
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.cov.c0.li.0"
+                    >Urgences, actes médicaux et hospitalisation.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.cov.c0.li.1"
+                    >Transport sanitaire & soins d'urgence dentaires
+                    (plafonds).</span
+                  >
+                </li>
+              </ul>
+            </section>
+            <section
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <h3
+                class="text-xl font-semibold mb-4"
+                style="color: rgba(0, 92, 115, 0.9)"
+                data-i18n="schengen.cov.c1.t"
+              >
+                Assistance & rapatriement
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.cov.c1.li.0"
+                    >Rapatriement médical / corps, accompagnement proche.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.cov.c1.li.1"
+                    >Prolongation d'hôtel en cas de convalescence
+                    (plafonds).</span
+                  >
+                </li>
+              </ul>
+            </section>
+            <section
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <h3
+                class="text-xl font-semibold mb-4"
+                style="color: rgba(0, 92, 115, 0.9)"
+                data-i18n="schengen.cov.c2.t"
+              >
+                Bagages & retard
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.cov.c2.li.0"
+                    >Perte/vol/détérioration de bagages (franchises et
+                    limites).</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.cov.c2.li.1"
+                    >Retard de vol/bagages (indemnité forfaitaire).</span
+                  >
+                </li>
+              </ul>
+            </section>
+            <section
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <h3
+                class="text-xl font-semibold mb-4"
+                style="color: rgba(0, 92, 115, 0.9)"
+                data-i18n="schengen.cov.c3.t"
+              >
+                Options
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.cov.c3.li.0"
+                    >Annulation/interruption de voyage (causes couvertes).</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.cov.c3.li.1"
+                    >Responsabilité civile vie privée à l'étranger.</span
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+        </article>
+
+        <!-- Documents & process -->
+        <article
+          id="doc"
+          class="tabpanel bg-white rounded-xl shadow-lg border border-gray-200 p-6"
+          role="tabpanel"
+          aria-labelledby="tab-doc"
+        >
+          <h2
+            class="text-2xl font-bold text-gray-900 mb-6"
+            data-i18n="schengen.doc.t"
+          >
+            3. Documents & process
+          </h2>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span
+                class="text-teal-600 mr-3 mt-1"
+                style="color: rgba(0, 92, 115, 0.8)"
+                >✓</span
+              >
+              <span class="text-gray-700" data-i18n="schengen.doc.li.0"
+                >Passeport, dates et pays visités, motif & coordonnées.</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span
+                class="text-teal-600 mr-3 mt-1"
+                style="color: rgba(0, 92, 115, 0.8)"
+                >✓</span
+              >
+              <span class="text-gray-700" data-i18n="schengen.doc.li.1"
+                >Dates exactes de couverture = période du voyage/visa.</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span
+                class="text-teal-600 mr-3 mt-1"
+                style="color: rgba(0, 92, 115, 0.8)"
+                >✓</span
+              >
+              <span class="text-gray-700" data-i18n="schengen.doc.li.2"
+                >Émission de l'attestation nominative (PDF) pour le
+                dossier.</span
+              >
+            </li>
+          </ul>
+          <p class="text-gray-600 mt-6" data-i18n="schengen.doc.note">
+            Délais rapides possibles. Multi-entrées et extensions à la demande.
+          </p>
+        </article>
+
+        <!-- Exclusions & limites -->
+        <article
+          id="lim"
+          class="tabpanel bg-white rounded-xl shadow-lg border border-gray-200 p-6"
+          role="tabpanel"
+          aria-labelledby="tab-lim"
+        >
+          <h2
+            class="text-2xl font-bold text-gray-900 mb-6"
+            data-i18n="schengen.lim.t"
+          >
+            4. Exclusions & limites (exemples)
+          </h2>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span
+                class="text-teal-600 mr-3 mt-1"
+                style="color: rgba(0, 92, 115, 0.8)"
+                >✓</span
+              >
+              <span class="text-gray-700" data-i18n="schengen.lim.li.0"
+                >Maladies préexistantes non soudaines (selon conditions).</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span
+                class="text-teal-600 mr-3 mt-1"
+                style="color: rgba(0, 92, 115, 0.8)"
+                >✓</span
+              >
+              <span class="text-gray-700" data-i18n="schengen.lim.li.1"
+                >Sports extrêmes ou zones sous sanctions (si non
+                optionnées).</span
+              >
+            </li>
+            <li class="flex items-start">
+              <span
+                class="text-teal-600 mr-3 mt-1"
+                style="color: rgba(0, 92, 115, 0.8)"
+                >✓</span
+              >
+              <span class="text-gray-700" data-i18n="schengen.lim.li.2"
+                >Franchises et plafonds par garantie (voir notice).</span
+              >
+            </li>
+          </ul>
+        </article>
+
+        <!-- Frais & sinistres -->
+        <article
+          id="claim"
+          class="tabpanel bg-white rounded-xl shadow-lg border border-gray-200 p-6"
+          role="tabpanel"
+          aria-labelledby="tab-claim"
+        >
+          <h2
+            class="text-2xl font-bold text-gray-900 mb-6"
+            data-i18n="schengen.claim.t"
+          >
+            5. Tarification & sinistres
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <h3
+                class="text-xl font-semibold mb-4"
+                style="color: rgba(0, 92, 115, 0.9)"
+                data-i18n="schengen.claim.c0.t"
+              >
+                Tarification
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.claim.c0.li.0"
+                    >Prime selon durée, âge, destination, options.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.claim.c0.li.1"
+                    >Réductions groupe / famille possibles.</span
+                  >
+                </li>
+              </ul>
+            </section>
+            <section
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <h3
+                class="text-xl font-semibold mb-4"
+                style="color: rgba(0, 92, 115, 0.9)"
+                data-i18n="schengen.claim.c1.t"
+              >
+                Déclaration d'un sinistre
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.claim.c1.li.0"
+                    >Assistance 24/7 (numéro sur l'attestation).</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="text-teal-600 mr-3 mt-1"
+                    style="color: rgba(0, 92, 115, 0.8)"
+                    >•</span
+                  >
+                  <span class="text-gray-700" data-i18n="schengen.claim.c1.li.1"
+                    >Conservez factures, rapports médicaux, preuves de
+                    retard/perte.</span
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+        </article>
+
+        <!-- FAQ -->
+        <article
+          id="faq"
+          class="tabpanel bg-white rounded-xl shadow-lg border border-gray-200 p-6"
+          role="tabpanel"
+          aria-labelledby="tab-faq"
+        >
+          <h2
+            class="text-2xl font-bold text-gray-900 mb-6"
+            data-i18n="schengen.faq.t"
+          >
+            6. FAQ
+          </h2>
+          <div class="space-y-4">
+            <details
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <summary
+                class="text-lg font-semibold cursor-pointer"
+                style="color: rgba(0, 92, 115, 0.9)"
+              >
+                ❓
+                <span data-i18n="schengen.faq.q0"
+                  >Quel plafond pour le visa Schengen ?</span
+                >
+              </summary>
+              <div class="mt-4">
+                <p class="text-gray-600" data-i18n="schengen.faq.a0">
+                  Un minimum de 30 000 € de frais médicaux & rapatriement est
+                  requis. Nous proposons des formules supérieures si besoin.
+                </p>
+              </div>
+            </details>
+            <details
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <summary
+                class="text-lg font-semibold cursor-pointer"
+                style="color: rgba(0, 92, 115, 0.9)"
+              >
+                ❓
+                <span data-i18n="schengen.faq.q1"
+                  >Quand recevoir l'attestation ?</span
+                >
+              </summary>
+              <div class="mt-4">
+                <p class="text-gray-600" data-i18n="schengen.faq.a1">
+                  Généralement sous 24h ouvrées après validation des
+                  informations et du paiement.
+                </p>
+              </div>
+            </details>
+            <details
+              class="rounded-xl p-6 border"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(0, 92, 115, 0.1),
+                  rgba(0, 92, 115, 0.05)
+                );
+                border-color: rgba(0, 92, 115, 0.2);
+              "
+            >
+              <summary
+                class="text-lg font-semibold cursor-pointer"
+                style="color: rgba(0, 92, 115, 0.9)"
+              >
+                ❓
+                <span data-i18n="schengen.faq.q2"
+                  >Puis-je prolonger ma couverture ?</span
+                >
+              </summary>
+              <div class="mt-4">
+                <p class="text-gray-600" data-i18n="schengen.faq.a2">
+                  Oui, sur demande avant l'expiration initiale (selon conditions
+                  de l'assureur).
+                </p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- CTA -->
+        <article
+          class="bg-white rounded-xl shadow-lg border border-gray-200 p-6 mt-6 text-center"
+          style="
+            background: linear-gradient(
+              135deg,
+              rgba(0, 92, 115, 0.9),
+              rgba(0, 92, 115, 0.8)
+            );
+            border-color: rgba(0, 92, 115, 0.9);
+          "
+        >
+          <h3
+            class="text-2xl font-bold text-white mb-4"
+            data-i18n="schengen.cta.t"
+          >
+            Prêt pour votre départ ?
+          </h3>
+          <p class="text-white/90 text-lg mb-6" data-i18n="schengen.cta.p">
+            Nous émettons une attestation conforme et calibrons vos garanties
+            selon la durée et les exigences de votre consulat.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              class="bg-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg"
+              style="color: rgba(0, 92, 115, 0.9)"
+              href="../contact.html"
+              data-i18n="schengen.cta.quote"
+              >Obtenir un devis</a
+            >
+            <a
+              class="px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg"
+              style="
+                background-color: rgba(0, 92, 115, 1);
+                color: white;
+                border-color: rgba(0, 92, 115, 0.9);
+              "
+              href="../contact.html"
+              data-i18n="schengen.cta.talk"
+              >Parler à un conseiller</a
+            >
+          </div>
+        </article>
+
+        <!-- Liens produits (précédent/suivant) -->
+        <article
+          class="bg-white rounded-xl shadow-lg border border-gray-200 p-6 mt-6 text-center"
+        >
+          <p class="text-gray-600">
+            <a
+              class="hover:underline"
+              style="color: rgba(0, 92, 115, 0.9)"
+              href="./vie.html"
+              >←
+              <span data-i18n="schengen.nav.prev"
+                >Assurance-vie & placements</span
+              ></a
+            >
+            &nbsp;|&nbsp;
+            <a
+              class="hover:underline"
+              style="color: rgba(0, 92, 115, 0.9)"
+              href="./retraite.html"
+              ><span data-i18n="schengen.nav.next">Retraite</span> →</a
+            >
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- FAQ SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quel plafond pour le visa Schengen ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un minimum de 30 000 € de frais médicaux & rapatriement est requis. Nous proposons des formules supérieures si besoin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quand recevoir l'attestation ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Généralement sous 24h ouvrées après validation des informations et du paiement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Puis-je prolonger ma couverture ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, sur demande avant l'expiration initiale (selon conditions de l'assureur)."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <script>
+      /* ================== Tab Management ================== */
+      function bindTabs() {
+        const tabs = document.querySelectorAll(".tabs .tab");
+        const panels = document.querySelectorAll(".tabpanel");
+
+        function show(id, push = true) {
+          tabs.forEach((btn) => {
+            const act = btn.dataset.tab === id;
+            btn.classList.toggle("active", act);
+            btn.setAttribute("aria-selected", act ? "true" : "false");
+
+            // Update tab styling
+            if (act) {
+              btn.style.backgroundColor = "rgba(0, 92, 115, 0.9)";
+              btn.style.color = "white";
+              btn.classList.remove("bg-gray-100", "text-gray-700");
+              btn.classList.add("text-white");
+            } else {
+              btn.style.backgroundColor = "";
+              btn.style.color = "";
+              btn.classList.remove("text-white");
+              btn.classList.add("bg-gray-100", "text-gray-700");
+            }
+          });
+          panels.forEach((p) => p.classList.toggle("active", p.id === id));
+          if (push) history.replaceState(null, "", "#" + id);
+        }
+
+        tabs.forEach((btn) =>
+          btn.addEventListener("click", () => show(btn.dataset.tab))
+        );
+
+        function fromHash() {
+          const id = (location.hash || "#over").slice(1);
+          const known = ["over", "cov", "doc", "lim", "claim", "faq"];
+          show(known.includes(id) ? id : "over", false);
+        }
+
+        window.addEventListener("hashchange", fromHash);
+        fromHash();
+      }
+
+      function initUI() {
+        bindTabs();
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Use global translation functions from i18n.js
+        if (typeof window.applyTexts === "function") {
+          window.applyTexts();
+        }
+        initUI();
+      });
+    </script>
+
+    <!-- Global I18N Script -->
+    <script src="/assets/js/i18n.js"></script>
+
+    <!-- Component Scripts -->
+    <script src="/assets/js/components/SearchComponent.js"></script>
+    <script src="/assets/js/components/NavigationComponent.js"></script>
+    <script src="/assets/js/components/FooterComponent.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Riskalia — Services de Conseil en Gestion des Risques</title>
+    <meta
+      name="description"
+      content="Services de conseil spécialisés : gestion des risques, évaluation actuarielle des engagements sociaux, formation sur mesure. Cartographies vivantes, hypothèses auditées, ateliers pratiques pour dirigeants et équipes techniques."
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/components/navigation.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --c1: #005c73;
+        --c2: #00849b;
+        --c3: #00b0c8;
+        --cl: #fff;
+        --cm: #f6fafc;
+        --cd: #243238;
+        --radius: 18px;
+        --shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+        --border: 1px solid rgba(0, 93, 115, 0.18);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        overflow-x: hidden;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+        color: var(--cd);
+        line-height: 1.7;
+        background: #fff;
+      }
+      body[dir="rtl"] {
+        direction: rtl;
+        font-family: "Tajawal", "Open Sans", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Montserrat", sans-serif;
+        color: var(--c1);
+      }
+      body[dir="rtl"] h1,
+      body[dir="rtl"] h2,
+      body[dir="rtl"] h3,
+      body[dir="rtl"] h4 {
+        font-family: "Tajawal", "Open Sans", sans-serif;
+        letter-spacing: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      .container {
+        max-width: 1180px;
+        margin: auto;
+        padding: 0 18px;
+      }
+      .kicker {
+        color: #4e6a74;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-weight: 800;
+        margin-bottom: 6px;
+      }
+      .muted {
+        color: #5f7781;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 16px;
+        background: var(--c3);
+        color: #fff;
+        border-radius: 12px;
+        font-weight: 800;
+        border: 1px solid transparent;
+        transition: 0.25s;
+      }
+      .btn:hover {
+        background: var(--c2);
+        transform: translateY(-1px);
+      }
+      .btn.secondary {
+        background: #fff;
+        color: var(--c1);
+        border-color: #cfe1e6;
+      }
+
+      /* NAV - Removed conflicting styles, using NavigationComponent instead */
+
+      /* Navigation search styles removed - using NavigationComponent */
+      /* Brand styles removed - using NavigationComponent */
+
+      /* RTL fixes */
+      :root {
+        --c1: #005c73;
+        --c2: #00849b;
+        --c3: #00b0c8;
+        --cl: #fff;
+        --cm: #f6fafc;
+        --cd: #243238;
+        --radius: 18px;
+        --shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+        --border: 1px solid rgba(0, 93, 115, 0.18);
+      }
+
+      /* ====== Ajouts / Correctifs RTL ====== */
+      ul.card-list {
+        list-style-position: inside;
+        padding-inline-start: 0;
+      }
+      body[dir="rtl"] ul.card-list {
+        text-align: right;
+        list-style-position: inside;
+      }
+      ul.card-list li {
+        padding-inline-start: 1ch;
+        margin-block: 5px;
+      }
+
+      /* RTL fixes for nav-search removed - using NavigationComponent */
+
+      /* Lang switch RTL fix removed - using NavigationComponent */
+
+      /* ================== ENHANCED HERO SECTION ================== */
+      .hero {
+        min-height: 75vh;
+        background: linear-gradient(
+            135deg,
+            rgba(0, 92, 115, 0.95) 0%,
+            rgba(0, 132, 155, 0.92) 35%,
+            rgba(0, 176, 200, 0.88) 100%
+          ),
+          radial-gradient(
+            ellipse at 70% 20%,
+            rgba(0, 176, 200, 0.3) 0%,
+            transparent 50%
+          ),
+          url("https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2000&q=80")
+            center/cover no-repeat;
+
+        position: relative;
+        overflow: hidden;
+      }
+
+      .badges {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .badge {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.18) 0%,
+          rgba(255, 255, 255, 0.12) 100%
+        );
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 50px;
+        font-weight: 600;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12),
+          inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .badge::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .badge:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18),
+          inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+
+      .badge:hover::before {
+        left: 100%;
+      }
+
+      .section-wave {
+        height: 44px;
+        margin-top: -44px;
+        background: url('data:image/svg+xml;utf8,<svg width="1440" height="44" viewBox="0 0 1440 44" xmlns="http://www.w3.org/2000/svg"><path d="M0,6 C240,44 480,0 720,18 C960,36 1200,8 1440,18 L1440,44 L0,44 Z" fill="white"/></svg>')
+          center/cover no-repeat;
+        position: relative;
+      }
+      .section-wave::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: 48px;
+
+        pointer-events: none;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+          opacity: 0.7;
+        }
+        50% {
+          transform: translateY(-20px) rotate(180deg);
+          opacity: 1;
+        }
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .hero {
+          min-height: 60vh;
+          padding: 60px 0 100px;
+        }
+
+        .badges {
+          gap: 8px;
+          margin-top: 1.5rem;
+        }
+
+        .badge {
+          padding: 10px 16px;
+          font-size: 0.9rem;
+        }
+
+        .hero-wave {
+          height: 60px;
+        }
+
+        /* Mobile-specific fixes */
+        .tabs {
+          padding: 0 20px;
+          gap: 8px;
+        }
+
+        .tab {
+          padding: 12px 16px;
+          font-size: 0.9rem;
+        }
+
+        .tools {
+          padding: 0 20px;
+        }
+
+        .search {
+          gap: 12px;
+        }
+
+        .search input[type="search"] {
+          padding: 14px 16px;
+          font-size: 1rem;
+        }
+
+        .search .btn {
+          padding: 14px 16px;
+          font-size: 1rem;
+        }
+
+        .chips {
+          padding: 0 20px;
+          gap: 6px;
+        }
+
+        .chip {
+          padding: 10px 14px;
+          font-size: 0.85rem;
+        }
+
+        .grid {
+          gap: 12px;
+          padding: 0 20px;
+        }
+
+        .card {
+          border-radius: 20px;
+        }
+
+        .card-content {
+          padding: 20px;
+        }
+
+        .card h3 {
+          font-size: 1.15rem;
+          margin-bottom: 10px;
+        }
+
+        .card p {
+          font-size: 0.9rem;
+          margin-bottom: 14px;
+        }
+
+        .card ul {
+          font-size: 0.85rem;
+          margin-bottom: 18px;
+        }
+
+        .illus {
+          height: 160px;
+        }
+
+        .actions {
+          gap: 10px;
+          margin-top: 18px;
+        }
+
+        .actions .btn {
+          padding: 10px 16px;
+          font-size: 0.85rem;
+          flex: 1;
+          min-width: 100px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero {
+          min-height: 55vh;
+          padding: 50px 0 80px;
+        }
+
+        .badges {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .badge {
+          width: fit-content;
+          min-width: 200px;
+        }
+
+        /* Extra small screens */
+        .tabs {
+          padding: 0 16px;
+          gap: 6px;
+        }
+
+        .tab {
+          padding: 10px 12px;
+          font-size: 0.85rem;
+        }
+
+        .tools {
+          padding: 0 16px;
+        }
+
+        .search input[type="search"] {
+          padding: 12px 14px;
+          font-size: 0.95rem;
+        }
+
+        .search .btn {
+          padding: 12px 14px;
+          font-size: 0.95rem;
+        }
+
+        .chips {
+          padding: 0 16px;
+          gap: 4px;
+        }
+
+        .chip {
+          padding: 8px 12px;
+          font-size: 0.8rem;
+        }
+
+        .grid {
+          padding: 0 16px;
+          gap: 10px;
+        }
+
+        .card {
+          border-radius: 16px;
+        }
+
+        .card-content {
+          padding: 16px;
+        }
+
+        .card h3 {
+          font-size: 1.05rem;
+          margin-bottom: 8px;
+        }
+
+        .card p {
+          font-size: 0.85rem;
+          margin-bottom: 12px;
+        }
+
+        .card ul {
+          font-size: 0.8rem;
+          margin-bottom: 16px;
+        }
+
+        .illus {
+          height: 140px;
+        }
+
+        .actions {
+          gap: 8px;
+          margin-top: 16px;
+          flex-direction: column;
+        }
+
+        .actions .btn {
+          padding: 12px 16px;
+          font-size: 0.85rem;
+          width: 100%;
+          min-width: auto;
+        }
+      }
+
+      /* ================== Tabs (segments) ================== */
+      .tabs {
+        margin: 10px auto 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 620px;
+        padding: 0 16px;
+      }
+      .tab {
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 93, 115, 0.16);
+        font-weight: var(--fw-bold);
+        font-size: 0.95rem;
+        color: #0b4e5b;
+        text-align: center;
+        cursor: pointer;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.92),
+          rgba(255, 255, 255, 0.78)
+        );
+        backdrop-filter: saturate(115%) blur(4px);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+        transition: transform 0.18s ease, box-shadow 0.18s ease,
+          background 0.18s ease, border-color 0.18s ease;
+      }
+      .tab:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      }
+      .tab.active {
+        background: linear-gradient(
+            135deg,
+            rgba(0, 176, 200, 0.18),
+            rgba(0, 92, 115, 0.1)
+          ),
+          linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.92),
+            rgba(255, 255, 255, 0.78)
+          );
+        border-color: rgba(0, 92, 115, 0.25);
+        box-shadow: 0 8px 22px rgba(0, 176, 200, 0.18);
+      }
+
+      /* ================== Tools: search + chips ================== */
+      .tools {
+        display: flex;
+        justify-content: center;
+        margin: 8px 0;
+        padding: 0 16px;
+      }
+      .search {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        max-width: 600px;
+        flex-direction: column;
+      }
+      .search input[type="search"] {
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 93, 115, 0.16);
+        background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.92));
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+        font-size: 1rem;
+        min-width: 0;
+      }
+      .search .btn {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 0.95rem;
+        border-radius: 12px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 16px;
+        background: var(--c3);
+        color: #fff;
+        border-radius: 12px;
+        font-weight: var(--fw-bold);
+        border: 1px solid transparent;
+        transition: 0.25s;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: var(--c2);
+        transform: translateY(-1px);
+      }
+      .btn.secondary {
+        background: #fff;
+        color: var(--c1);
+        border-color: #cfe1e6;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin: 10px auto;
+        max-width: 980px;
+        padding: 0 16px;
+      }
+      .chip {
+        border: 1px solid rgba(0, 93, 115, 0.16);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.94),
+          rgba(255, 255, 255, 0.86)
+        );
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-weight: 800;
+        color: #0b4e5b;
+        cursor: pointer;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+        transition: 0.18s;
+      }
+      .chip:hover {
+        transform: translateY(-1px);
+      }
+      .chip.active {
+        background: linear-gradient(
+            135deg,
+            rgba(0, 176, 200, 0.16),
+            rgba(0, 92, 115, 0.08)
+          ),
+          linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.94),
+            rgba(255, 255, 255, 0.86)
+          );
+        border-color: rgba(0, 92, 115, 0.25);
+        color: #064b58;
+        box-shadow: 0 8px 22px rgba(0, 176, 200, 0.14);
+      }
+
+      /* ================== Product grid ================== */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      @media (max-width: 980px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 580px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card {
+        position: relative;
+        border-radius: 24px;
+        overflow: hidden;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.95) 0%,
+          rgba(255, 255, 255, 0.85) 50%,
+          rgba(255, 255, 255, 0.9) 100%
+        );
+        backdrop-filter: saturate(120%) blur(20px);
+        box-shadow: 0 8px 32px rgba(0, 92, 115, 0.08),
+          0 2px 8px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        transform-style: preserve-3d;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(
+          90deg,
+          var(--c3) 0%,
+          var(--c2) 50%,
+          var(--c1) 100%
+        );
+        opacity: 0.8;
+        z-index: 1;
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 176, 200, 0.02) 0%,
+          rgba(0, 132, 155, 0.01) 50%,
+          rgba(0, 92, 115, 0.02) 100%
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 60px rgba(0, 92, 115, 0.15),
+          0 8px 24px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        border-color: rgba(0, 176, 200, 0.3);
+      }
+
+      .card:hover::after {
+        opacity: 1;
+      }
+
+      .card:hover::before {
+        opacity: 1;
+        height: 6px;
+      }
+      .illus {
+        height: 180px;
+        border-radius: 0;
+        object-fit: cover;
+        width: 100%;
+        border: none;
+        background: linear-gradient(135deg, #f8fbfc 0%, #e6eef1 100%);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .illus::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 176, 200, 0.1) 0%,
+          rgba(0, 132, 155, 0.05) 50%,
+          rgba(0, 92, 115, 0.1) 100%
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+
+      .card:hover .illus {
+        transform: scale(1.05);
+      }
+
+      .card:hover .illus::before {
+        opacity: 1;
+      }
+      .card-content {
+        padding: 24px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .card h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--c1);
+        margin: 0 0 12px 0;
+        line-height: 1.3;
+        font-family: "Montserrat", sans-serif;
+        transition: color 0.3s ease;
+      }
+
+      .card:hover h3 {
+        color: var(--c2);
+      }
+
+      .card p {
+        color: #5f7781;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0 0 16px 0;
+        font-weight: 500;
+      }
+
+      .card ul {
+        color: #5f7781;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 0 0 20px 0;
+        padding-left: 20px;
+        list-style: none;
+      }
+
+      .card ul li {
+        position: relative;
+        margin-bottom: 8px;
+        padding-left: 16px;
+      }
+
+      .card ul li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--c3);
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .actions .btn {
+        flex: 1;
+        min-width: 120px;
+        padding: 12px 20px;
+        border-radius: 16px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-align: center;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .actions .btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .actions .btn:hover::before {
+        left: 100%;
+      }
+
+      .actions .btn:not(.secondary) {
+        background: linear-gradient(135deg, var(--c3) 0%, var(--c2) 100%);
+        color: white;
+        box-shadow: 0 4px 16px rgba(0, 176, 200, 0.3);
+      }
+
+      .actions .btn:not(.secondary):hover {
+        background: linear-gradient(135deg, var(--c2) 0%, var(--c1) 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 176, 200, 0.4);
+      }
+
+      .actions .btn.secondary {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.9) 0%,
+          rgba(255, 255, 255, 0.7) 100%
+        );
+        color: var(--c1);
+        border: 1px solid rgba(0, 176, 200, 0.2);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .actions .btn.secondary:hover {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 176, 200, 0.1) 0%,
+          rgba(0, 132, 155, 0.05) 100%
+        );
+        border-color: rgba(0, 176, 200, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 176, 200, 0.15);
+      }
+
+      /* ================== Enhanced Card Animations ================== */
+
+      /* ================== Loading Animation ================== */
+      .card {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: cardSlideIn 0.6s ease-out forwards;
+      }
+
+      @keyframes cardSlideIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .card:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .card:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .card:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .card:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .card:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+
+      /* ================== Footer ================== */
+      footer {
+        background: var(--c1);
+        color: #fff;
+        padding: 36px 0;
+        margin-top: 0;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+      }
+      footer h4 {
+        color: #a8ecf4;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Component Container -->
+    <div id="navigation-container"></div>
+
+    <!-- HERO -->
+    <section
+      class="hero min-h-[40vh] flex items-center text-white text-center relative py-12"
+    >
+      <div class="container">
+        <h1
+          class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-2 sm:mb-3 md:mb-4"
+          data-i18n="title"
+        >
+          Solutions d'assurance
+        </h1>
+        <p
+          class="text-white/95 text-sm sm:text-base md:text-lg lg:text-xl font-light mb-2 sm:mb-3 md:mb-4 max-w-4xl mx-auto leading-relaxed"
+          data-i18n="subtitle"
+        >
+          Deux parcours : <strong>Entreprises</strong> et
+          <strong>Particuliers</strong>. Produits inspirés des meilleures
+          pratiques du marché (multirisques, transport, flotte, RC,
+          construction… / santé, habitation, vie, voyage Schengen, retraite).
+        </p>
+        <div class="badges">
+          <span class="badge text-xs sm:text-sm" data-i18n="badges.0"
+            >Mise en concurrence</span
+          >
+          <span class="badge text-xs sm:text-sm" data-i18n="badges.1"
+            >Gestion des sinistres</span
+          >
+          <span class="badge text-xs sm:text-sm" data-i18n="badges.2"
+            >Transparence totale</span
+          >
+        </div>
+      </div>
+    </section>
+    <div class="section-wave" aria-hidden="true"></div>
+    <!-- MAIN -->
+    <div class="main-wrapper">
+      <section class="">
+        <div class="container mb-6 max-w-7xl mx-auto px-4">
+          <!-- Tabs -->
+          <div class="tabs" role="tablist" aria-label="Segments">
+            <button
+              class="tab active"
+              id="tab-corp"
+              role="tab"
+              aria-selected="true"
+              data-seg="corp"
+              data-i18n="tabs.corp"
+            >
+              Entreprises
+            </button>
+            <button
+              class="tab"
+              id="tab-retail"
+              role="tab"
+              aria-selected="false"
+              data-seg="retail"
+              data-i18n="tabs.retail"
+            >
+              Particuliers
+            </button>
+          </div>
+
+          <!-- Tools -->
+          <div class="tools">
+            <div class="search" role="search">
+              <input
+                id="q"
+                type="search"
+                placeholder="Rechercher…"
+                aria-label="Rechercher"
+              />
+              <button class="btn" id="clear" type="button" data-i18n="ui.clear">
+                Effacer
+              </button>
+            </div>
+          </div>
+
+          <!-- Chips -->
+          <div class="chips" id="chips"></div>
+
+          <!-- Product grid in "glass" cards -->
+          <div id="grid" class="grid" aria-live="polite"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Component Container -->
+    <div id="footer-container"></div>
+
+    <!-- ================== i18n & data ================== -->
+    <script>
+      const I18N = {
+        fr: {
+          nav: {
+            home: "Accueil",
+            solutions: "Solutions",
+            assurance: "Assurance",
+            re: "Réassurance",
+            climate: "Risques Climatiques",
+            services: "Services de Conseil",
+            esg: "ESG",
+            contact: "Contact",
+          },
+          title: "Solutions d'assurance",
+          subtitle:
+            "Deux parcours : <strong>Entreprises</strong> et <strong>Particuliers</strong>. Produits inspirés des meilleures pratiques du marché (multirisques, transport, flotte, RC, construction… / santé, habitation, vie, voyage Schengen, retraite).",
+          badges: [
+            "Mise en concurrence",
+            "Gestion des sinistres",
+            "Transparence totale",
+          ],
+          tabs: { corp: "Entreprises", retail: "Particuliers" },
+          ui: {
+            clear: "Effacer",
+            search: "Rechercher…",
+            nores: "Aucun produit ne correspond à votre recherche.",
+          },
+          cta: {
+            quote: "Obtenir un devis",
+            learn: "En savoir plus",
+            more: "Parler à un conseiller",
+          },
+          footer: {
+            desc: "Cabinet de courtage & réassurance agréé ACAPS<br/>Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
+            links: "Liens",
+            contact: "Contact",
+            contactBlock: {
+              tel: "Tél 1 :",
+              telNum1: "+212-666-756991",
+              tel2: "Tél 2 :",
+              telNum2: "+212-675-208909",
+              nabil: "E-mail de Nabil :",
+              infos: "Informations générales :",
+            },
+          },
+          filters: {
+            corp: [
+              ["all", "Tous"],
+              ["prop", "Biens"],
+              ["trans", "Transport"],
+              ["fleet", "Flotte"],
+              ["liab", "Responsabilité"],
+              ["const", "Construction"],
+              ["health", "Santé"],
+            ],
+            retail: [
+              ["all", "Tous"],
+              ["health", "Santé"],
+              ["acc", "Accident"],
+              ["home", "Habitation"],
+              ["life", "Vie & placements"],
+              ["travel", "Voyage"],
+              ["ret", "Retraite"],
+            ],
+          },
+          products: {
+            corp: [
+              {
+                id: "multirisques",
+                url: "Produits/multirisques.html",
+                img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
+                cat: ["prop"],
+                t: "Multirisques Entreprise",
+                p: "Biens & pertes d'exploitation pour locaux, stocks, machines.",
+                bul: [
+                  "Incendie, dégâts des eaux, bris de machines",
+                  "Pertes d'exploitation (PDB)",
+                  "Options CatNat & événements climatiques",
+                ],
+              },
+              {
+                id: "transport",
+                url: "Produits/transport.html",
+                img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
+                cat: ["trans"],
+                t: "Transport (marchandises)",
+                p: "Couvre vos expéditions import/export & logistique.",
+                bul: [
+                  "Tous risques facultés",
+                  "RC transporteur / commissionnaire",
+                  "Paramétriques météo en option",
+                ],
+              },
+              {
+                id: "flotte",
+                url: "Produits/flotte.html",
+                img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
+                cat: ["fleet"],
+                t: "Automobile & Flotte",
+                p: "De 5 à 5 000 véhicules, gestion sinistres & télématique.",
+                bul: [
+                  "Tiers / Tous risques / Bris de glace",
+                  "Assistance & véhicules de remplacement",
+                  "Tableaux de bord sinistres",
+                ],
+              },
+              {
+                id: "rc",
+                url: "Produits/rc.html",
+                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
+                cat: ["liab"],
+                t: "Responsabilité Civile",
+                p: "RC Générale / Professionnelle / Pollution / Produits.",
+                bul: [
+                  "RC exploitation et après livraison",
+                  "RC professionnelle (PI)",
+                  "RC environnementale",
+                ],
+              },
+              {
+                id: "construction",
+                url: "Produits/construction.html",
+                img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
+                cat: ["const"],
+                t: "Construction (CAR/EAR)",
+                p: "Tous risques chantier & décennale selon projet.",
+                bul: [
+                  "Chantiers BTP, énergie, infrastructures",
+                  "Pertes d'exploitation chantier",
+                  "Couvertures par phase",
+                ],
+              },
+              {
+                id: "santecollective",
+                url: "Produits/santecollective.html",
+                img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
+                cat: ["health"],
+                t: "Santé collective & Prévoyance",
+                p: "Contrats pour salariés : frais médicaux et prévoyance.",
+                bul: [
+                  "Réseaux de soins & tiers payant",
+                  "Couvertures cadres/non-cadres",
+                  "Pilotage coûts & prévention",
+                ],
+              },
+            ],
+            retail: [
+              {
+                id: "sante",
+                url: "Produits/sante.html",
+                img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
+                cat: ["health"],
+                t: "Santé",
+                p: "Remboursement soins, hospitalisation, optique & dentaire.",
+                bul: [
+                  "Réseau partenaires & tiers payant",
+                  "Formules modulaires",
+                  "Assistance 24/7",
+                ],
+              },
+              {
+                id: "alv",
+                url: "Produits/alv.html",
+                img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
+                cat: ["acc"],
+                t: "Accidents de la vie",
+                p: "Indemnisation des accidents domestiques & loisirs.",
+                bul: [
+                  "Incapacité & invalidité",
+                  "Rente éducation",
+                  "Assistance à domicile",
+                ],
+              },
+              {
+                id: "habitation",
+                url: "Produits/habitation.html",
+                img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
+                cat: ["home"],
+                t: "Biens (Habitation)",
+                p: "Incendie, vol, dégâts des eaux, RC vie privée.",
+                bul: [
+                  "Valeur à neuf selon options",
+                  "Protection juridique",
+                  "Objets de valeur",
+                ],
+              },
+              {
+                id: "vie",
+                url: "Produits/vie.html",
+                img: "https://img.freepik.com/photos-gratuite/famille-islamique-maison-vue-face_23-2149887070.jpg",
+                cat: ["life"],
+                t: "Assurance-vie & placements",
+                p: "Épargne, transmission & capitalisation.",
+                bul: [
+                  "Fonds euros & unités de compte",
+                  "Arbitrages & fiscalité",
+                  "Options bénéficiaires",
+                ],
+              },
+              {
+                id: "schengen",
+                url: "Produits/schengen.html",
+                img: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=1200&q=60",
+                cat: ["travel"],
+                t: "Voyage Schengen",
+                p: "Attestation conforme, visa & assistance.",
+                bul: [
+                  "Frais médicaux & rapatriement",
+                  "Bagages & retard",
+                  "Formules courte/longue durée",
+                ],
+              },
+              {
+                id: "retraite",
+                url: "Produits/retraite.html",
+                img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
+                cat: ["ret"],
+                t: "Retraite",
+                p: "Constitution d'une rente/épargne long terme.",
+                bul: [
+                  "Versements programmés",
+                  "Avantages fiscaux (selon cadre)",
+                  "Options réversibilité",
+                ],
+              },
+            ],
+          },
+        },
+
+        en: {
+          nav: {
+            home: "Home",
+            solutions: "Solutions",
+            assurance: "Insurance",
+            re: "Reinsurance",
+            climate: "Climate Risk",
+            services: "Advisory Services",
+            esg: "ESG",
+            contact: "Contact",
+          },
+          title: "Insurance solutions",
+          subtitle:
+            "Two paths: <strong>Businesses</strong> and <strong>Individuals</strong>. Products aligned with market best practices (property, cargo, fleet, liability, construction… / health, home, life & savings, Schengen travel, retirement).",
+          badges: [
+            "Market benchmarking",
+            "Claims handling",
+            "Full transparency",
+          ],
+          tabs: { corp: "Businesses", retail: "Individuals" },
+          ui: {
+            clear: "Clear",
+            search: "Search…",
+            nores: "No product matches your search.",
+          },
+          cta: {
+            quote: "Get a quote",
+            learn: "Learn more",
+            more: "Talk to an advisor",
+          },
+          footer: {
+            desc: "ACAPS-licensed brokerage & reinsurance<br/>Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
+            links: "Links",
+            contact: "Contact",
+            contactBlock: {
+              tel: "Phone 1 :",
+              telNum1: "+212-666-756991",
+              tel2: "Phone 2 :",
+              telNum2: "+212-675-208909",
+              nabil: "Nabil's e-mail :",
+              infos: "General Information :",
+            },
+          },
+          filters: {
+            corp: [
+              ["all", "All"],
+              ["prop", "Property"],
+              ["trans", "Cargo"],
+              ["fleet", "Fleet"],
+              ["liab", "Liability"],
+              ["const", "Construction"],
+              ["health", "Health"],
+            ],
+            retail: [
+              ["all", "All"],
+              ["health", "Health"],
+              ["acc", "Accident"],
+              ["home", "Home"],
+              ["life", "Life & savings"],
+              ["travel", "Travel"],
+              ["ret", "Retirement"],
+            ],
+          },
+          products: {
+            corp: [
+              {
+                id: "multirisques",
+                url: "Produits/multirisques.html",
+                img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
+                cat: ["prop"],
+                t: "Commercial Property (All Risks)",
+                p: "Assets & Business Interruption for premises, stock, machinery.",
+                bul: [
+                  "Fire, water damage, machinery breakdown",
+                  "Business interruption",
+                  "NatCat & climate options",
+                ],
+              },
+              {
+                id: "transport",
+                url: "Produits/transport.html",
+                img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
+                cat: ["trans"],
+                t: "Cargo / Transport",
+                p: "Covers imports/exports and logistics chain.",
+                bul: [
+                  "All-risks cargo",
+                  "Carrier/Freight forwarder liability",
+                  "Optional weather parametrics",
+                ],
+              },
+              {
+                id: "flotte",
+                url: "Produits/flotte.html",
+                img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
+                cat: ["fleet"],
+                t: "Motor & Fleet",
+                p: "From 5 to 5,000 vehicles, claims & telematics.",
+                bul: [
+                  "TPL / Comprehensive / Glass",
+                  "Roadside assistance",
+                  "Claims dashboards",
+                ],
+              },
+              {
+                id: "rc",
+                url: "Produits/rc.html",
+                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
+                cat: ["liab"],
+                t: "General / Professional Liability",
+                p: "GL, PI, pollution, product liability.",
+                bul: [
+                  "Operations & post-delivery",
+                  "Professional indemnity",
+                  "Environmental liability",
+                ],
+              },
+              {
+                id: "construction",
+                url: "Produits/construction.html",
+                img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
+                cat: ["const"],
+                t: "Construction (CAR/EAR)",
+                p: "All-risks projects & decennial where applicable.",
+                bul: [
+                  "BTP, energy, infrastructure",
+                  "Project delay/BI options",
+                  "Phase-based covers",
+                ],
+              },
+              {
+                id: "santecollective",
+                url: "Produits/santecollective.html",
+                img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
+                cat: ["health"],
+                t: "Group Health & Benefits",
+                p: "Employee medical + risk benefits packages.",
+                bul: [
+                  "Provider networks & direct billing",
+                  "Schemes by grade",
+                  "Cost control & prevention",
+                ],
+              },
+            ],
+            retail: [
+              {
+                id: "sante",
+                url: "Produits/sante.html",
+                img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
+                cat: ["health"],
+                t: "Health",
+                p: "Outpatient, hospital, optical & dental.",
+                bul: [
+                  "Partner networks & cashless",
+                  "Modular plans",
+                  "24/7 assistance",
+                ],
+              },
+              {
+                id: "alv",
+                url: "Produits/alv.html",
+                img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
+                cat: ["acc"],
+                t: "Personal Accident",
+                p: "Indemnities for domestic/leisure accidents.",
+                bul: [
+                  "Disability benefits",
+                  "Education annuity",
+                  "Home assistance",
+                ],
+              },
+              {
+                id: "habitation",
+                url: "Produits/habitation.html",
+                img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
+                cat: ["home"],
+                t: "Home (Property)",
+                p: "Fire, theft, water damage, personal liability.",
+                bul: [
+                  "New-for-old options",
+                  "Legal protection",
+                  "Valuables cover",
+                ],
+              },
+              {
+                id: "vie",
+                url: "Produits/vie.html",
+                img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1200&q=60",
+                cat: ["life"],
+                t: "Life Insurance & Savings",
+                p: "Wealth, succession & capital growth.",
+                bul: [
+                  "Euro funds & UC",
+                  "Arbitrage & tax",
+                  "Beneficiary options",
+                ],
+              },
+              {
+                id: "schengen",
+                url: "Produits/schengen.html",
+                img: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=1200&q=60",
+                cat: ["travel"],
+                t: "Schengen Travel",
+                p: "Visa-compliant certificate & assistance.",
+                bul: [
+                  "Medical & repatriation",
+                  "Baggage & delay",
+                  "Short/long stays",
+                ],
+              },
+              {
+                id: "retraite",
+                url: "Produits/retraite.html",
+                img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
+                cat: ["ret"],
+                t: "Retirement",
+                p: "Build long-term income/savings.",
+                bul: [
+                  "Programmed contributions",
+                  "Tax efficiency (framework)",
+                  "Reversion options",
+                ],
+              },
+            ],
+          },
+        },
+
+        ar: {
+          nav: {
+            home: "الرئيسية",
+            solutions: "الحلول",
+            assurance: "التأمين",
+            re: "إعادة التأمين",
+            climate: "مخاطر المناخ",
+            services: "الخدمات الاستشارية",
+            esg: "الاستدامة",
+            contact: "اتصال",
+          },
+          title: "حلول التأمين",
+          subtitle:
+            "مساران: <strong>الشركات</strong> و<strong>الأفراد</strong>. منتجات وفق أفضل الممارسات (ممتلكات، نقل بضائع، أساطيل، مسؤولية، إنشاءات… / صحة، سكن، حياة وادخار، سفر شنغن، تقاعد).",
+          badges: ["مقارنة عروض السوق", "إدارة المطالبات", "شفافية كاملة"],
+          tabs: { corp: "الشركات", retail: "الأفراد" },
+          ui: {
+            clear: "مسح",
+            search: "ابحث…",
+            nores: "لا توجد منتجات مطابقة لبحثك.",
+          },
+          cta: {
+            quote: "اطلب عرضاً",
+            learn: "تعرّف أكثر",
+            more: "تحدث إلى مستشار",
+          },
+          footer: {
+            desc: "مكتب وساطة وإعادة تأمين مرخص من ACAPS<br/>المقر: 16، شارع تيرفيس، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
+            links: "روابط",
+            contact: "اتصال",
+            contactBlock: {
+              tel: "هاتف 1 :",
+              tel2: "هاتف 2 :",
+              telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
+              telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
+              nabil: "بريد نبيل الإلكتروني :",
+              infos: "معلومات عامة :",
+            },
+          },
+          filters: {
+            corp: [
+              ["all", "الكل"],
+              ["prop", "ممتلكات"],
+              ["trans", "نقل"],
+              ["fleet", "أساطيل"],
+              ["liab", "مسؤولية"],
+              ["const", "إنشاءات"],
+              ["health", "صحة"],
+            ],
+            retail: [
+              ["all", "الكل"],
+              ["health", "صحة"],
+              ["acc", "حوادث"],
+              ["home", "سكن"],
+              ["life", "حياة وادخار"],
+              ["travel", "سفر"],
+              ["ret", "تقاعد"],
+            ],
+          },
+          products: {
+            corp: [
+              {
+                id: "multirisques",
+                url: "Produits/multirisques.html",
+                img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
+                cat: ["prop"],
+                t: "متعدد المخاطر للشركات",
+                p: "الممتلكات وخسارة الأرباح للمقار والمخازن والآلات.",
+                bul: [
+                  "حريق وتسرب مياه وكسر آلات",
+                  "خسارة الأرباح",
+                  "خيارات كوارث طبيعية ومناخ",
+                ],
+              },
+              {
+                id: "transport",
+                url: "Produits/transport.html",
+                img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
+                cat: ["trans"],
+                t: "نقل البضائع",
+                p: "يغطي الاستيراد/التصدير وسلاسل الإمداد.",
+                bul: [
+                  "جميع الأخطار للبضائع",
+                  "مسؤولية الناقل/المخلّص",
+                  "بارامترية للطقس (اختياري)",
+                ],
+              },
+              {
+                id: "flotte",
+                url: "Produits/flotte.html",
+                img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
+                cat: ["fleet"],
+                t: "السيارات والأساطيل",
+                p: "من 5 إلى 5000 مركبة، إدارة مطالبات وتتبع.",
+                bul: [
+                  "طرف ثالث/شامل/زجاج",
+                  "مساعدة على الطريق",
+                  "لوحات مؤشرات للمطالبات",
+                ],
+              },
+              {
+                id: "rc",
+                url: "Produits/rc.html",
+                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
+                cat: ["liab"],
+                t: "المسؤولية العامة/المهنية",
+                p: "عامة ومهنية وتلوث ومسؤولية المنتج.",
+                bul: [
+                  "أثناء التشغيل وبعد التسليم",
+                  "المسؤولية المهنية",
+                  "المسؤولية البيئية",
+                ],
+              },
+              {
+                id: "construction",
+                url: "Produits/construction.html",
+                img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
+                cat: ["const"],
+                t: "الإنشاءات (CAR/EAR)",
+                p: "جميع أخطار المشاريع والضمانات اللاحقة حيث تنطبق.",
+                bul: [
+                  "بناء وطاقة وبنية تحتية",
+                  "تأخير المشروع/خسارة الأرباح",
+                  "تغطيات حسب المراحل",
+                ],
+              },
+              {
+                id: "santecollective",
+                url: "Produits/santecollective.html",
+                img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
+                cat: ["health"],
+                t: "الصحة الجماعية والمزايا",
+                p: "برامج طبية ومخاطر للموظفين.",
+                bul: [
+                  "شبكات مقدمي الخدمة والدفع المباشر",
+                  "خطط حسب الدرجات",
+                  "تحكم في التكاليف والوقاية",
+                ],
+              },
+            ],
+            retail: [
+              {
+                id: "sante",
+                url: "Produits/sante.html",
+                img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
+                cat: ["health"],
+                t: "الصحة",
+                p: "عيادات وتنويم ونظارات وأسنان.",
+                bul: ["شبكات شركاء ودفع مباشر", "خطط مرنة", "مساعدة 24/7"],
+              },
+              {
+                id: "alv",
+                url: "Produits/alv.html",
+                img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
+                cat: ["acc"],
+                t: "حوادث الحياة",
+                p: "تعويض عن الحوادث المنزلية والترفيهية.",
+                bul: ["عوائد عجز", "راتب تعليم", "مساعدة منزلية"],
+              },
+              {
+                id: "habitation",
+                url: "Produits/habitation.html",
+                img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
+                cat: ["home"],
+                t: "السكن (الممتلكات)",
+                p: "حريق وسرقة وتسرب مياه ومسؤولية خاصة.",
+                bul: [
+                  "قيمة جديدة حسب الخيارات",
+                  "حماية قانونية",
+                  "تغطية المقتنيات الثمينة",
+                ],
+              },
+              {
+                id: "vie",
+                url: "Produits/vie.html",
+                img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1200&q=60",
+                cat: ["life"],
+                t: "تأمين الحياة والادخار",
+                p: "ادخار ونقل الثروة وتنمية رأس المال.",
+                bul: [
+                  "صناديق بالعملة المحلية ووحدات",
+                  "تحويلات وضريبة",
+                  "خيارات المستفيد",
+                ],
+              },
+              {
+                id: "schengen",
+                url: "Produits/schengen.html",
+                img: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=1200&q=60",
+                cat: ["travel"],
+                t: "سفر شنغن",
+                p: "شهادة مطابقة للتأشيرة ومساعدة.",
+                bul: [
+                  "نفقات طبية وإعادة للوطن",
+                  "أمتعة وتأخير",
+                  "قصير/طويل الأجل",
+                ],
+              },
+              {
+                id: "retraite",
+                url: "Produits/retraite.html",
+                img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
+                cat: ["ret"],
+                t: "التقاعد",
+                p: "بناء دخل/ادخار طويل الأجل.",
+                bul: [
+                  "مساهمات مبرمجة",
+                  "كفاءة ضريبية (حسب الإطار)",
+                  "خيارات الاستحقاق",
+                ],
+              },
+            ],
+          },
+        },
+      };
+
+      /* ================== Helpers ================== */
+      let lang = localStorage.getItem("riskalia_lang") || "fr";
+      if (!["fr", "en", "ar"].includes(lang)) lang = "fr";
+      let seg = "corp";
+      let chip = "all";
+      let query = "";
+
+      const $ = (s, root = document) => root.querySelector(s);
+      const $$ = (s, root = document) => [...root.querySelectorAll(s)];
+      function t(path) {
+        const ns = path.split(".");
+        let cur = I18N[lang];
+        for (const n of ns) {
+          if (cur == null || !(n in cur)) return path;
+          cur = cur[n];
+        }
+        return cur;
+      }
+
+      /* ================== Render ================== */
+      function renderChips() {
+        const wrap = $("#chips");
+        wrap.innerHTML = "";
+        const items = t("filters." + seg);
+        (items || []).forEach(([id, label]) => {
+          const b = document.createElement("button");
+          b.className = "chip" + (chip === id ? " active" : "");
+          b.dataset.id = id;
+          b.type = "button";
+          b.textContent = label;
+          b.addEventListener("click", () => {
+            chip = id;
+            renderGrid();
+            highlightChip();
+          });
+          wrap.appendChild(b);
+        });
+      }
+      function highlightChip() {
+        $$("#chips .chip").forEach((c) =>
+          c.classList.toggle("active", c.dataset.id === chip)
+        );
+      }
+
+      function renderGrid() {
+        const grid = $("#grid");
+        grid.innerHTML = "";
+        const list = t("products." + seg) || [];
+        const q = query.trim().toLowerCase();
+
+        const filtered = list.filter((it) => {
+          const okCat = chip === "all" || it.cat.includes(chip);
+          const okText =
+            !q ||
+            it.t.toLowerCase().includes(q) ||
+            (it.p || "").toLowerCase().includes(q) ||
+            (it.bul || []).some((b) => b.toLowerCase().includes(q));
+          return okCat && okText;
+        });
+
+        if (filtered.length === 0) {
+          const p = document.createElement("p");
+          p.className = "muted";
+          p.textContent = t("ui.nores");
+          grid.appendChild(p);
+          return;
+        }
+
+        filtered.forEach((it) => {
+          const img =
+            it.img ||
+            "https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?auto=format&fit=crop&w=1200&q=60";
+          const url = it.url || "contact.html";
+          const card = document.createElement("article");
+          card.className = "card";
+          card.innerHTML = `
+      <a href="${url}" aria-label="${it.t}" class="block">
+        <img class="illus" src="${img}" alt="${it.t}">
+      </a>
+      <div class="card-content">
+        <h3>${it.t}</h3>
+        <p>${it.p || ""}</p>
+        ${
+          it.bul && it.bul.length
+            ? `<ul>${it.bul.map((x) => `<li>${x}</li>`).join("")}</ul>`
+            : ""
+        }
+        <div class="actions">
+          <a class="btn" href="${url}">
+            <span>${t("cta.learn")}</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
+          <a class="btn secondary" href="contact.html">
+            <span>${t("cta.quote")}</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    `;
+          grid.appendChild(card);
+        });
+      }
+
+      function applyTexts() {
+        document.documentElement.lang = lang;
+        document.body.dir = lang === "ar" ? "rtl" : "ltr";
+
+        $$("[data-i18n]").forEach((el) => (el.innerHTML = t(el.dataset.i18n)));
+
+        $$(".lang-btn").forEach((b) =>
+          b.classList.toggle("active", b.dataset.lang === lang)
+        );
+        $("#q").placeholder = t("ui.search");
+        renderChips();
+        renderGrid();
+
+        $$(".tab").forEach((b) =>
+          b.classList.toggle("active", b.dataset.seg === seg)
+        );
+      }
+
+      // Make translation functions available globally for components
+      window.applyI18n = applyTexts;
+      window.t = t;
+
+      /* ================== UI ================== */
+      function initUI() {
+        // Mobile menu toggle removed - using NavigationComponent
+
+        $$(".lang-btn").forEach((btn) =>
+          btn.addEventListener("click", () => {
+            lang = btn.dataset.lang;
+            localStorage.setItem("riskalia_lang", lang);
+            applyTexts();
+          })
+        );
+
+        $$("#tab-corp,#tab-retail").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            seg = btn.dataset.seg;
+            chip = "all";
+            query = "";
+            $("#q").value = "";
+            applyTexts();
+            btn.setAttribute("aria-selected", "true");
+            (btn.id === "tab-corp"
+              ? $("#tab-retail")
+              : $("#tab-corp")
+            ).setAttribute("aria-selected", "false");
+          });
+        });
+
+        $("#q").addEventListener("input", (e) => {
+          query = e.target.value;
+          renderGrid();
+        });
+        $("#clear").addEventListener("click", () => {
+          query = "";
+          $("#q").value = "";
+          renderGrid();
+        });
+      }
+
+      // Dropdown accessibility removed - using NavigationComponent
+
+      /* init */
+      document.addEventListener("DOMContentLoaded", () => {
+        applyTexts();
+        initUI();
+      });
+    </script>
+
+    <!-- NAV SEARCH Scripts removed - using NavigationComponent -->
+
+    <!-- Component Scripts -->
+    <script src="assets/js/components/SearchComponent.js"></script>
+    <script src="assets/js/components/NavigationComponent.js"></script>
+    <script src="assets/js/components/FooterComponent.js"></script>
+
+    <!-- Initialize Components -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Navigation Component
+        if (typeof NavigationComponent !== "undefined") {
+          const nav = new NavigationComponent("navigation-container");
+          nav.init();
+
+          // Make navigation component available globally for language changes
+          window.navigationComponent = nav;
+        }
+
+        // Initialize Footer Component
+        if (typeof FooterComponent !== "undefined") {
+          const footer = new FooterComponent("footer-container");
+          footer.init();
+
+          // Make footer component available globally for language changes
+          window.footerComponent = footer;
+        }
+
+        // Listen for language changes from the navigation component
+        document.addEventListener("languageChanged", function (e) {
+          if (e.detail && e.detail.language) {
+            // Update the global language variable
+            lang = e.detail.language;
+
+            // Call the existing language change function
+            if (typeof applyTexts === "function") {
+              applyTexts();
+            }
+
+            // Update footer component translations
+            if (
+              window.footerComponent &&
+              typeof window.footerComponent.updateTranslations === "function"
+            ) {
+              window.footerComponent.updateTranslations();
+            }
+
+            // Call any other language change handlers
+            if (typeof window._onLangChanged === "function") {
+              window._onLangChanged();
+            }
+          }
+        });
+      });
+
+      // Update components when language changes from other sources
+      const originalOnLangChanged = window._onLangChanged;
+      window._onLangChanged = function () {
+        // Call original language change handler
+        if (originalOnLangChanged) {
+          originalOnLangChanged();
+        }
+
+        // Update navigation component
+        if (window.navigationComponent) {
+          const currentLang = localStorage.getItem("riskalia_lang") || "fr";
+          window.navigationComponent.updateLanguage(currentLang);
+        }
+
+        // Update footer component
+        if (
+          window.footerComponent &&
+          typeof window.footerComponent.updateTranslations === "function"
+        ) {
+          window.footerComponent.updateTranslations();
+        }
+      };
+    </script>
+  </body>
+</html>

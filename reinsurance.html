@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Riskalia — Réassurance (Programmes & Conseil)</title>
+    <meta
+      name="description"
+      content="Réassurance proportionnelle et non proportionnelle, placement marché, sinistres & recouvrements, data & modélisation, optimisation des protections et cadre réglementaire SBR (Supervision Basée sur les Risques)."
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="assets/css/components/navigation.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --c1: #005c73;
+        --c2: #00849b;
+        --c3: #00b0c8;
+        --cl: #fff;
+        --cm: #f6fafc;
+        --cd: #243238;
+        --radius: 18px;
+        --shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+        --border: 1px solid rgba(0, 93, 115, 0.18);
+      }
+
+      /* Tab Content Management */
+      .section-content {
+        display: none;
+      }
+      .section-content.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Navigation Component Container -->
+    <div id="navigation-container"></div>
+    <!-- HERO -->
+    <!-- HERO SECTION -->
+    <section
+      class="hero-bg min-h-[40vh] flex items-center text-white text-center relative py-12"
+    >
+      <!-- Floating Background Elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          class="floating-element absolute top-1/4 left-1/4 w-2 h-2 bg-white/20 rounded-full"
+        ></div>
+        <div
+          class="floating-element absolute top-1/3 right-1/3 w-1 h-1 bg-white/30 rounded-full"
+        ></div>
+        <div
+          class="floating-element absolute bottom-1/4 right-1/4 w-3 h-3 bg-white/10 rounded-full"
+        ></div>
+      </div>
+
+      <div class="hero-content container mx-auto px-4 max-w-6xl relative z-10">
+        <div class="space-y-8 px-4">
+          <h1
+            class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-2 sm:mb-3 md:mb-4"
+            data-i18n="hero.title"
+          >
+            Réassurance — Programmes & Conseil
+          </h1>
+          <h3
+            class="text-white/95 text-sm sm:text-base md:text-lg lg:text-xl font-light mb-2 sm:mb-3 md:mb-4 max-w-4xl mx-auto leading-relaxed"
+            data-i18n="hero.subtitle"
+          >
+            Des protections alignées sur vos priorités : stabilité des
+            résultats, protection du capital, soutien à la croissance et
+            conformité.
+          </h3>
+          <div
+            class="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          >
+            <a
+              href="contact.html"
+              class="bg-gradient-to-r from-[var(--c3)] to-[var(--c2)] hover:from-[var(--c2)] hover:to-[var(--c1)] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base no-underline hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
+              data-i18n="cta.contact"
+            >
+              Nous contacter
+            </a>
+            <a
+              href="#section1"
+              class="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 hover:border-white/50 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base no-underline hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
+              data-i18n="cta.discover"
+            >
+              Découvrir nos solutions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-wave" aria-hidden="true"></div>
+
+    <!-- SMOOTH IMAGE-BACKED AREA -->
+    <div class="main-wrapper mb-8">
+      <div class="main-bloc max-w-7xl mx-auto">
+        <!-- HORIZONTAL TABS -->
+        <nav
+          class="bg-gradient-to-r from-[var(--c3)]/10 to-[var(--c1)]/6 border border-[var(--c1)]/20 rounded-2xl backdrop-blur-sm shadow-lg mx-auto mb-8 z-50 max-w-6xl"
+          aria-label="Sommaire"
+        >
+          <div class="flex flex-wrap gap-2 items-center justify-center p-3">
+            <a
+              href="#section1"
+              class="inline-block px-4 py-2 rounded-xl font-bold text-white bg-[var(--c3)] border border-[var(--c3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--c2)] hover:shadow-md"
+              data-i18n="toc.promise"
+              >Notre Promesse</a
+            >
+            <a
+              href="#section2"
+              class="inline-block px-4 py-2 rounded-xl font-bold text-[#0b4e5b] border border-[var(--c1)]/20 bg-white/90 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--c3)] hover:text-white hover:border-[var(--c3)]"
+              data-i18n="toc.programs"
+              >Programmes</a
+            >
+            <a
+              href="#section3"
+              class="inline-block px-4 py-2 rounded-xl font-bold text-[#0b4e5b] border border-[var(--c1)]/20 bg-white/90 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--c3)] hover:text-white hover:border-[var(--c3)]"
+              data-i18n="toc.markets"
+              >Marchés</a
+            >
+            <a
+              href="#section4"
+              class="inline-block px-4 py-2 rounded-xl font-bold text-[#0b4e5b] border border-[var(--c1)]/20 bg-white/90 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--c3)] hover:text-white hover:border-[var(--c3)]"
+              data-i18n="toc.claims"
+              >Sinistres</a
+            >
+            <a
+              href="#section5"
+              class="inline-block px-4 py-2 rounded-xl font-bold text-[#0b4e5b] border border-[var(--c1)]/20 bg-white/90 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--c3)] hover:text-white hover:border-[var(--c3)]"
+              data-i18n="toc.data"
+              >Données</a
+            >
+            <a
+              href="#section6"
+              class="inline-block px-4 py-2 rounded-xl font-bold text-[#0b4e5b] border border-[var(--c1)]/20 bg-white/90 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--c3)] hover:text-white hover:border-[var(--c3)]"
+              data-i18n="toc.optimization"
+              >Optimisation</a
+            >
+            <a
+              href="#section7"
+              class="inline-block px-4 py-2 rounded-xl font-bold text-[#0b4e5b] border border-[var(--c1)]/20 bg-white/90 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--c3)] hover:text-white hover:border-[var(--c3)]"
+              data-i18n="toc.compliance"
+              >Conformité</a
+            >
+            <a
+              href="#section8"
+              class="inline-block px-4 py-2 rounded-xl font-bold text-[#0b4e5b] border border-[var(--c1)]/20 bg-white/90 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--c3)] hover:text-white hover:border-[var(--c3)]"
+              data-i18n="toc.faq"
+              >FAQ</a
+            >
+          </div>
+        </nav>
+
+        <!-- CONTENT -->
+        <section class="reveal">
+          <div class="container px-4">
+            <!-- Section 1: Notre Promesse -->
+            <div id="section1" class="section-content active">
+              <div class="content-section">
+                <h2
+                  class="text-[var(--c1)] text-lg md:text-xl font-bold mb-3 flex items-center gap-2"
+                >
+                  <i class="fas fa-handshake text-blue-600"></i>
+                  <span data-i18n="s1.title"
+                    >Notre promesse : des protections qui soutiennent votre
+                    stratégie</span
+                  >
+                </h2>
+                <p data-i18n="s1.intro">
+                  Nous concevons et plaçons des protections alignées sur vos
+                  priorités : stabilité des résultats, protection du capital,
+                  soutien à la croissance et conformité.
+                </p>
+
+                <div
+                  class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 mb-6 border border-blue-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s1.concrete.title"
+                  >
+                    <i class="fas fa-lightbulb text-blue-600"></i>
+                    Concrètement, pour vous :
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <span data-i18n="s1.concrete.item1">
+                        Moins de volatilité : on amortit les années « chargées »
+                        pour lisser la performance.
+                      </span>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <span data-i18n="s1.concrete.item2">
+                        Juste prix : on relie le coût de la couverture à la
+                        réalité de vos pertes et du capital mobilisé.
+                      </span>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <span data-i18n="s1.concrete.item3">
+                        Capacité sécurisée : on priorise d'abord vos périls
+                        critiques (cat nat, grands risques, lignes sensibles).
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 mb-6 border border-green-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s1.method.title"
+                  >
+                    <i class="fas fa-tools text-green-600"></i>
+                    Notre manière de faire :
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <span data-i18n="s1.method.item1">
+                        Lecture des faits : historique de sinistres, structure
+                        du portefeuille, zones et périls.
+                      </span>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <span data-i18n="s1.method.item2">
+                        Tests simples : scénarios « et si ? » pour mesurer
+                        l'impact réel (franchise, limite, nombre d'événements).
+                      </span>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <span data-i18n="s1.method.item3">
+                        Allers-retours marché : itérations courtes avec les
+                        réassureurs et travail précis sur les termes.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6 mb-6 border-l-4 border-amber-400"
+                >
+                  <div
+                    class="text-amber-700 font-bold mb-3 text-lg flex items-center gap-2"
+                    data-i18n="s1.example.title"
+                  >
+                    <i class="fas fa-chart-line text-amber-600"></i>
+                    Exemple :
+                  </div>
+                  <p
+                    class="text-gray-700 leading-relaxed text-base"
+                    data-i18n="s1.example.text"
+                  >
+                    Si vos pertes moyennes sont maîtrisées mais que 2–3
+                    sinistres/an déséquilibrent le résultat, on calibre une
+                    couverture qui cible ces chocs, pas le quotidien.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 2: Programmes -->
+            <div id="section2" class="section-content">
+              <div class="content-section">
+                <h2
+                  class="text-[var(--c1)] text-lg md:text-xl font-bold mb-3 flex items-center gap-2"
+                >
+                  <i class="fas fa-cogs text-purple-600"></i>
+                  <span data-i18n="s2.title"
+                    >Vos programmes de réassurance, simplement expliqués</span
+                  >
+                </h2>
+
+                <div
+                  class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-6 mb-6 border border-purple-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s2.proportional.title"
+                  >
+                    <i class="fas fa-chart-pie text-purple-600"></i>
+                    Partage du risque (proportionnel)
+                  </div>
+                  <ul class="space-y-4">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-purple-500 font-bold mt-1">•</span>
+                      <div>
+                        <strong class="text-gray-900">Quota-share</strong> :
+                        vous cédez une part fixe des primes et des sinistres.<br />
+                        <em class="text-gray-600 italic">Utilité</em> : soulager
+                        le capital et monter en capacité (croissance, nouvelles
+                        gammes).
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-purple-500 font-bold mt-1">•</span>
+                      <div>
+                        <strong class="text-gray-900">Surplus</strong> : vous
+                        gardez une base et cédez l'excédent.<br />
+                        <em class="text-gray-600 italic">Utilité</em> : grands
+                        risques (sommes assurées élevées), lissage de la
+                        sévérité.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-purple-500 font-bold mt-1">•</span>
+                      <div>
+                        <strong class="text-gray-900"
+                          >Rémunération alignée</strong
+                        >
+                        : participation aux bénéfices, sliding scale (si les
+                        résultats sont bons, vous en profitez).
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6 mb-6 border border-red-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s2.nonproportional.title"
+                  >
+                    <i class="fas fa-shield-alt text-red-600"></i>
+                    Protection des gros chocs (non proportionnel)
+                  </div>
+                  <ul class="space-y-4">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-red-500 font-bold mt-1">•</span>
+                      <div>
+                        <strong class="text-gray-900"
+                          >Excess of Loss (XL)</strong
+                        >
+                        par risque/péril ou par événement : déclenchement
+                        au-delà d'une franchise.<br />
+                        <em class="text-gray-600 italic">Utilité</em> : absorber
+                        les sinistres majeurs.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-red-500 font-bold mt-1">•</span>
+                      <div>
+                        <strong class="text-gray-900"
+                          >Aggregate XL / Stop-loss</strong
+                        >
+                        : capper la perte annuelle ou le ratio combiné.<br />
+                        <em class="text-gray-600 italic">Utilité</em> :
+                        maîtriser le P&L quand l'année est ponctuée de nombreux
+                        sinistres moyens.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 mb-6 border border-teal-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s2.innovative.title"
+                  >
+                    <i class="fas fa-rocket text-teal-600"></i>
+                    Ciblé & innovant
+                  </div>
+                  <ul class="space-y-4">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-teal-500 font-bold mt-1">•</span>
+                      <div>
+                        <strong class="text-gray-900">Facultatives</strong> :
+                        placement à l'unité pour un risque atypique ou hors
+                        cadre des traités.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-teal-500 font-bold mt-1">•</span>
+                      <div>
+                        <strong class="text-gray-900">Paramétriques</strong> :
+                        déclenchement sur indices objectifs (pluie, vent,
+                        séisme).<br />
+                        <em class="text-gray-600 italic">Utilité</em> : réponse
+                        rapide, utile quand la preuve de dommage est lente ou
+                        disputée.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-6 mb-6 border-l-4 border-indigo-400"
+                >
+                  <div
+                    class="text-indigo-700 font-bold mb-3 text-lg flex items-center gap-2"
+                    data-i18n="s2.benchmark.title"
+                  >
+                    <i class="fas fa-bullseye text-indigo-600"></i>
+                    Repère :
+                  </div>
+                  <p
+                    class="text-gray-700 leading-relaxed text-base"
+                    data-i18n="s2.benchmark.text"
+                  >
+                    On choisit l'outil en fonction du problème : stabilité,
+                    capital, croissance, choc exceptionnel… pas l'inverse.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 3: Marchés -->
+            <div id="section3" class="section-content">
+              <div class="content-section">
+                <h2
+                  class="text-[var(--c1)] text-lg md:text-xl font-bold mb-3 flex items-center gap-2"
+                >
+                  <i class="fas fa-globe text-blue-600"></i>
+                  <span data-i18n="s3.title"
+                    >Accéder aux meilleurs marchés, dans les meilleures
+                    conditions</span
+                  >
+                </h2>
+
+                <div
+                  class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 mb-6 border border-blue-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s3.strategy.title"
+                  >
+                    <i class="fas fa-chess text-blue-600"></i>
+                    Stratégie de marché claire
+                  </div>
+                  <ul class="space-y-4">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Panel diversifié et noté</span
+                        >
+                        : on combine solidité financière et appétit pour votre
+                        risque.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Séquençage du placement</span
+                        >
+                        : créer une concurrence saine, sécuriser la capacité au
+                        bon moment.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Focus périls critiques</span
+                        >
+                        : sécuriser d'abord ce qui peut faire dérailler votre
+                        année.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 mb-6 border border-green-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s3.terms.title"
+                  >
+                    <i class="fas fa-file-contract text-green-600"></i>
+                    Termes lisibles et utiles
+                  </div>
+                  <ul class="space-y-4">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Définitions claires</span
+                        >
+                        : périls, regroupement d'événements (aggregation),
+                        fenêtres temporelles (hours clause).
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Gouvernance des sinistres</span
+                        >
+                        : rôles, délais, documents attendus.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Dispositifs de confiance</span
+                        >
+                        : cut-through, dépôts, garanties… quand le contexte
+                        l'exige.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-6 mb-6 border border-purple-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s3.control.title"
+                  >
+                    <i class="fas fa-search text-purple-600"></i>
+                    Traçabilité & contrôle
+                  </div>
+                  <ul class="space-y-4">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-purple-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Décisions documentées</span
+                        >
+                        : pourquoi ce seuil, cette limite, ce choix de marché.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-purple-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Matrice des limites et concentrations</span
+                        >
+                        : suivi simple dans le temps.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-purple-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Créances réassureurs</span
+                        >
+                        : aging, attestations, relances.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-6 mb-6 border-l-4 border-emerald-400"
+                >
+                  <div
+                    class="text-emerald-700 font-bold mb-3 text-lg flex items-center gap-2"
+                    data-i18n="s3.benefit.title"
+                  >
+                    <i class="fas fa-check-circle text-emerald-600"></i>
+                    Bénéfice :
+                  </div>
+                  <p
+                    class="text-gray-700 leading-relaxed text-base"
+                    data-i18n="s3.benefit.text"
+                  >
+                    Vous savez qui couvre quoi, quand, comment — et avec quelle
+                    qualité.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 4: Sinistres -->
+            <div id="section4" class="section-content">
+              <div class="content-section">
+                <h2
+                  class="text-[var(--c1)] text-lg md:text-xl font-bold mb-3 flex items-center gap-2"
+                >
+                  <i class="fas fa-bolt text-yellow-600"></i>
+                  <span data-i18n="s4.title"
+                    >Sinistres : agir tôt, recouvrer vite</span
+                  >
+                </h2>
+
+                <ul class="space-y-4">
+                  <li
+                    class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                  >
+                    <span class="text-yellow-500 font-bold mt-1">•</span>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Notification précoce</span
+                      >
+                      : mettre les réassureurs dans la boucle tôt = moins de
+                      friction.
+                    </div>
+                  </li>
+                  <li
+                    class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                  >
+                    <span class="text-yellow-500 font-bold mt-1">•</span>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Réserves partagées</span
+                      >
+                      : on s'accorde sur les hypothèses pour éviter les
+                      surprises.
+                    </div>
+                  </li>
+                  <li
+                    class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                  >
+                    <span class="text-yellow-500 font-bold mt-1">•</span>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Comités « sinistres majeurs »</span
+                      >
+                      : clarifier les points techniques, acter les étapes, tenir
+                      le calendrier.
+                    </div>
+                  </li>
+                  <li
+                    class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                  >
+                    <span class="text-yellow-500 font-bold mt-1">•</span>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Recouvrements</span
+                      >
+                      : focus délais, intérêts, voies d'escalade.
+                    </div>
+                  </li>
+                </ul>
+
+                <div
+                  class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 mb-6 border-l-4 border-yellow-400"
+                >
+                  <div
+                    class="text-yellow-700 font-bold mb-3 text-lg flex items-center gap-2"
+                    data-i18n="s4.objective.title"
+                  >
+                    <i class="fas fa-target text-yellow-600"></i>
+                    Objectif :
+                  </div>
+                  <p
+                    class="text-gray-700 leading-relaxed text-base"
+                    data-i18n="s4.objective.text"
+                  >
+                    Plus de prévisibilité, moins de temps perdu, plus de
+                    cash-in.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 5: Données -->
+            <div id="section5" class="section-content">
+              <div class="content-section">
+                <h2
+                  class="text-[var(--c1)] text-lg md:text-xl font-bold mb-3 flex items-center gap-2"
+                >
+                  <i class="fas fa-chart-bar text-purple-600"></i>
+                  <span data-i18n="s5.title"
+                    >Données & modélisation au service de décisions
+                    simples</span
+                  >
+                </h2>
+
+                <ul class="space-y-4">
+                  <li
+                    class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                  >
+                    <span class="text-purple-500 font-bold mt-1">•</span>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Historique 5–10 ans</span
+                      >
+                      : fréquence/sévérité, frais (ULAE), ajustements comptables
+                      — on nettoie et on explique.
+                    </div>
+                  </li>
+                  <li
+                    class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                  >
+                    <span class="text-purple-500 font-bold mt-1">•</span>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Expositions</span
+                      >
+                      : par zones et périls (géocodage), vision claire des
+                      sommes assurées.
+                    </div>
+                  </li>
+                  <li
+                    class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                  >
+                    <span class="text-purple-500 font-bold mt-1">•</span>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Scénarios de stress</span
+                      >
+                      : météo extrême, inflation des coûts, rupture
+                      fournisseurs… à impact business lisible.
+                    </div>
+                  </li>
+                  <li
+                    class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                  >
+                    <span class="text-purple-500 font-bold mt-1">•</span>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Livrables lisibles</span
+                      >
+                      : graphiques, rétentions conseillées, marges de sécurité,
+                      tableau « pour/contre » des options.
+                    </div>
+                  </li>
+                </ul>
+
+                <div
+                  class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-6 mb-6 border-l-4 border-purple-400"
+                >
+                  <div
+                    class="text-purple-700 font-bold mb-3 text-lg flex items-center gap-2"
+                    data-i18n="s5.goal.title"
+                  >
+                    <i class="fas fa-bullseye text-purple-600"></i>
+                    But :
+                  </div>
+                  <p
+                    class="text-gray-700 leading-relaxed text-base"
+                    data-i18n="s5.goal.text"
+                  >
+                    Choisir une réponse proportionnée (ni trop, ni trop peu) en
+                    connaissance de cause.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 6: Optimisation -->
+            <div id="section6" class="section-content">
+              <div class="content-section">
+                <h2
+                  class="text-[var(--c1)] text-lg md:text-xl font-bold mb-3 flex items-center gap-2"
+                >
+                  <i class="fas fa-balance-scale text-green-600"></i>
+                  <span data-i18n="s6.title"
+                    >Optimiser le trio coût / protection / capital</span
+                  >
+                </h2>
+
+                <div
+                  class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 mb-6 border border-green-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s6.architecture.title"
+                  >
+                    <i class="fas fa-cogs text-green-600"></i>
+                    Architecture & rétention
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <div>
+                        Stabiliser la marge : quota-share/surplus pour la base,
+                        XL pour les chocs, aggregate pour la dérive annuelle.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <div>
+                        Choisir la franchise : mix expérience passée (burn) +
+                        indicateurs de risque (on vulgarise VaR/TVaR).
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-green-500 font-bold mt-1">•</span>
+                      <div>
+                        Limiter l'aléa : limite par événement et/ou par an,
+                        selon votre tolérance.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 mb-6 border border-blue-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s6.efficiency.title"
+                  >
+                    <i class="fas fa-chart-line text-blue-600"></i>
+                    Efficience économique
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <div>
+                        Décomposer le prix : perte attendue, coût du capital,
+                        frais — transparente.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <div>
+                        Leviers : contrats multi-annuels, reinstatements
+                        calibrés, ajustement franchise/limite.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-blue-500 font-bold mt-1">•</span>
+                      <div>
+                        Paramétriques : complément utile sur pics climatiques
+                        coûteux/difficiles à prouver.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 mb-6 border border-indigo-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s6.counterparties.title"
+                  >
+                    <i class="fas fa-handshake text-indigo-600"></i>
+                    Contreparties & rédaction
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-indigo-500 font-bold mt-1">•</span>
+                      <div>
+                        Qualité et diversification : pas d'œufs dans le même
+                        panier.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-indigo-500 font-bold mt-1">•</span>
+                      <div>
+                        Clauses clés : agrégation, hours, exclusions — on
+                        explique l'impact.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-indigo-500 font-bold mt-1">•</span>
+                      <div>
+                        Exécution : bordereaux simples, cut-through si utile,
+                        suivi recouvrements serré.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-6 mb-6 border-l-4 border-emerald-400"
+                >
+                  <div
+                    class="text-emerald-700 font-bold mb-3 text-lg flex items-center gap-2"
+                    data-i18n="s6.examples.title"
+                  >
+                    <i class="fas fa-lightbulb text-emerald-600"></i>
+                    Exemples de leviers (clairs & concrets)
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-emerald-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Aggregate XL</span
+                        >
+                        : lisse une année à nombreux sinistres moyens (retail) →
+                        vigilance sur « comment on additionne ».
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-emerald-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Stop-loss résultat</span
+                        >
+                        : plafond sur ratio combiné → utile si l'objectif est
+                        P&L first.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-emerald-500 font-bold mt-1">•</span>
+                      <div>
+                        <span class="font-semibold text-gray-900"
+                          >Quota-share + surplus</span
+                        >
+                        : capital + capacité → soigner la profit commission pour
+                        aligner les intérêts.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 7: Conformité -->
+            <div id="section7" class="section-content">
+              <div class="content-section">
+                <h2
+                  class="text-[var(--c1)] text-lg md:text-xl font-bold mb-3 flex items-center gap-2"
+                >
+                  <i class="fas fa-shield-alt text-red-600"></i>
+                  <span data-i18n="s7.title"
+                    >Conformité : réassurance alignée SBR (prudentiel)</span
+                  >
+                </h2>
+
+                <p data-i18n="s7.intro">
+                  Nous alignons vos programmes avec les exigences ACAPS sans
+                  jargon.
+                </p>
+
+                <div
+                  class="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6 mb-6 border border-red-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s7.policy.title"
+                  >
+                    <i class="fas fa-file-alt text-red-600"></i>
+                    Politique de réassurance
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-red-500 font-bold mt-1">•</span>
+                      <div>
+                        Clarté : objectifs, appétit au risque,
+                        limites/concentrations.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-red-500 font-bold mt-1">•</span>
+                      <div>
+                        Sélection des réassureurs : notation, garanties, dépôts.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-red-500 font-bold mt-1">•</span>
+                      <div>
+                        Gouvernance : validation, revue annuelle documentée.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 mb-6 border border-orange-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s7.orsa.title"
+                  >
+                    <i class="fas fa-calculator text-orange-600"></i>
+                    ORSA & capital
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-orange-500 font-bold mt-1">•</span>
+                      <div>
+                        Scénarios réels : cat, dérive fréquence, inflation
+                        sinistres.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-orange-500 font-bold mt-1">•</span>
+                      <div>
+                        Impact solvabilité : SCR/MCR et sensibilités expliquées
+                        simplement.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-orange-500 font-bold mt-1">•</span>
+                      <div>
+                        Back-testing : les protections ont-elles fait ce qui
+                        était prévu ?
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 mb-6 border border-teal-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s7.reporting.title"
+                  >
+                    <i class="fas fa-chart-pie text-teal-600"></i>
+                    Reporting & contrôles
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-teal-500 font-bold mt-1">•</span>
+                      <div>
+                        Créances réassureurs : aging, provisions, relances.
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-teal-500 font-bold mt-1">•</span>
+                      <div>Concentrations : par contrepartie/pays.</div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-teal-500 font-bold mt-1">•</span>
+                      <div>
+                        Prudence comptable : dépôts, intérêts, pièces
+                        justificatives.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-6 mb-6 border border-violet-100"
+                >
+                  <div
+                    class="text-[var(--c1)] font-bold mb-4 text-lg flex items-center gap-2"
+                    data-i18n="s7.deliverables.title"
+                  >
+                    <i class="fas fa-tasks text-violet-600"></i>
+                    Vos livrables (clairs et actionnables)
+                  </div>
+                  <ul class="space-y-3">
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-violet-500 font-bold mt-1">•</span>
+                      <div>
+                        Politique & stratégie : document + matrice
+                        limites/contreparties (annuel).
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-violet-500 font-bold mt-1">•</span>
+                      <div>
+                        ORSA : scénarios + note d'impact solvabilité (annuel +
+                        ad hoc).
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+                    >
+                      <span class="text-violet-500 font-bold mt-1">•</span>
+                      <div>
+                        Créances réassureurs : KPI aging & recouvrements
+                        (trimestriel).
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-slate-50 to-gray-50 rounded-xl p-6 mb-6 border-l-4 border-slate-400"
+                >
+                  <div
+                    class="text-slate-700 font-bold mb-3 text-lg flex items-center gap-2"
+                    data-i18n="s7.purpose.title"
+                  >
+                    <i class="fas fa-check-circle text-slate-600"></i>
+                    Finalité :
+                  </div>
+                  <p
+                    class="text-gray-700 leading-relaxed text-base"
+                    data-i18n="s7.purpose.text"
+                  >
+                    Un dispositif propre, traçable, défendable.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 8: FAQ -->
+            <div id="section8" class="section-content">
+              <div class="content-section">
+                <h2
+                  class="text-[var(--c1)] text-lg md:text-xl font-bold mb-3 flex items-center gap-2"
+                >
+                  <i class="fas fa-question-circle text-indigo-600"></i>
+                  <span data-i18n="s8.title"
+                    >FAQ – les questions qu'on nous pose le plus</span
+                  >
+                </h2>
+
+                <!-- FAQ Items -->
+                <div class="space-y-4">
+                  <!-- FAQ Item 1 -->
+                  <div
+                    class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+                  >
+                    <button
+                      class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 rounded-xl transition-colors duration-200"
+                      onclick="toggleFAQ(this)"
+                    >
+                      <span
+                        class="font-semibold text-[var(--c1)] text-base"
+                        data-i18n="s8.q1.question"
+                      >
+                        Comment fixer la rétention ?
+                      </span>
+                      <i
+                        class="fas fa-chevron-down text-[var(--c3)] transition-transform duration-200"
+                      ></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                      <p
+                        class="text-gray-700 leading-relaxed"
+                        data-i18n="s8.q1.answer"
+                      >
+                        On part de vos pertes passées et de votre tolérance au
+                        risque. On simule plusieurs seuils et on retient celui
+                        qui équilibre coût, protection et capital.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 2 -->
+                  <div
+                    class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+                  >
+                    <button
+                      class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 rounded-xl transition-colors duration-200"
+                      onclick="toggleFAQ(this)"
+                    >
+                      <span
+                        class="font-semibold text-[var(--c1)] text-base"
+                        data-i18n="s8.q2.question"
+                      >
+                        Aggregate XL ou stop-loss ?
+                      </span>
+                      <i
+                        class="fas fa-chevron-down text-[var(--c3)] transition-transform duration-200"
+                      ></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                      <p
+                        class="text-gray-700 leading-relaxed"
+                        data-i18n="s8.q2.answer"
+                      >
+                        Aggregate XL additionne des sinistres sur l'année pour
+                        déclencher la couverture ; le stop-loss plafonne le
+                        ratio combiné. On choisit selon où se situe votre
+                        douleur (fréquence vs résultat global).
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 3 -->
+                  <div
+                    class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+                  >
+                    <button
+                      class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 rounded-xl transition-colors duration-200"
+                      onclick="toggleFAQ(this)"
+                    >
+                      <span
+                        class="font-semibold text-[var(--c1)] text-base"
+                        data-i18n="s8.q3.question"
+                      >
+                        Proportionnel ou XL ?
+                      </span>
+                      <i
+                        class="fas fa-chevron-down text-[var(--c3)] transition-transform duration-200"
+                      ></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                      <p
+                        class="text-gray-700 leading-relaxed"
+                        data-i18n="s8.q3.answer"
+                      >
+                        Proportionnel si vous voulez stabiliser et soutenir la
+                        croissance ; XL si vous voulez protéger les chocs.
+                        Souvent, le mix des deux est optimal.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 4 -->
+                  <div
+                    class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+                  >
+                    <button
+                      class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 rounded-xl transition-colors duration-200"
+                      onclick="toggleFAQ(this)"
+                    >
+                      <span
+                        class="font-semibold text-[var(--c1)] text-base"
+                        data-i18n="s8.q4.question"
+                      >
+                        Les paramétriques, ça marche comment ?
+                      </span>
+                      <i
+                        class="fas fa-chevron-down text-[var(--c3)] transition-transform duration-200"
+                      ></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                      <p
+                        class="text-gray-700 leading-relaxed"
+                        data-i18n="s8.q4.answer"
+                      >
+                        La couverture est liée à un indice objectif (pluie,
+                        vent, séisme). Avantage : rapidité de règlement et moins
+                        de débat sur la preuve de dommage. Idéal pour certains
+                        pics climatiques.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 5 -->
+                  <div
+                    class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+                  >
+                    <button
+                      class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 rounded-xl transition-colors duration-200"
+                      onclick="toggleFAQ(this)"
+                    >
+                      <span
+                        class="font-semibold text-[var(--c1)] text-base"
+                        data-i18n="s8.q5.question"
+                      >
+                        Qu'attend le régulateur (SBR) ?
+                      </span>
+                      <i
+                        class="fas fa-chevron-down text-[var(--c3)] transition-transform duration-200"
+                      ></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                      <p
+                        class="text-gray-700 leading-relaxed"
+                        data-i18n="s8.q5.answer"
+                      >
+                        Une politique claire, des scénarios crédibles dans
+                        l'ORSA, et un suivi sérieux des créances et
+                        concentrations. Nos gabarits vous font gagner du temps
+                        et sécurisent vos échanges.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="end-fade" aria-hidden="true"></div>
+    </div>
+
+    <!-- CTA SECTION -->
+    <section class="py-8 px-4 bg-[var(--c1)] text-white">
+      <div class="container mx-auto max-w-4xl text-center">
+        <h2
+          class="text-xl md:text-2xl font-bold mb-3 md:mb-4 !text-white"
+          data-i18n="contact.title"
+        >
+          Un besoin de couverture ?
+        </h2>
+        <p
+          class="text-base md:text-lg mb-4 md:mb-6 text-white/90"
+          data-i18n="contact.subtitle"
+        >
+          Décrivez votre projet : nous répondons sous 24–48 h.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="contact.html"
+            class="bg-[var(--c3)] hover:bg-[var(--c2)] text-white px-8 py-4 rounded-xl font-bold no-underline transition-all duration-300 hover:-translate-y-0.5"
+            data-i18n="cta.quote"
+          >
+            Obtenir un devis
+          </a>
+          <a
+            href="contact.html"
+            class="bg-white text-[var(--c1)] hover:bg-gray-100 px-8 py-4 rounded-xl font-bold no-underline transition-all duration-300 hover:-translate-y-0.5"
+            data-i18n="cta.advisor"
+          >
+            Contacter un conseiller
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Component Container -->
+    <div id="footer-container"></div>
+
+    <script>
+      /* ===================== I18N DICTIONARY (FR/EN/AR) ===================== */
+      window.I18N = {
+        fr: {
+          meta: {
+            title: "Riskalia — Réassurance (Programmes & Conseil)",
+            desc: "Réassurance proportionnelle et non proportionnelle, placement marché, sinistres & recouvrements, data & modélisation, optimisation des protections et cadre réglementaire SBR (Supervision Basée sur les Risques).",
+          },
+          ui: { search: "🔎…" },
+          aria: {
+            nav: "Navigation principale",
+            submenu_solutions: "Sous-menu Solutions",
+            langswitch: "Sélecteur de langue",
+          },
+          nav: {
+            home: "Accueil",
+            solutions: "Solutions",
+            assurance: "Assurance",
+            re: "Réassurance",
+            climate: "Risques Climatiques",
+            services: "Services de Conseil",
+            esg: "ESG",
+            contact: "Contact",
+          },
+          hero: {
+            title: "Réassurance — Programmes & Conseil",
+            subtitle:
+              "Des protections alignées sur vos priorités : stabilité des résultats, protection du capital, soutien à la croissance et conformité.",
+          },
+          cta: {
+            contact: "Nous contacter",
+            discover: "Découvrir nos solutions",
+            quote: "Obtenir un devis",
+            advisor: "Contacter un conseiller",
+            title: "Optimisons votre programme",
+            subtitle:
+              "Ateliers rapides : objectifs, données, scénarios et options d'architecture, puis consultation marché.",
+          },
+          toc: {
+            promise: "Notre Promesse",
+            programs: "Programmes",
+            markets: "Marchés",
+            claims: "Sinistres",
+            data: "Données",
+            optimization: "Optimisation",
+            compliance: "Conformité",
+            faq: "FAQ",
+          },
+          s1: {
+            title:
+              "Notre promesse : des protections qui soutiennent votre stratégie",
+            intro:
+              "Nous concevons et plaçons des protections alignées sur vos priorités : stabilité des résultats, protection du capital, soutien à la croissance et conformité.",
+            concrete: {
+              title: "Concrètement, pour vous :",
+              item1:
+                "Moins de volatilité : on amortit les années « chargées » pour lisser la performance.",
+              item2:
+                "Juste prix : on relie le coût de la couverture à la réalité de vos pertes et du capital mobilisé.",
+              item3:
+                "Capacité sécurisée : on priorise d'abord vos périls critiques (cat nat, grands risques, lignes sensibles).",
+            },
+            method: {
+              title: "Notre manière de faire :",
+              item1:
+                "Lecture des faits : historique de sinistres, structure du portefeuille, zones et périls.",
+              item2:
+                "Tests simples : scénarios « et si ? » pour mesurer l'impact réel (franchise, limite, nombre d'événements).",
+              item3:
+                "Allers-retours marché : itérations courtes avec les réassureurs et travail précis sur les termes.",
+            },
+            example: {
+              title: "Exemple :",
+              text: "Si vos pertes moyennes sont maîtrisées mais que 2–3 sinistres/an déséquilibrent le résultat, on calibre une couverture qui cible ces chocs, pas le quotidien.",
+            },
+          },
+          s2: {
+            title: "Vos programmes de réassurance, simplement expliqués",
+            proportional: {
+              title: "Partage du risque (proportionnel)",
+              quota:
+                "Quota-share : vous cédez une part fixe des primes et des sinistres.\nUtilité : soulager le capital et monter en capacité (croissance, nouvelles gammes).",
+              surplus:
+                "Surplus : vous gardez une base et cédez l'excédent.\nUtilité : grands risques (sommes assurées élevées), lissage de la sévérité.",
+              commission:
+                "Rémunération alignée : participation aux bénéfices, sliding scale (si les résultats sont bons, vous en profitez).",
+            },
+            nonproportional: {
+              title: "Protection des gros chocs (non proportionnel)",
+              xl: "Excess of Loss (XL) par risque/péril ou par événement : déclenchement au-delà d'une franchise.\nUtilité : absorber les sinistres majeurs.",
+              aggregate:
+                "Aggregate XL / Stop-loss : capper la perte annuelle ou le ratio combiné.\nUtilité : maîtriser le P&L quand l'année est ponctuée de nombreux sinistres moyens.",
+            },
+            innovative: {
+              title: "Ciblé & innovant",
+              facultative:
+                "Facultatives : placement à l'unité pour un risque atypique ou hors cadre des traités.",
+              parametric:
+                "Paramétriques : déclenchement sur indices objectifs (pluie, vent, séisme).\nUtilité : réponse rapide, utile quand la preuve de dommage est lente ou disputée.",
+            },
+            benchmark: {
+              title: "Repère :",
+              text: "On choisit l'outil en fonction du problème : stabilité, capital, croissance, choc exceptionnel… pas l'inverse.",
+            },
+          },
+          s3: {
+            title:
+              "Accéder aux meilleurs marchés, dans les meilleures conditions",
+            strategy: {
+              title: "Stratégie de marché claire",
+              panel:
+                "Panel diversifié et noté : on combine solidité financière et appétit pour votre risque.",
+              sequencing:
+                "Séquençage du placement : créer une concurrence saine, sécuriser la capacité au bon moment.",
+              focus:
+                "Focus périls critiques : sécuriser d'abord ce qui peut faire dérailler votre année.",
+            },
+            terms: {
+              title: "Termes lisibles et utiles",
+              definitions:
+                "Définitions claires : périls, regroupement d'événements (aggregation), fenêtres temporelles (hours clause).",
+              governance:
+                "Gouvernance des sinistres : rôles, délais, documents attendus.",
+              trust:
+                "Dispositifs de confiance : cut-through, dépôts, garanties… quand le contexte l'exige.",
+            },
+            control: {
+              title: "Traçabilité & contrôle",
+              decisions:
+                "Décisions documentées : pourquoi ce seuil, cette limite, ce choix de marché.",
+              matrix:
+                "Matrice des limites et concentrations : suivi simple dans le temps.",
+              receivables:
+                "Créances réassureurs : aging, attestations, relances.",
+            },
+            benefit: {
+              title: "Bénéfice :",
+              text: "Vous savez qui couvre quoi, quand, comment — et avec quelle qualité.",
+            },
+          },
+          s4: {
+            title: "Sinistres : agir tôt, recouvrer vite",
+            item1:
+              "Notification précoce : mettre les réassureurs dans la boucle tôt = moins de friction.",
+            item2:
+              "Réserves partagées : on s'accorde sur les hypothèses pour éviter les surprises.",
+            item3:
+              "Comités « sinistres majeurs » : clarifier les points techniques, acter les étapes, tenir le calendrier.",
+            item4: "Recouvrements : focus délais, intérêts, voies d'escalade.",
+            objective: {
+              title: "Objectif :",
+              text: "Plus de prévisibilité, moins de temps perdu, plus de cash-in.",
+            },
+          },
+          s5: {
+            title: "Données & modélisation au service de décisions simples",
+            item1:
+              "Historique 5–10 ans : fréquence/sévérité, frais (ULAE), ajustements comptables — on nettoie et on explique.",
+            item2:
+              "Expositions : par zones et périls (géocodage), vision claire des sommes assurées.",
+            item3:
+              "Scénarios de stress : météo extrême, inflation des coûts, rupture fournisseurs… à impact business lisible.",
+            item4:
+              "Livrables lisibles : graphiques, rétentions conseillées, marges de sécurité, tableau « pour/contre » des options.",
+            goal: {
+              title: "But :",
+              text: "Choisir une réponse proportionnée (ni trop, ni trop peu) en connaissance de cause.",
+            },
+          },
+          s6: {
+            title: "Optimiser le trio coût / protection / capital",
+            architecture: {
+              title: "Architecture & rétention",
+              stabilize:
+                "Stabiliser la marge : quota-share/surplus pour la base, XL pour les chocs, aggregate pour la dérive annuelle.",
+              deductible:
+                "Choisir la franchise : mix expérience passée (burn) + indicateurs de risque (on vulgarise VaR/TVaR).",
+              limit:
+                "Limiter l'aléa : limite par événement et/ou par an, selon votre tolérance.",
+            },
+            efficiency: {
+              title: "Efficience économique",
+              breakdown:
+                "Décomposer le prix : perte attendue, coût du capital, frais — transparente.",
+              levers:
+                "Leviers : contrats multi-annuels, reinstatements calibrés, ajustement franchise/limite.",
+              parametric:
+                "Paramétriques : complément utile sur pics climatiques coûteux/difficiles à prouver.",
+            },
+            counterparties: {
+              title: "Contreparties & rédaction",
+              quality:
+                "Qualité et diversification : pas d'œufs dans le même panier.",
+              clauses:
+                "Clauses clés : agrégation, hours, exclusions — on explique l'impact.",
+              execution:
+                "Exécution : bordereaux simples, cut-through si utile, suivi recouvrements serré.",
+            },
+            examples: {
+              title: "Exemples de leviers (clairs & concrets)",
+              aggregate:
+                "Aggregate XL : lisse une année à nombreux sinistres moyens (retail) → vigilance sur « comment on additionne ».",
+              stoploss:
+                "Stop-loss résultat : plafond sur ratio combiné → utile si l'objectif est P&L first.",
+              quota:
+                "Quota-share + surplus : capital + capacité → soigner la profit commission pour aligner les intérêts.",
+            },
+          },
+          s7: {
+            title: "Conformité : réassurance alignée SBR (prudentiel)",
+            intro:
+              "Nous alignons vos programmes avec les exigences ACAPS sans jargon.",
+            policy: {
+              title: "Politique de réassurance",
+              clarity:
+                "Clarté : objectifs, appétit au risque, limites/concentrations.",
+              selection:
+                "Sélection des réassureurs : notation, garanties, dépôts.",
+              governance:
+                "Gouvernance : validation, revue annuelle documentée.",
+            },
+            orsa: {
+              title: "ORSA & capital",
+              scenarios:
+                "Scénarios réels : cat, dérive fréquence, inflation sinistres.",
+              impact:
+                "Impact solvabilité : SCR/MCR et sensibilités expliquées simplement.",
+              testing:
+                "Back-testing : les protections ont-elles fait ce qui était prévu ?",
+            },
+            reporting: {
+              title: "Reporting & contrôles",
+              receivables:
+                "Créances réassureurs : aging, provisions, relances.",
+              concentrations: "Concentrations : par contrepartie/pays.",
+              prudence:
+                "Prudence comptable : dépôts, intérêts, pièces justificatives.",
+            },
+            deliverables: {
+              title: "Vos livrables (clairs et actionnables)",
+              policy:
+                "Politique & stratégie : document + matrice limites/contreparties (annuel).",
+              orsa: "ORSA : scénarios + note d'impact solvabilité (annuel + ad hoc).",
+              kpi: "Créances réassureurs : KPI aging & recouvrements (trimestriel).",
+            },
+            purpose: {
+              title: "Finalité :",
+              text: "Un dispositif propre, traçable, défendable.",
+            },
+          },
+          s8: {
+            title: "FAQ – les questions qu'on nous pose le plus",
+            q1: {
+              question: "Comment fixer la rétention ?",
+              answer:
+                "On part de vos pertes passées et de votre tolérance au risque. On simule plusieurs seuils et on retient celui qui équilibre coût, protection et capital.",
+            },
+            q2: {
+              question: "Aggregate XL ou stop-loss ?",
+              answer:
+                "Aggregate XL additionne des sinistres sur l'année pour déclencher la couverture ; le stop-loss plafonne le ratio combiné. On choisit selon où se situe votre douleur (fréquence vs résultat global).",
+            },
+            q3: {
+              question: "Proportionnel ou XL ?",
+              answer:
+                "Proportionnel si vous voulez stabiliser et soutenir la croissance ; XL si vous voulez protéger les chocs. Souvent, le mix des deux est optimal.",
+            },
+            q4: {
+              question: "Les paramétriques, ça marche comment ?",
+              answer:
+                "La couverture est liée à un indice objectif (pluie, vent, séisme). Avantage : rapidité de règlement et moins de débat sur la preuve de dommage. Idéal pour certains pics climatiques.",
+            },
+            q5: {
+              question: "Qu'attend le régulateur (SBR) ?",
+              answer:
+                "Une politique claire, des scénarios crédibles dans l'ORSA, et un suivi sérieux des créances et concentrations. Nos gabarits vous font gagner du temps et sécurisent vos échanges.",
+            },
+          },
+          contact: {
+            title: "Optimisons votre programme ?",
+            subtitle:
+              "Ateliers rapides : objectifs, données, scénarios et options d'architecture, puis consultation marché.",
+          },
+          footer: {
+            desc: "Cabinet de courtage & réassurance agréé ACAPS<br/>Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
+            links: "Liens",
+            contact: "Contact",
+            contactBlock: {
+              tel: "Tél 1 :",
+              telNum1: "+212-666-756991",
+              tel2: "Tél 2 :",
+              telNum2: "+212-675-208909",
+              nabil: "E-mail de Nabil :",
+              infos: "Informations générales :",
+            },
+          },
+        },
+
+        en: {
+          meta: {
+            title: "Riskalia — Reinsurance (Programs & Advisory)",
+            desc: "Proportional & non-proportional reinsurance, market placement, claims & recoveries, data & modelling, protection optimization and RBS regulatory framework.",
+          },
+          ui: { search: "🔎…" },
+          aria: {
+            nav: "Main navigation",
+            submenu_solutions: "Solutions submenu",
+            langswitch: "Language switcher",
+          },
+          nav: {
+            home: "Home",
+            solutions: "Solutions",
+            assurance: "Insurance",
+            re: "Reinsurance",
+            climate: "Climate Risks",
+            services: "Advisory Services",
+            esg: "ESG",
+            contact: "Contact",
+          },
+          hero: {
+            title: "Reinsurance — Programs & Advisory",
+            subtitle:
+              "Protections aligned with your priorities: result stability, capital protection, growth support and compliance.",
+          },
+          cta: {
+            contact: "Contact us",
+            discover: "Discover our solutions",
+            quote: "Get a quote",
+            advisor: "Talk to an advisor",
+            title: "Let's optimize your program",
+            subtitle:
+              "Quick workshops: objectives, data, scenarios and architecture options, then market consultation.",
+          },
+          toc: {
+            promise: "Our Promise",
+            programs: "Programs",
+            markets: "Markets",
+            claims: "Claims",
+            data: "Data",
+            optimization: "Optimization",
+            compliance: "Compliance",
+            faq: "FAQ",
+          },
+          s1: {
+            title: "Our promise: protections that support your strategy",
+            intro:
+              "We design and place protections aligned with your priorities: result stability, capital protection, growth support and compliance.",
+            concrete: {
+              title: "Concretely, for you:",
+              item1:
+                "Less volatility: we cushion the 'heavy' years to smooth performance.",
+              item2:
+                "Fair price: we link coverage cost to the reality of your losses and mobilized capital.",
+              item3:
+                "Secured capacity: we first prioritize your critical perils (nat cat, major risks, sensitive lines).",
+            },
+            method: {
+              title: "Our way of doing:",
+              item1:
+                "Reading the facts: claims history, portfolio structure, zones and perils.",
+              item2:
+                "Simple tests: 'what if?' scenarios to measure real impact (deductible, limit, number of events).",
+              item3:
+                "Market back-and-forth: short iterations with reinsurers and precise work on terms.",
+            },
+            example: {
+              title: "Example:",
+              text: "If your average losses are controlled but 2-3 claims/year unbalance the result, we calibrate coverage that targets these shocks, not the daily routine.",
+            },
+          },
+          s2: {
+            title: "Your reinsurance programs, simply explained",
+            proportional: {
+              title: "Risk sharing (proportional)",
+              quota:
+                "Quota-share: you cede a fixed share of premiums and claims.\nUtility: relieve capital and increase capacity (growth, new ranges).",
+              surplus:
+                "Surplus: you keep a base and cede the excess.\nUtility: major risks (high insured sums), severity smoothing.",
+              commission:
+                "Aligned remuneration: profit sharing, sliding scale (if results are good, you benefit).",
+            },
+            nonproportional: {
+              title: "Major shock protection (non-proportional)",
+              xl: "Excess of Loss (XL) per risk/peril or per event: trigger beyond a deductible.\nUtility: absorb major claims.",
+              aggregate:
+                "Aggregate XL / Stop-loss: cap annual loss or combined ratio.\nUtility: control P&L when the year is punctuated by many medium claims.",
+            },
+            innovative: {
+              title: "Targeted & innovative",
+              facultative:
+                "Facultative: unit placement for an atypical risk or outside the treaty framework.",
+              parametric:
+                "Parametric: trigger on objective indices (rain, wind, earthquake).\nUtility: quick response, useful when proof of damage is slow or disputed.",
+            },
+            benchmark: {
+              title: "Benchmark:",
+              text: "We choose the tool according to the problem: stability, capital, growth, exceptional shock... not the reverse.",
+            },
+          },
+          s3: {
+            title: "Access the best markets, under the best conditions",
+            strategy: {
+              title: "Clear market strategy",
+              panel:
+                "Diversified and rated panel: we combine financial strength and appetite for your risk.",
+              sequencing:
+                "Placement sequencing: create healthy competition, secure capacity at the right time.",
+              focus:
+                "Critical perils focus: first secure what can derail your year.",
+            },
+            terms: {
+              title: "Readable and useful terms",
+              definitions:
+                "Clear definitions: perils, event aggregation, time windows (hours clause).",
+              governance:
+                "Claims governance: roles, deadlines, expected documents.",
+              trust:
+                "Trust devices: cut-through, deposits, guarantees... when the context requires it.",
+            },
+            control: {
+              title: "Traceability & control",
+              decisions:
+                "Documented decisions: why this threshold, this limit, this market choice.",
+              matrix:
+                "Limits and concentrations matrix: simple tracking over time.",
+              receivables:
+                "Reinsurer receivables: aging, certificates, follow-ups.",
+            },
+            benefit: {
+              title: "Benefit:",
+              text: "You know who covers what, when, how — and with what quality.",
+            },
+          },
+          s4: {
+            title: "Claims: act early, recover quickly",
+            item1:
+              "Early notification: getting reinsurers in the loop early = less friction.",
+            item2:
+              "Shared reserves: we agree on assumptions to avoid surprises.",
+            item3:
+              "'Major claims' committees: clarify technical points, record steps, keep the schedule.",
+            item4:
+              "Recoveries: focus on deadlines, interests, escalation paths.",
+            objective: {
+              title: "Objective:",
+              text: "More predictability, less time wasted, more cash-in.",
+            },
+          },
+          s5: {
+            title: "Data & modeling for simple decisions",
+            item1:
+              "5-10 year history: frequency/severity, expenses (ULAE), accounting adjustments — we clean and explain.",
+            item2:
+              "Exposures: by zones and perils (geocoding), clear view of insured sums.",
+            item3:
+              "Stress scenarios: extreme weather, cost inflation, supplier disruption... with readable business impact.",
+            item4:
+              "Readable deliverables: graphics, recommended retentions, safety margins, 'pros/cons' table of options.",
+            goal: {
+              title: "Goal:",
+              text: "Choose a proportionate response (neither too much, nor too little) with full knowledge.",
+            },
+          },
+          s6: {
+            title: "Optimize the cost / protection / capital trio",
+            architecture: {
+              title: "Architecture & retention",
+              stabilize:
+                "Stabilize margin: quota-share/surplus for the base, XL for shocks, aggregate for annual drift.",
+              deductible:
+                "Choose deductible: mix past experience (burn) + risk indicators (we popularize VaR/TVaR).",
+              limit:
+                "Limit randomness: limit per event and/or per year, according to your tolerance.",
+            },
+            efficiency: {
+              title: "Economic efficiency",
+              breakdown:
+                "Break down price: expected loss, cost of capital, expenses — transparent.",
+              levers:
+                "Levers: multi-year contracts, calibrated reinstatements, deductible/limit adjustment.",
+              parametric:
+                "Parametric: useful complement on expensive/hard-to-prove climate peaks.",
+            },
+            counterparties: {
+              title: "Counterparties & wording",
+              quality:
+                "Reinsurer quality & diversification: don't put all eggs in one basket.",
+              clauses:
+                "Key clauses: aggregation, hours clause, exclusions — we explain the impact.",
+              execution:
+                "Execution: simple bordereaux, cut-through if useful, tight recoveries monitoring.",
+            },
+            examples: {
+              title: "Examples of levers (clear & concrete)",
+              aggregate:
+                "Aggregate XL: smooths a year with many medium claims (retail) → vigilance on 'how we add up'.",
+              stoploss:
+                "Result stop-loss: ceiling on combined ratio → useful if objective is P&L first.",
+              quota:
+                "Quota-share + surplus: capital + capacity → care for profit commission to align interests.",
+            },
+          },
+          s7: {
+            title: "Compliance: RBS-aligned reinsurance (prudential)",
+            intro:
+              "We align your programs with ACAPS requirements without jargon.",
+            policy: {
+              title: "Reinsurance policy",
+              clarity:
+                "Clarity: objectives, risk appetite, limits/concentrations.",
+              selection: "Reinsurer selection: rating, guarantees, deposits.",
+              governance: "Governance: validation, documented annual review.",
+            },
+            orsa: {
+              title: "ORSA & capital",
+              scenarios:
+                "Real scenarios: cat, frequency drift, claims inflation.",
+              impact:
+                "Solvency impact: SCR/MCR and sensitivities explained simply.",
+              testing:
+                "Back-testing: did the protections do what was expected?",
+            },
+            reporting: {
+              title: "Reporting & controls",
+              receivables:
+                "Reinsurer receivables: aging, provisions, follow-ups.",
+              concentrations: "Concentrations: by counterparty/country.",
+              prudence:
+                "Prudent accounting: deposits, interests, supporting documents.",
+            },
+            deliverables: {
+              title: "Your deliverables (clear and actionable)",
+              policy:
+                "Policy & strategy: document + limits/counterparties matrix (annual).",
+              orsa: "ORSA: scenarios + solvency impact note (annual + ad hoc).",
+              kpi: "Reinsurer receivables: aging KPIs & recoveries (quarterly).",
+            },
+            purpose: {
+              title: "Purpose:",
+              text: "A clean, traceable, defensible system.",
+            },
+          },
+          s8: {
+            title: "FAQ – the questions we get asked most",
+            q1: {
+              question: "How to set retention?",
+              answer:
+                "We start from your past losses and your risk tolerance. We simulate several thresholds and retain the one that balances cost, protection and capital.",
+            },
+            q2: {
+              question: "Aggregate XL or stop-loss?",
+              answer:
+                "Aggregate XL adds up claims over the year to trigger coverage; stop-loss caps the combined ratio. We choose according to where your pain lies (frequency vs overall result).",
+            },
+            q3: {
+              question: "Proportional or XL?",
+              answer:
+                "Proportional if you want to stabilize and support growth; XL if you want to protect against shocks. Often, a mix of both is optimal.",
+            },
+            q4: {
+              question: "How do parametrics work?",
+              answer:
+                "Coverage is linked to an objective index (rain, wind, earthquake). Advantage: quick settlement and less debate on proof of damage. Ideal for certain climate peaks.",
+            },
+            q5: {
+              question: "What does the regulator (RBS) expect?",
+              answer:
+                "A clear policy, credible scenarios in ORSA, and serious monitoring of receivables and concentrations. Our templates save you time and secure your exchanges.",
+            },
+          },
+          contact: {
+            title: "Let's optimize your program",
+            subtitle:
+              "Quick workshops: objectives, data, scenarios and architecture options, then market consultation.",
+          },
+          footer: {
+            desc: "Licensed insurance & reinsurance brokerage (ACAPS)<br/>Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
+            links: "Links",
+            contact: "Contact",
+            contactBlock: {
+              tel: "Phone 1:",
+              telNum1: "+212-666-756991",
+              tel2: "Phone 2:",
+              telNum2: "+212-675-208909",
+              nabil: "Nabil's email:",
+              infos: "General information:",
+            },
+          },
+        },
+
+        ar: {
+          meta: {
+            title: "ريسكاليا — إعادة التأمين (برامج واستشارات)",
+            desc: "إعادة تأمين نسبية وغير نسبية، ترتيب السوق، المطالبات والتحصيل، البيانات والنمذجة، تحسين الحماية وإطار تنظيمي قائم على المخاطر.",
+          },
+          ui: { search: "…🔎" },
+          aria: {
+            nav: "التنقل الرئيسي",
+            submenu_solutions: "القائمة الفرعية للحلول",
+            langswitch: "مبدّل اللغة",
+          },
+          nav: {
+            home: "الرئيسية",
+            solutions: "الحلول",
+            assurance: "التأمين",
+            re: "إعادة التأمين",
+            climate: "مخاطر المناخ",
+            services: "الخدمات الاستشارية",
+            esg: "الاستدامة",
+            contact: "تواصل",
+          },
+          hero: {
+            title: "إعادة التأمين — برامج واستشارات",
+            subtitle:
+              "حماية متوائمة مع أولوياتك: استقرار النتائج، حماية رأس المال، دعم النمو والامتثال.",
+          },
+          cta: {
+            contact: "تواصل معنا",
+            discover: "اكتشف حلولنا",
+            quote: "احصل على عرض",
+            advisor: "تحدث مع مستشار",
+            title: "لنحسن برنامجك",
+            subtitle:
+              "ورش سريعة: أهداف، بيانات، سيناريوهات وخيارات الهيكلة، ثم استشارة السوق.",
+          },
+          toc: {
+            promise: "وعدنا",
+            programs: "البرامج",
+            markets: "الأسواق",
+            claims: "المطالبات",
+            data: "البيانات",
+            optimization: "التحسين",
+            compliance: "الامتثال",
+            faq: "الأسئلة الشائعة",
+          },
+          s1: {
+            title: "وعدنا: حماية تدعم استراتيجيتك",
+            intro:
+              "نصمم ونضع حماية متوائمة مع أولوياتك: استقرار النتائج، حماية رأس المال، دعم النمو والامتثال.",
+            concrete: {
+              title: "عملياً، بالنسبة لك:",
+              item1: "تقلبات أقل: نخفف من السنوات 'المثقلة' لتنعيم الأداء.",
+              item2:
+                "سعر عادل: نربط تكلفة التغطية بواقع خسائرك ورأس المال المعبأ.",
+              item3:
+                "قدرة مؤمنة: نعطي الأولوية أولاً لمخاطرك الحرجة (الكوارث الطبيعية، المخاطر الكبيرة، الخطوط الحساسة).",
+            },
+            method: {
+              title: "طريقتنا في العمل:",
+              item1:
+                "قراءة الحقائق: تاريخ المطالبات، هيكل المحفظة، المناطق والمخاطر.",
+              item2:
+                "اختبارات بسيطة: سيناريوهات 'ماذا لو؟' لقياس التأثير الحقيقي (الخصم، الحد، عدد الأحداث).",
+              item3:
+                "ذهاب وإياب السوق: تكرارات قصيرة مع معيدي التأمين والعمل الدقيق على الشروط.",
+            },
+            example: {
+              title: "مثال:",
+              text: "إذا كانت خسائرك المتوسطة تحت السيطرة ولكن 2-3 مطالبات/سنة تخل بالنتيجة، فإننا نعاير تغطية تستهدف هذه الصدمات، وليس الروتين اليومي.",
+            },
+          },
+          s2: {
+            title: "برامج إعادة التأمين الخاصة بك، مشروحة ببساطة",
+            proportional: {
+              title: "تقاسم المخاطر (متناسب)",
+              quota:
+                "حصة الكوتا: تتنازل عن حصة ثابتة من الأقساط والمطالبات.\nالفائدة: تخفيف رأس المال وزيادة القدرة (النمو، النطاقات الجديدة).",
+              surplus:
+                "الفائض: تحتفظ بقاعدة وتتنازل عن الفائض.\nالفائدة: المخاطر الكبيرة (المبالغ المؤمنة العالية)، تنعيم الشدة.",
+              commission:
+                "المكافآت المتوائمة: المشاركة في الأرباح، مقياس متدرج (إذا كانت النتائج جيدة، فإنك تستفيد).",
+            },
+            nonproportional: {
+              title: "حماية الصدمات الكبيرة (غير متناسبة)",
+              xl: "فائض الخسارة (XL) لكل مخاطرة/خطر أو لكل حدث: التفعيل بعد الخصم.\nالفائدة: امتصاص المطالبات الكبيرة.",
+              aggregate:
+                "إجمالي XL / وقف الخسارة: وضع حد أقصى للخسارة السنوية أو النسبة المجمعة.\nالفائدة: التحكم في الأرباح والخسائر عندما تكون السنة مليئة بالعديد من المطالبات المتوسطة.",
+            },
+            innovative: {
+              title: "مستهدف ومبتكر",
+              facultative:
+                "الاختيارية: الوضع الوحدوي لخطر غير نمطي أو خارج إطار المعاهدات.",
+              parametric:
+                "البارامترية: التفعيل على المؤشرات الموضوعية (المطر، الرياح، الزلزال).\nالفائدة: الاستجابة السريعة، مفيد عندما يكون إثبات الضرر بطيئًا أو متنازعًا عليه.",
+            },
+            benchmark: {
+              title: "معيار:",
+              text: "نختار الأداة وفقًا للمشكلة: الاستقرار، رأس المال، النمو، الصدمة الاستثنائية... وليس العكس.",
+            },
+          },
+          s3: {
+            title: "الوصول إلى أفضل الأسواق، في أفضل الظروف",
+            strategy: {
+              title: "استراتيجية السوق الواضحة",
+              panel:
+                "لوحة متنوعة ومصنفة: نجمع بين القوة المالية والشهية لمخاطرك.",
+              sequencing:
+                "تسلسل الوضع: خلق منافسة صحية، تأمين القدرة في الوقت المناسب.",
+              focus:
+                "التركيز على المخاطر الحرجة: تأمين أولاً ما يمكن أن يخرج سنتك عن مسارها.",
+            },
+            terms: {
+              title: "شروط قابلة للقراءة ومفيدة",
+              definitions:
+                "تعريفات واضحة: المخاطر، تجميع الأحداث، النوافذ الزمنية (بند الساعات).",
+              governance:
+                "حوكمة المطالبات: الأدوار، المواعيد النهائية، الوثائق المتوقعة.",
+              trust:
+                "أجهزة الثقة: القطع المباشر، الودائع، الضمانات... عندما يتطلب السياق ذلك.",
+            },
+            control: {
+              title: "التتبع والسيطرة",
+              decisions:
+                "القرارات الموثقة: لماذا هذا العتبة، هذا الحد، هذا الاختيار السوقي.",
+              matrix: "مصفوفة الحدود والتركيزات: تتبع بسيط عبر الزمن.",
+              receivables:
+                "مستحقات معيدي التأمين: الشيخوخة، الشهادات، المتابعات.",
+            },
+            benefit: {
+              title: "الفائدة:",
+              text: "تعرف من يغطي ماذا، متى، كيف — وبأي جودة.",
+            },
+          },
+          s4: {
+            title: "المطالبات: التصرف مبكراً، الاسترداد بسرعة",
+            item1:
+              "الإشعار المبكر: إدخال معيدي التأمين في الحلقة مبكراً = احتكاك أقل.",
+            item2: "الاحتياطيات المشتركة: نتفق على الافتراضات لتجنب المفاجآت.",
+            item3:
+              "لجان 'المطالبات الكبيرة': توضيح النقاط التقنية، تسجيل الخطوات، الحفاظ على الجدول الزمني.",
+            item4:
+              "الاسترداد: التركيز على المواعيد النهائية، الفوائد، مسارات التصعيد.",
+            objective: {
+              title: "الهدف:",
+              text: "قابلية تنبؤ أكثر، وقت أقل ضياعاً، تدفق نقدي أكثر.",
+            },
+          },
+          s5: {
+            title: "البيانات والنمذجة في خدمة القرارات البسيطة",
+            item1:
+              "تاريخ 5-10 سنوات: التكرار/الشدة، المصروفات (ULAE)، التعديلات المحاسبية — ننظف ونشرح.",
+            item2:
+              "التعرضات: حسب المناطق والمخاطر (الترميز الجغرافي)، رؤية واضحة للمبالغ المؤمنة.",
+            item3:
+              "سيناريوهات الضغط: الطقس المتطرف، تضخم التكاليف، انقطاع الموردين... مع تأثير تجاري قابل للقراءة.",
+            item4:
+              "المخرجات القابلة للقراءة: الرسوم البيانية، الاحتفاظات الموصى بها، هوامش الأمان، جدول 'الإيجابيات/السلبيات' للخيارات.",
+            goal: {
+              title: "الهدف:",
+              text: "اختيار استجابة متناسبة (لا كثيرة جداً، ولا قليلة جداً) عن علم تام.",
+            },
+          },
+          s6: {
+            title: "تحسين ثلاثي التكلفة / الحماية / رأس المال",
+            architecture: {
+              title: "العمارة والاحتفاظ",
+              stabilize:
+                "استقرار الهامش: حصة الكوتا/الفائض للقاعدة، XL للصدمات، الإجمالي للانحراف السنوي.",
+              deductible:
+                "اختيار الخصم: مزج التجربة السابقة (الحرق) + مؤشرات المخاطر (نبسط VaR/TVaR).",
+              limit: "الحد من العشوائية: حد لكل حدث و/أو سنوياً، حسب تحملك.",
+            },
+            efficiency: {
+              title: "الكفاءة الاقتصادية",
+              breakdown:
+                "تفكيك السعر: الخسارة المتوقعة، تكلفة رأس المال، المصروفات — شفاف.",
+              levers:
+                "الروافع: العقود متعددة السنوات، إعادة التأسيس المعايرة، تعديل الخصم/الحد.",
+              parametric:
+                "البارامترية: مكمل مفيد على الذروات المناخية المكلفة/الصعبة الإثبات.",
+            },
+            counterparties: {
+              title: "الأطراف المقابلة والصياغة",
+              quality:
+                "جودة معيدي التأمين والتنويع: لا تضع كل البيض في سلة واحدة.",
+              clauses:
+                "البنود الرئيسية: التجميع، بند الساعات، الاستثناءات — نشرح التأثير.",
+              execution:
+                "التنفيذ: جداول بسيطة، قطع مباشر إذا كان مفيداً، متابعة استرداد محكمة.",
+            },
+            examples: {
+              title: "أمثلة على الروافع (واضحة وملموسة)",
+              aggregate:
+                "إجمالي XL: ينعم سنة بالعديد من المطالبات المتوسطة (التجزئة) → اليقظة حول 'كيف نجمع'.",
+              stoploss:
+                "وقف خسارة النتيجة: سقف على النسبة المجمعة → مفيد إذا كان الهدف هو الأرباح والخسائر أولاً.",
+              quota:
+                "حصة الكوتا + الفائض: رأس المال + القدرة → الاهتمام بعمولة الربح لمواءمة المصالح.",
+            },
+          },
+          s7: {
+            title:
+              "الامتثال: إعادة التأمين المتوافقة مع الإشراف القائم على المخاطر",
+            intro: "نحن نوائم برامجك مع متطلبات ACAPS بدون مصطلحات معقدة.",
+            policy: {
+              title: "سياسة إعادة التأمين",
+              clarity: "الوضوح: الأهداف، الشهية للمخاطر، الحدود/التركيزات.",
+              selection: "اختيار معيدي التأمين: التصنيف، الضمانات، الودائع.",
+              governance: "الحوكمة: التحقق، المراجعة السنوية الموثقة.",
+            },
+            orsa: {
+              title: "ORSA ورأس المال",
+              scenarios:
+                "السيناريوهات الحقيقية: الكوارث، انحراف التكرار، تضخم المطالبات.",
+              impact:
+                "تأثير الملاءة المالية: SCR/MCR والحساسيات مشروحة ببساطة.",
+              testing: "الاختبار بأثر رجعي: هل فعلت الحماية ما كان متوقعاً؟",
+            },
+            reporting: {
+              title: "التقارير والرقابة",
+              receivables:
+                "مستحقات معيدي التأمين: الشيخوخة، المؤونات، المتابعات.",
+              concentrations: "التركيزات: حسب الطرف المقابل/البلد.",
+              prudence: "التحفظ المحاسبي: الودائع، الفوائد، الوثائق المؤيدة.",
+            },
+            deliverables: {
+              title: "مخرجاتك (واضحة وقابلة للتنفيذ)",
+              policy:
+                "السياسة والاستراتيجية: وثيقة + مصفوفة الحدود/الأطراف المقابلة (سنوي).",
+              orsa: "ORSA: السيناريوهات + مذكرة تأثير الملاءة المالية (سنوي + مخصص).",
+              kpi: "مستحقات معيدي التأمين: مؤشر أداء الشيخوخة والاستردادات (ربع سنوي).",
+            },
+            purpose: {
+              title: "الغرض:",
+              text: "نظام نظيف، قابل للتتبع، قابل للدفاع عنه.",
+            },
+          },
+          s8: {
+            title: "الأسئلة الشائعة - الأسئلة التي نُسأل عنها أكثر",
+            q1: {
+              question: "كيفية تحديد الاحتفاظ؟",
+              answer:
+                "نبدأ من خسائرك السابقة وتحملك للمخاطر. نحاكي عدة عتبات ونحتفظ بالتي توازن التكلفة والحماية ورأس المال.",
+            },
+            q2: {
+              question: "إجمالي XL أم وقف الخسارة؟",
+              answer:
+                "إجمالي XL يجمع المطالبات على مدار السنة لتفعيل التغطية؛ وقف الخسارة يحدد سقف النسبة المجمعة. نختار حسب مكان ألمك (التكرار مقابل النتيجة الإجمالية).",
+            },
+            q3: {
+              question: "متناسب أم XL؟",
+              answer:
+                "متناسب إذا كنت تريد الاستقرار ودعم النمو؛ XL إذا كنت تريد الحماية من الصدمات. غالباً، يكون المزج بين الاثنين مثالياً.",
+            },
+            q4: {
+              question: "كيف تعمل البارامترية؟",
+              answer:
+                "التغطية مرتبطة بمؤشر موضوعي (المطر، الرياح، الزلزال). الميزة: سرعة التسوية وجدال أقل حول إثبات الضرر. مثالي لبعض الذروات المناخية.",
+            },
+            q5: {
+              question: "ماذا يتوقع المنظم؟",
+              answer:
+                "سياسة واضحة، سيناريوهات موثوقة في ORSA، ومتابعة جدية للمستحقات والتركيزات. قوالبنا توفر عليك الوقت وتؤمن تبادلاتك.",
+            },
+          },
+          contact: {
+            title: "لنحسن برنامجك",
+            subtitle:
+              " ورش سريعة: أهداف، بيانات، سيناريوهات وخيارات الهيكلة، ثم استشارة السوق.",
+          },
+          footer: {
+            desc: "مكتب وساطة وإعادة تأمين مرخص من ACAPS<br/>المقر: 16، شارع تيرفيس، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
+            links: "روابط",
+            contact: "تواصل",
+            contactBlock: {
+              tel: "هاتف 1:",
+              telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
+              tel2: "هاتف 2:",
+              telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
+              nabil: "بريد نبيل الإلكتروني:",
+              infos: "معلومات عامة:",
+            },
+          },
+        },
+      };
+      /* =================== END I18N DICTIONARY =================== */
+
+      /* ===================== SHARED HELPERS (NO REDECLARATION) ===================== */
+      var lang = localStorage.getItem("riskalia_lang") || "fr";
+      if (!["fr", "en", "ar"].includes(lang)) lang = "fr";
+
+      // Flag to prevent scroll-based tab highlighting when user manually clicks
+
+      // Listen for language changes from NavigationComponent
+      document.addEventListener("languageChanged", (e) => {
+        if (e.detail && e.detail.language) {
+          lang = e.detail.language;
+          applyTexts();
+        }
+      });
+
+      const $ = (s, root = document) => root.querySelector(s);
+      const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
+
+      function t(path) {
+        const ns = String(path).split(".");
+        let cur = window.I18N?.[lang];
+        for (const n of ns) {
+          if (cur == null || !(n in cur)) return path;
+          cur = cur[n];
+        }
+        return cur;
+      }
+
+      /* Translate attributes via data-i18n-attr="attr:key,attr2:key2" */
+      function applyI18nAttrs() {
+        $$("[data-i18n-attr]").forEach((el) => {
+          const pairs = (el.dataset.i18nAttr || "")
+            .split(",")
+            .map((x) => x.trim())
+            .filter(Boolean);
+          for (const pair of pairs) {
+            const [attr, key] = pair.split(":").map((s) => s.trim());
+            const val = t(key);
+            if (attr && val) el.setAttribute(attr, val);
+          }
+        });
+      }
+
+      /* Meta */
+      function setMeta() {
+        const m = window.I18N?.[lang]?.meta;
+        if (m?.title) document.title = m.title;
+        if (m?.desc) {
+          let md = document.querySelector('meta[name="description"]');
+          if (!md) {
+            md = document.createElement("meta");
+            md.setAttribute("name", "description");
+            document.head.appendChild(md);
+          }
+          md.setAttribute("content", m.desc);
+        }
+      }
+
+      /* FAQ Toggle Function */
+      function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector("i");
+
+        if (content.classList.contains("hidden")) {
+          // Show content
+          content.classList.remove("hidden");
+          icon.classList.remove("fa-chevron-down");
+          icon.classList.add("fa-chevron-up");
+        } else {
+          // Hide content
+          content.classList.add("hidden");
+          icon.classList.remove("fa-chevron-up");
+          icon.classList.add("fa-chevron-down");
+        }
+      }
+
+      // Make toggleFAQ available globally
+      window.toggleFAQ = toggleFAQ;
+
+      /* TOC highlight on scroll */
+
+      /* Apply translations & meta */
+      function applyTexts() {
+        document.documentElement.lang = lang;
+        document.body.dir = lang === "ar" ? "rtl" : "ltr";
+        $$("[data-i18n]").forEach((el) => (el.innerHTML = t(el.dataset.i18n)));
+        applyI18nAttrs();
+        // Active nav and language button state are now handled by NavigationComponent
+        setMeta();
+      }
+
+      // Make translation functions available globally for components
+      window.applyI18n = applyTexts;
+      window.t = t;
+
+      /* Navigation search utilities handled by NavigationComponent */
+
+      /* ===================== UI INIT ===================== */
+      function initUI() {
+        /* Language switch - handled by NavigationComponent, but keeping for compatibility */
+
+        /* Tabs (fix: correct selector for target section) */
+        /* Tabs - Show/Hide Content */
+        $$("nav a[href^='#section']").forEach((tab) => {
+          tab.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Remove active classes from all tabs
+            $$("nav a[href^='#section']").forEach((t) => {
+              t.classList.remove("active");
+              t.classList.remove(
+                "bg-[var(--c3)]",
+                "text-white",
+                "border-[var(--c3)]"
+              );
+              t.classList.add(
+                "text-[#0b4e5b]",
+                "border-[var(--c1)]/20",
+                "bg-white/90"
+              );
+            });
+
+            // Hide all sections
+            $$(".section-content").forEach((s) => s.classList.remove("active"));
+
+            // Add active classes to clicked tab
+            this.classList.add("active");
+            this.classList.remove(
+              "text-[#0b4e5b]",
+              "border-[var(--c1)]/20",
+              "bg-white/90"
+            );
+            this.classList.add(
+              "bg-[var(--c3)]",
+              "text-white",
+              "border-[var(--c3)]"
+            );
+
+            // Show the target section
+            const id = this.getAttribute("href").substring(1); // 'sectionN'
+            const targetSection = document.getElementById(id);
+            if (targetSection) {
+              targetSection.classList.add("active");
+            }
+          });
+        });
+
+        /* Reveal on scroll */
+        const rev = $$(".reveal");
+        const onScroll = () => {
+          const tr = window.innerHeight * 0.85;
+          rev.forEach((el) => {
+            if (el.getBoundingClientRect().top < tr) el.classList.add("active");
+          });
+        };
+        window.addEventListener("scroll", onScroll);
+
+        // Activate reveal elements on load
+        document
+          .querySelector(".main-wrapper .reveal")
+          ?.classList.add("active");
+      }
+
+      /* Navigation dropdown handled by NavigationComponent */
+
+      /* Navigation search handled by NavigationComponent */
+
+      /* ===================== BOOTSTRAP ===================== */
+      document.addEventListener("DOMContentLoaded", () => {
+        try {
+          if (!window.I18N) throw new Error("I18N not loaded");
+
+          // Ensure page starts at the top
+          window.scrollTo(0, 0);
+
+          applyTexts();
+          initUI();
+        } catch (e) {
+          console.error(e);
+          document.documentElement.lang = "fr";
+        }
+      });
+    </script>
+
+    <!-- Component JavaScript -->
+    <script src="assets/js/components/SearchComponent.js"></script>
+    <script src="assets/js/components/NavigationComponent.js"></script>
+    <script src="assets/js/components/FooterComponent.js"></script>
+  </body>
+</html>
