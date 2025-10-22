@@ -59,11 +59,11 @@ window.I18N = {
         desc: "Nous dimensionnons des programmes clairs et robustes. PML/AAL mesurés, rétentions optimisées et géométries comparées afin de stabiliser le résultat technique, sécuriser le capital et soutenir votre trajectoire de croissance sur la durée.",
       },
       facultatives: {
-        title: "Facultatives ciblées",
+        title: "Nos solutions en Facultatives pour nos clients",
         desc: "Placement sur risques complexes (Property, RC, énergie, construction, lignes financières, transport) auprès de marchés A+/AA. Dossier technique solide, négociation de clauses différenciantes et suivi rigoureux jusqu'au bind, sans surprise.",
       },
       sinistres: {
-        title: "Sinistres & arbitrages 24/7",
+        title: "Experstise en gestion des sinistres",
         desc: "Activation précoce, stratégie d'expertise partagée, coordination multi-parties et cash-calls maîtrisés. Bordereaux transparents, délais tenus et arbitrages documentés pour accélérer les recouvrements et réduire la friction opérationnelle.",
       },
       cta: "Explorer la réassurance",
@@ -7501,3 +7501,4 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
