@@ -4,7 +4,7 @@ window.I18N = {
     meta: {
       title:
         "Riskalia — Courtage Assurance· Réassurance · Risques Climatiques · Politique ESG",
-      desc: "Riskalia : courtage toutes branches, réassurance (QS/Surplus/XoL/Stop-Loss, facultatives) et accompagnement ESG & climat (diagnostic, scénarios, paramétriques, reporting).",
+      desc: "Riskalia : Courtage et intermédiation toutes branches en assurance, réassurance (QS/Surplus/XoL/Stop-Loss, facultatives) et accompagnement ESG & climat (diagnostic, scénarios, paramétriques, reporting).",
     },
     nav: {
       home: "Accueil",
@@ -20,7 +20,7 @@ window.I18N = {
       title: "L'expertise qui rassure",
       slogan:
         "Nous transformons vos aléas opérationnels en croissance durable.",
-      sub: "Courtage toutes branches · Réassurance · Risques Climatiques · Services de Conseil en gestion des risques",
+      sub: "Courtage et intermédiation en assurance, toutes branches · Réassurance · Risques Climatiques · Services de Conseil en gestion des risques",
       cta1: "Nos Solutions",
       cta2: "Nous Contacter",
     },
@@ -2537,7 +2537,7 @@ window.I18N = {
     hero: {
       title: "Expertise that reassures",
       slogan: "We turn operational uncertainty into sustainable growth.",
-      sub: "All-lines broking · Reinsurance · Climate Risks · Risk Management Advisory",
+      sub: "All-lines insurance broking · Reinsurance · Climate Risks · Risk Management Advisory",
       cta1: "Our Solutions",
       cta2: "Contact Us",
     },
@@ -2572,7 +2572,7 @@ window.I18N = {
       label: "REINSURANCE",
       title: "Treaties & facultatives, end to end",
       traites: {
-        title: "Brokerage and intermediation in all branches of insurance",
+        title: "Brokerage and intermediation in all insurance branches",
         desc: "We design clear and robust programs. Measured PML/AAL, optimized retentions and compared geometries to stabilize technical results, secure capital and support your growth trajectory over time.",
       },
       facultatives: {
@@ -5058,7 +5058,7 @@ window.I18N = {
       label: "إعادة التأمين",
       title: "المعاهدات والاختيارية، من البداية إلى النهاية",
       traites: {
-        title: "الوساطة في جميع فروع التأمين ",
+        title: "الوساطة والتوسط في جميع فروع التأمين",
         desc: "نصمم برامج واضحة وقوية. قياس الحد الأقصى للخسارة المحتملة/متوسط الخسارة السنوية، تحسين الاحتفاظات ومقارنة الهندسات لتحقيق الاستقرار في النتائج التقنية وتأمين رأس المال ودعم مسار نموك على المدى الطويل.",
       },
       facultatives: {
@@ -7501,4 +7501,5 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
