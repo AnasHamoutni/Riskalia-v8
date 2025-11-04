@@ -290,7 +290,7 @@ window.I18N = {
           "Commençons par un diagnostic rapide de vos expositions et opportunités.",
       },
       footer: {
-        desc: "Cabinet de courtage & réassurance agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
+        desc: "Cabinet de courtage & stratégie agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
         links: "Liens",
         contact: "Contact",
         contactBlock: {
@@ -300,7 +300,7 @@ window.I18N = {
           telNum2: "+212-675-208909",
           infos: "Informations générales :",
         },
-          rights: "© ${getFullYear()} Riskalia. Tous droits réservés.",
+          copyright: "© ${Date().getFullYear()} Riskalia. Tous droits réservés.",
       },
     },
     reinsurance: {
@@ -841,21 +841,6 @@ window.I18N = {
         climate: "Risques Climatiques",
         contact: "Contact",
       },
-    },
-    footer: {
-      company: "Riskalia",
-      desc: "Cabinet de courtage & réassurance agréé ACAPS\nSiège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
-      links: "Liens",
-      contact: "Contact",
-      contactBlock: {
-        tel: "Tél1:",
-        telNum1: "+212-666-756991",
-        tel2: "Tél2:",
-        telNum2: "+212-675-208909",
-        nabil: "Nabil:",
-        infos: "Infos:",
-      },
-      copyright: "© 2024 Riskalia. Tous droits réservés.",
     },
     // Multirisques page specific translations
     multirisques: {
@@ -2800,7 +2785,7 @@ window.I18N = {
           "Let's start with a rapid assessment of your exposures and opportunities.",
       },
       footer: {
-        desc: "Licensed insurance & reinsurance brokerage (ACAPS). Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
+        desc: "Licensed insurance & strategy brokerage (ACAPS). Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
         links: "Links",
         contact: "Contact",
         contactBlock: {
@@ -2808,9 +2793,9 @@ window.I18N = {
           telNum1: "+212-666-756991",
           tel2: "Phone 2 :",
           telNum2: "+212-675-208909",
-          nabil: "Nabil's e-mail :",
           infos: "General Information :",
         },
+        copyright:"© Date().getFullYear() Riskalia. All rights reserved.",
       },
     },
     reinsurance: {
@@ -3340,21 +3325,6 @@ window.I18N = {
         climate: "Climate Risks",
         contact: "Contact",
       },
-    },
-    footer: {
-      company: "Riskalia",
-      desc: "ACAPS licensed brokerage & reinsurance firm\nHeadquarters: 16, Rue de Terves, 2nd Floor. Mers Sultan District, Casablanca",
-      links: "Links",
-      contact: "Contact",
-      contactBlock: {
-        tel: "Tel1:",
-        telNum1: "+212-666-756991",
-        tel2: "Tel2:",
-        telNum2: "+212-675-208909",
-        nabil: "Nabil:",
-        infos: "Info:",
-      },
-      copyright: "© 2024 Riskalia. All rights reserved.",
     },
     // Multirisques page specific translations
     multirisques: {
@@ -5280,9 +5250,9 @@ window.I18N = {
           telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
           tel2: "هاتف 2 :",
           telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
-          nabil: "بريد نبيل الإلكتروني :",
           infos: "معلومات عامة :",
         },
+          copyright: "© ${Date().getFullYear()} ريسكاليا. جميع الحقوق محفوظة.",
       },
     },
     reinsurance: {
@@ -5798,21 +5768,7 @@ window.I18N = {
         contact: "اتصال",
       },
     },
-    footer: {
-      company: "ريسكاليا",
-      desc: "مكتب وساطة وإعادة تأمين مرخص من ACAPS\nالمقر: 16، شارع تيرفيس، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
-      links: "الروابط",
-      contact: "تواصل",
-      contactBlock: {
-        tel: "هاتف1:",
-        telNum1: "+212-666-756991",
-        tel2: "هاتف2:",
-        telNum2: "+212-675-208909",
-        nabil: "نبيل:",
-        infos: "معلومات:",
-      },
-      copyright: "© 2024 ريسكاليا. جميع الحقوق محفوظة.",
-    },
+
     // Multirisques page specific translations
     multirisques: {
       title: "المخاطر المتعددة للمؤسسات",
@@ -7501,6 +7457,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
