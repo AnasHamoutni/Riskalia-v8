@@ -53,18 +53,19 @@ window.I18N = {
     },
     reassurance: {
       label: "RÉASSURANCE",
-      title: "Traités & facultatives, de bout en bout",
+      title: "Réassurance en Traités & Cessions Facultatives :",
+      subtitle: "Une maîtrise de bout en bout",
       traites: {
-        title: "Nos solutions en Traités pour nos partenaires assureurs",
-        desc: "Nous dimensionnons des programmes clairs et robustes. PML/AAL mesurés, rétentions optimisées et géométries comparées afin de stabiliser le résultat technique, sécuriser le capital et soutenir votre trajectoire de croissance sur la durée.",
+        title: "Traités sur mesure pour vos portefeuilles : De la conception à l’indemnisation, une chaîne maîtrisée",
+        desc: "Nous concevons des programmes de réassurance clairs, robustes et pérennes, alignés sur vos objectifs techniques et financiers.",
       },
       facultatives: {
-        title: "Nos solutions en Facultatives pour nos clients",
-        desc: "Placement sur risques complexes (Property, RC, énergie, construction, lignes financières, transport) auprès de marchés A+/AA. Dossier technique solide, négociation de clauses différenciantes et suivi rigoureux jusqu'au bind, sans surprise.",
+        title: "Cessions en réassurance facultatives : Vos facultatives. Notre expertise",
+        desc: "Des solutions de réassurance intégrées assuré ou assureur, pensées pour la performance et la stabilité durable.",
       },
       sinistres: {
-        title: "Experstise en gestion des sinistres",
-        desc: "Activation précoce, stratégie d'expertise partagée, coordination multi-parties et cash-calls maîtrisés. Bordereaux transparents, délais tenus et arbitrages documentés pour accélérer les recouvrements et réduire la friction opérationnelle.",
+        title: "Gestion des Sinistres & accompagnement 24/7 : Réactivité, maitrise, rigueur",
+        desc: "Dès la survenance du sinistre, nous mobilisons une équipe dédiée pour assurer un pilotage précis des expertises, une communication claire et une résolution rapide.",
       },
       cta: "Explorer la réassurance",
     },
@@ -7494,6 +7495,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
