@@ -73,7 +73,7 @@ window.I18N = {
       title: "Risques climatiques — de l'analyse à l'action",
       cartographie: {
         title: "Cartographie & scénarios",
-        desc: "Analyse physique et de transition, scénarios NGFS et stress tests. Une matérialité par sites, métiers et chaînes de valeur qui priorise les risques et éclaire les décisions d'investissement et de continuité d'activité.",
+        desc: "Analyse physique, de transition et stress tests. Une matérialité par sites, métiers et chaînes de valeur qui priorise les risques et éclaire les décisions d'investissement et de continuité d'activité.",
       },
       modelisation: {
         title: "Modélisation & transfert",
@@ -2575,7 +2575,7 @@ window.I18N = {
       title: "Climate risks — from analysis to action",
       cartographie: {
         title: "Mapping & scenarios",
-        desc: "Physical and transition analysis, NGFS scenarios and stress tests. Materiality by sites, businesses and value chains that prioritizes risks and informs investment and business continuity decisions.",
+        desc: "Physical/transition analysis and stress tests. Materiality by sites, businesses and value chains that prioritizes risks and informs investment and business continuity decisions.",
       },
       modelisation: {
         title: "Modeling & transfer",
@@ -5046,7 +5046,7 @@ window.I18N = {
       title: "مخاطر المناخ — من التحليل إلى العمل",
       cartographie: {
         title: "رسم الخرائط والسيناريوهات",
-        desc: "التحليل الفيزيائي والانتقالي، سيناريوهات NGFS واختبارات الضغط. أهمية نسبية حسب المواقع والأعمال وسلاسل القيمة تعطي الأولوية للمخاطر وتوضح قرارات الاستثمار واستمرارية الأعمال.",
+        desc: "التحليل الفيزيائي والانتقالي واختبارات الضغط. أهمية نسبية حسب المواقع والأعمال وسلاسل القيمة تعطي الأولوية للمخاطر وتوضح قرارات الاستثمار واستمرارية الأعمال.",
       },
       modelisation: {
         title: "النمذجة والنقل",
@@ -7457,6 +7457,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
