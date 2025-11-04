@@ -844,7 +844,7 @@ window.I18N = {
     },
         footer: {
       company: "Riskalia",
-      desc: "Cabinet de courtage & réassurance agréé ACAPS\nSiège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
+      desc: "Cabinet de courtage & stratégies agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
       links: "Liens",
       contact: "Contact",
       contactBlock: {
@@ -7497,6 +7497,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
