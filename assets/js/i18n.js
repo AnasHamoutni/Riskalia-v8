@@ -2570,18 +2570,19 @@ window.I18N = {
     },
     reassurance: {
       label: "REINSURANCE",
-      title: "Treaties & facultatives, end to end",
+      title: "Reinsurance in Treaties & Facultative Cessions:",
+      subtitle: "End-to-end expertise",
       traites: {
-        title: "Brokerage and intermediation in all insurance branches",
-        desc: "We design clear and robust programs. Measured PML/AAL, optimized retentions and compared geometries to stabilize technical results, secure capital and support your growth trajectory over time.",
+        title: "Tailor-made treaties for your portfolios: From design to claims, a fully controlled chain.",
+        desc: "We design clear, robust, and sustainable reinsurance programs aligned with your technical and financial objectives.",
       },
       facultatives: {
-        title: "Targeted facultatives",
-        desc: "Placement on complex risks (Property, RC, energy, construction, financial lines, transport) with A+/AA markets. Solid technical file, negotiation of differentiating clauses and rigorous follow-up to bind, no surprises.",
+        title: "Facultative Reinsurance Cessions: Your facultatives. Our expertise.",
+        desc: "Integrated reinsurance solutions — whether for the insured or the insurer — designed for performance and long-term stability.",
       },
       sinistres: {
-        title: "Claims & arbitrations 24/7",
-        desc: "Early activation, shared expertise strategy, multi-party coordination and controlled cash-calls. Transparent bordereaux, deadlines met and documented arbitrations to accelerate recoveries and reduce operational friction.",
+        title: "Claims Management & 24/7 Support: Responsiveness, control, precision.",
+        desc: "From the moment a claim occurs, we mobilize a dedicated team to ensure accurate handling of assessments, transparent communication, and swift resolution.",
       },
       cta: "Explore reinsurance",
     },
@@ -5053,18 +5054,19 @@ window.I18N = {
     },
     reassurance: {
       label: "إعادة التأمين",
-      title: "المعاهدات والاختيارية، من البداية إلى النهاية",
+      title: "إعادة التأمين في المعاهدات والتنازلات الاختيارية:",
+      subtitle: "إتقان شامل من البداية إلى النهاية",
       traites: {
-        title: "الوساطة والتوسط في جميع فروع التأمين",
-        desc: "نصمم برامج واضحة وقوية. قياس الحد الأقصى للخسارة المحتملة/متوسط الخسارة السنوية، تحسين الاحتفاظات ومقارنة الهندسات لتحقيق الاستقرار في النتائج التقنية وتأمين رأس المال ودعم مسار نموك على المدى الطويل.",
+        title: "معاهدات مصممة خصيصًا لمحافظكم: من التصميم إلى التعويض، سلسلة مُتحكَّم فيها بالكامل.",
+        desc: "نُصمّم برامج إعادة تأمين واضحة، قوية، ومستدامة، ومتوافقة مع أهدافكم التقنية والمالية.",
       },
       facultatives: {
-        title: "الاختيارية المستهدفة",
-        desc: "التوظيف في المخاطر المعقدة (الممتلكات، المسؤولية المدنية، الطاقة، البناء، الخطوط المالية، النقل) لدى أسواق A+/AA. ملف تقني قوي، تفاوض على بنود مميزة ومتابعة صارمة حتى الربط، بدون مفاجآت.",
+        title: "التنازلات في إعادة التأمين الاختيارية: تنازلاتكم... خبرتنا.",
+        desc: "حلول إعادة تأمين متكاملة، سواء للمؤمَّن أو لشركة التأمين، مصمّمة لتحقيق الأداء والاستقرار الدائم.",
       },
       sinistres: {
-        title: "المطالبات والتحكيم 24/7",
-        desc: "التفعيل المبكر، استراتيجية الخبرة المشتركة، التنسيق متعدد الأطراف والتحكم في طلبات النقد. كشوف حسابات شفافة، مواعيد محترمة وتحكيمات موثقة لتسريع الاستردادات وتقليل الاحتكاك التشغيلي.",
+        title: "تدبير التعويضات والدعم على مدار الساعة: سرعة، إتقان، وانضباط.",
+        desc: "منذ وقوع الحادث، نقوم بتعبئة فريق مخصّص لضمان إدارة دقيقة للخبرات، وتواصل واضح، وتسوية سريعة للملفات.",
       },
       cta: "استكشاف إعادة التأمين",
     },
@@ -7495,6 +7497,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
