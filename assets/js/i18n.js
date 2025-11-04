@@ -290,7 +290,7 @@ window.I18N = {
           "Commençons par un diagnostic rapide de vos expositions et opportunités.",
       },
       footer: {
-        desc: "Cabinet de courtage & stratégie agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
+        desc: "Cabinet de courtage & stratégies agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
         links: "Liens",
         contact: "Contact",
         contactBlock: {
@@ -2785,7 +2785,7 @@ window.I18N = {
           "Let's start with a rapid assessment of your exposures and opportunities.",
       },
       footer: {
-        desc: "Licensed insurance & strategy brokerage (ACAPS). Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
+        desc: "Licensed brokerage & strategy firm (ACAPS). Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
         links: "Links",
         contact: "Contact",
         contactBlock: {
@@ -5242,7 +5242,7 @@ window.I18N = {
         subtitle: "لنبدأ بتقييم سريع لتعرضاتكم وفرصكم.",
       },
       footer: {
-        desc: "وساطة تأمين وإعادة تأمين مرخصة (ACAPS). المقر الرئيسي: ١٦، شارع تيرف، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
+        desc: "شركة وساطة واستشارات استراتيجية مرخصة (ACAPS). المقر الرئيسي: ١٦، شارع تيرف، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
         links: "روابط",
         contact: "تواصل",
         contactBlock: {
@@ -7457,6 +7457,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
