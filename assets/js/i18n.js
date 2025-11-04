@@ -648,7 +648,7 @@ window.I18N = {
       nabil: {
         name: "Nabil Cherkaoui",
         title: "Associé dirigeant",
-        bio: "Juriste de formation et spécialiste de la réassurance, Nabil Cherkaoui a dirigé au sein de la SCR (Groupe CDG) la gouvernance, la conformité, le juridique, les sinistres majeurs et le risque de contrepartie. Référence du marché pour la rédaction et la négociation de traités internationaux, il a piloté les relations avec régulateurs, agences de notation et partenaires mondiaux. Dirigeant effectif de Riskalia, il garantit la solidité institutionnelle, la conformité et la qualité d'exécution. Chercheur associé à Paris-Dauphine, il apporte une rigueur académique au service de solutions robustes, alliant sécurité juridique, clarté contractuelle et valeur client.",
+        bio: "Juriste de formation et spécialiste de la réassurance, Nabil Cherkaoui a dirigé au sein de la SCR (Groupe CDG) la gouvernance, la conformité, le juridique, les sinistres majeurs et le risque de contrepartie. Référence du marché pour la rédaction et la négociation des placements en réassurance, il a piloté les relations avec régulateurs, agences de notation et partenaires mondiaux. Dirigeant effectif de Riskalia, il garantit la solidité institutionnelle, la conformité et la qualité d'exécution. Chercheur associé à Paris-Dauphine, il apporte une rigueur académique au service de solutions robustes, alliant sécurité juridique, clarté contractuelle et valeur client.",
       },
       anasse: {
         name: "Anasse Youssfi",
@@ -3147,7 +3147,7 @@ window.I18N = {
       nabil: {
         name: "Nabil Cherkaoui",
         title: "Managing Partner",
-        bio: "A lawyer by training and reinsurance specialist, Nabil Cherkaoui led governance, compliance, legal affairs, major claims and counterparty risk at SCR (CDG Group). A market reference for drafting and negotiating international treaties, he managed relationships with regulators, rating agencies and global partners. As Managing Director of Riskalia, he ensures institutional strength, compliance and execution quality. As an associate researcher at Paris-Dauphine, he brings academic rigor to robust solutions, combining legal security, contractual clarity and client value.",
+        bio: "A lawyer by training and reinsurance specialist, Nabil Cherkaoui led governance, compliance, legal affairs, major claims and counterparty risk at SCR (CDG Group). A market reference for drafting and negotiating reinsurance placements, he managed relationships with regulators, rating agencies and global partners. As Managing Director of Riskalia, he ensures institutional strength, compliance and execution quality. As an associate researcher at Paris-Dauphine, he brings academic rigor to robust solutions, combining legal security, contractual clarity and client value.",
       },
       anasse: {
         name: "Anasse Youssfi",
@@ -5606,7 +5606,7 @@ window.I18N = {
       nabil: {
         name: "نبيل شرقاوي",
         title: "الشريك المدير",
-        bio: "قانوني التكوين ومتخصص في إعادة التأمين، قاد نبيل شرقاوي في شركة إعادة التأمين المركزية (مجموعة صندوق الإيداع والتدبير) الحوكمة والامتثال والشؤون القانونية والمطالبات الكبرى ومخاطر الطرف المقابل. مرجع في السوق لصياغة وتفاوض المعاهدات الدولية، أدار العلاقات مع المنظمين ووكالات التصنيف والشركاء العالميين. كمدير فعال لريسكاليا، يضمن القوة المؤسسية والامتثال وجودة التنفيذ. كباحث مشارك في جامعة باريس دوفين، يجلب الدقة الأكاديمية لخدمة حلول قوية، تجمع بين الأمان القانوني ووضوح العقود وقيمة العميل.",
+        bio: "قانوني التكوين ومتخصص في إعادة التأمين، قاد نبيل شرقاوي في شركة إعادة التأمين المركزية (مجموعة صندوق الإيداع والتدبير) الحوكمة والامتثال والشؤون القانونية والمطالبات الكبرى ومخاطر الطرف المقابل. مرجع في الصياغة والتفاوض بشأن عمليات الإسناد في إعادة التأمين، أدار العلاقات مع المنظمين ووكالات التصنيف والشركاء العالميين. كمدير فعال لريسكاليا، يضمن القوة المؤسسية والامتثال وجودة التنفيذ. كباحث مشارك في جامعة باريس دوفين، يجلب الدقة الأكاديمية لخدمة حلول قوية، تجمع بين الأمان القانوني ووضوح العقود وقيمة العميل.",
       },
       anasse: {
         name: "أنس يوسفي",
@@ -7497,6 +7497,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
