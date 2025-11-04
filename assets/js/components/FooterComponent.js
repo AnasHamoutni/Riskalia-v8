@@ -59,7 +59,7 @@ class FooterComponent {
                   <span data-i18n="footer.contactBlock.telNum2">+212-675-208909</span>
                 </div>
                 <div class="footer-contact-item">
-                  <strong data-i18n="footer.contactBlock.infos">Infos:</strong>
+                  <strong data-i18n="footer.contactBlock.infos">Informations générales :</strong>
                   <a href="mailto:contact@riskalia.ma">contact@riskalia.ma</a>
                 </div>
               </div>
@@ -156,4 +156,5 @@ document.addEventListener("DOMContentLoaded", () => {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = FooterComponent;
 }
+
 
