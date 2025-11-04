@@ -300,7 +300,7 @@ window.I18N = {
           telNum2: "+212-675-208909",
           infos: "Informations générales :",
         },
-          copyright: "© ${Date().getFullYear()} Riskalia. Tous droits réservés.",
+          copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés.",
       },
     },
     reinsurance: {
@@ -855,7 +855,7 @@ window.I18N = {
         nabil: "Nabil:",
         infos: "Infos:",
       },
-          copyright: "© ${Date().getFullYear()} Riskalia. Tous droits réservés.",
+          copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés.",
     },
     // Multirisques page specific translations
     multirisques: {
@@ -2810,7 +2810,7 @@ window.I18N = {
           telNum2: "+212-675-208909",
           infos: "General Information :",
         },
-        copyright:"© Date().getFullYear() Riskalia. All rights reserved.",
+        copyright:"© " + new Date().getFullYear() + " Riskalia. All rights reserved.",
       },
     },
     reinsurance: {
@@ -3352,7 +3352,7 @@ window.I18N = {
           telNum2: "+212-675-208909",
           infos: "General Information :",
         },
-        copyright:"© Date().getFullYear() Riskalia. All rights reserved.",
+        copyright:"© " + new Date().getFullYear() + " Riskalia. All rights reserved.",
       },
     // Multirisques page specific translations
     multirisques: {
@@ -5280,7 +5280,7 @@ window.I18N = {
           telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
           infos: "معلومات عامة :",
         },
-          copyright: "© ${Date().getFullYear()} ريسكاليا. جميع الحقوق محفوظة.",
+          copyright: "© " + new Date().getFullYear() + " ريسكاليا. جميع الحقوق محفوظة.",
       },
     },
     reinsurance: {
@@ -5807,7 +5807,7 @@ window.I18N = {
           telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
           infos: "معلومات عامة :",
         },
-          copyright: "© ${Date().getFullYear()} ريسكاليا. جميع الحقوق محفوظة.",
+          copyright: "© " + new Date().getFullYear() + " ريسكاليا. جميع الحقوق محفوظة.",
       },
     // Multirisques page specific translations
     multirisques: {
@@ -7497,6 +7497,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
