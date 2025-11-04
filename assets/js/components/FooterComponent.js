@@ -67,7 +67,7 @@ class FooterComponent {
           </div>
           
           <div class="footer-bottom">
-            <p>
+            <p data-i18n="footer.rights">
               © 2025 Riskalia. Tous droits réservés.
             </p>
           </div>
@@ -156,6 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = FooterComponent;
 }
+
 
 
 
