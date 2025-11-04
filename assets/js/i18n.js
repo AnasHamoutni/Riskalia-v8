@@ -3354,7 +3354,6 @@ window.I18N = {
         },
         copyright:"© Date().getFullYear() Riskalia. All rights reserved.",
       },
-    },
     // Multirisques page specific translations
     multirisques: {
       title: "Commercial Property & Business Interruption",
@@ -5810,7 +5809,6 @@ window.I18N = {
         },
           copyright: "© ${Date().getFullYear()} ريسكاليا. جميع الحقوق محفوظة.",
       },
-    },
     // Multirisques page specific translations
     multirisques: {
       title: "المخاطر المتعددة للمؤسسات",
@@ -7499,6 +7497,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
