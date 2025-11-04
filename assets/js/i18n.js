@@ -88,7 +88,7 @@ window.I18N = {
       // Climate page specific content
       meta: {
         title: "Riskalia — Risques climatiques",
-        desc: "Identifier, quantifier et piloter les risques climatiques : risques physiques et de transition, scénarios (RCP/SSP), feuille de route d'adaptation, transfert de risque et reporting.",
+        desc: "Identifier, quantifier et piloter les risques climatiques : risques de transition, scénarios (RCP/SSP), feuille de route d'adaptation, transfert de risque et reporting.",
       },
       ui: { search: "🔎…" },
       aria: {
@@ -98,12 +98,11 @@ window.I18N = {
       },
       title: "Risques climatiques",
       subtitle:
-        "Identifier, quantifier et piloter les impacts liés au climat : risques physiques (aigus/chroniques) et de transition, scénarios (RCP/SSP), feuille de route d'adaptation, transfert de risque et reporting TCFD/ISSB.",
+        "Identifier, quantifier et piloter les impacts liés au climat : risques de transition, scénarios (RCP/SSP), feuille de route d'adaptation, transfert de risque et reporting TCFD/ISSB.",
       method:
         "On part de vos pertes passées et de votre tolérance au risque. On simule plusieurs seuils et on retient celui qui équilibre coût, protection et capital.",
       cta: {
         contact: "Nous contacter",
-        discover: "Découvrir notre approche",
         advisor: "Parler à un expert",
       },
       intro_climate: {
@@ -2615,12 +2614,11 @@ window.I18N = {
       },
       title: "Climate Risk",
       subtitle:
-        "Identify, quantify and manage climate impacts: physical (acute/chronic) and transition risks, scenarios (RCP/SSP), adaptation roadmap, risk transfer and TCFD/ISSB reporting.",
+        "Identify, quantify and manage climate impacts: transition risks, scenarios (RCP/SSP), adaptation roadmap, risk transfer and TCFD/ISSB reporting.",
       method:
         "We start from your historical losses and risk tolerance, simulate several thresholds, and retain the one that balances cost, protection and capital.",
       cta: {
         contact: "Contact us",
-        discover: "Discover our approach",
         advisor: "Talk to an expert",
       },
       intro_climate: {
@@ -5089,7 +5087,7 @@ window.I18N = {
       // Climate page specific content
       meta: {
         title: "ريسكاليا — مخاطر المناخ",
-        desc: "تحديد وقياس وإدارة آثار المناخ: المخاطر الفيزيائية (حادّة/مزمنة) ومخاطر الانتقال، سيناريوهات RCP/SSP، خارطة طريق للتكيّف، نقل المخاطر والإفصاح TCFD/ISSB.",
+        desc: "تحديد وقياس وإدارة آثار المناخ: مخاطر الانتقال، سيناريوهات RCP/SSP، خارطة طريق للتكيّف، نقل المخاطر والإفصاح TCFD/ISSB.",
       },
       ui: { search: "…🔎" },
       aria: {
@@ -5104,7 +5102,6 @@ window.I18N = {
         "نبدأ من خسائركم السابقة وتحمّل المخاطر لديكم، نحاكي عدة عتبات ونختار ما يوازن الكلفة والحماية ورأس المال.",
       cta: {
         contact: "تواصل معنا",
-        discover: "اكتشف نهجنا",
         advisor: "تحدث مع خبير",
       },
       intro_climate: {
@@ -7497,6 +7494,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
