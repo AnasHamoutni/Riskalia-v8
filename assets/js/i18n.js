@@ -852,8 +852,8 @@ window.I18N = {
         telNum1: "+212-666-756991",
         tel2: "Tél2:",
         telNum2: "+212-675-208909",
-        nabil: "Nabil:",
-        infos: "Infos:",
+        infos: "Informations générales :",
+
       },
           copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés.",
     },
@@ -7497,6 +7497,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
