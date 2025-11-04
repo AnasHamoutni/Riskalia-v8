@@ -2123,7 +2123,7 @@ window.I18N = {
     vie: {
       title: "Assurance-vie & placements",
       subtitle:
-        "Épargne long terme • Transmission • Supports en euros & unités de compte • Options de gestion • Rachats & avances • Fiscalité selon cadre.",
+        "Épargne long terme • Transmission • Supports en dirhams & unités de compte • Options de gestion • Rachats & avances • Fiscalité selon cadre.",
       badges: ["Épargne & succession", "Gestion pilotée", "Unités de compte"],
       tabs: {
         over: "Aperçu",
@@ -2176,7 +2176,7 @@ window.I18N = {
       inv: {
         t: "3. Supports d'investissement",
         c0: {
-          t: "Support en euros",
+          t: "Support en dirhams",
           li: [
             "Objectif de préservation du capital (hors frais).",
             "Rendement annuel servi par l'assureur.",
@@ -2419,7 +2419,7 @@ window.I18N = {
         c0: {
           t: "Profils",
           li: [
-            "Sécurisé (obligataire/fonds euro).",
+            "Sécurisé (obligataire/fonds dirham).",
             "Équilibré (mixte obligations/actions).",
             "Dynamique (actions/Thèmes/ESG).",
           ],
@@ -4608,7 +4608,7 @@ window.I18N = {
     vie: {
       title: "Life insurance & savings",
       subtitle:
-        "Long-term savings • Estate planning • Euro & unit-linked funds • Managed options • Withdrawals & policy loans • Tax per framework.",
+        "Long-term savings • Estate planning • Dirhams & unit-linked funds • Managed options • Withdrawals & policy loans • Tax per framework.",
       badges: ["Savings & estate", "Managed portfolios", "Unit-linked"],
       tabs: {
         over: "Overview",
@@ -4661,7 +4661,7 @@ window.I18N = {
       inv: {
         t: "3. Investment options",
         c0: {
-          t: "Euro (general account)",
+          t: "Dirham (general account)",
           li: [
             "Capital preservation objective (net of market risk).",
             "Annual return credited by insurer.",
@@ -4904,7 +4904,7 @@ window.I18N = {
         c0: {
           t: "Profiles",
           li: [
-            "Conservative (bonds/euro fund).",
+            "Conservative (bonds/dirham fund).",
             "Balanced (bonds/equities mix).",
             "Dynamic (equities/Thematics/ESG).",
           ],
@@ -5318,7 +5318,7 @@ window.I18N = {
         },
         example: {
           title: "مثال",
-          text: "شركة تأمين سيارات: نحلل مطالباتها حسب فئة المركبة، نحدد حجم برنامج حصص الحصة بنسبة 20% مع حد 2 مليون يورو لكل مطالبة، ونفاوض مع 3 شركات إعادة تأمين A+ للحصول على أفضل الشروط.",
+          text: "شركة تأمين سيارات: نحلل مطالباتها حسب فئة المركبة، نحدد حجم برنامج حصص الحصة بنسبة 20% مع حد 2 مليون درهم لكل مطالبة، ونفاوض مع 3 شركات إعادة تأمين A+ للحصول على أفضل الشروط.",
         },
       },
       s2: {
@@ -5335,21 +5335,21 @@ window.I18N = {
           },
           surplus: {
             title: "الفائض",
-            desc: "تحتفظون بقاعدة وتتنازلون عن الفائض (مثال: 1 مليون يورو احتفاظ، 4 ملايين يورو قدرة).",
+            desc: "تحتفظون بقاعدة وتتنازلون عن الفائض (مثال: 1 مليون درهم احتفاظ، 4 ملايين درهم قدرة).",
             utility:
               "الفائدة: تحسين رأس المال مع الحفاظ على التعرض المتحكم فيه.",
             example:
-              "مثال: شركة تأمين تحتفظ بمليون يورو لكل مطالبة وتتنازل حتى 4 ملايين يورو لتحسين رأس مالها مع الحفاظ على التعرض المتحكم فيه.",
+              "مثال: شركة تأمين تحتفظ بمليون درهم لكل مطالبة وتتنازل حتى 4 ملايين درهم لتحسين رأس مالها مع الحفاظ على التعرض المتحكم فيه.",
           },
         },
         nonproportional: {
           title: "غير النسبية",
           xol: {
             title: "XoL (فائض الخسارة)",
-            desc: "تحتفظون بالاحتفاظ وتتنازلون عن الفائض (مثال: 500 ألف يورو احتفاظ، 2 مليون يورو حد).",
+            desc: "تحتفظون بالاحتفاظ وتتنازلون عن الفائض (مثال: 500 ألف درهم احتفاظ، 2 مليون درهم حد).",
             utility: "الفائدة: الحماية ضد المطالبات الكبرى مع تحسين رأس المال.",
             example:
-              "مثال: شركة تأمين تحتفظ بـ 500 ألف يورو لكل مطالبة وتتنازل حتى 2 مليون يورو للحماية ضد المطالبات الكبرى.",
+              "مثال: شركة تأمين تحتفظ بـ 500 ألف درهم لكل مطالبة وتتنازل حتى 2 مليون درهم للحماية ضد المطالبات الكبرى.",
           },
           stoploss: {
             title: "إيقاف الخسارة",
@@ -7089,7 +7089,7 @@ window.I18N = {
       inv: {
         t: "٣. خيارات الاستثمار",
         c0: {
-          t: "حساب عام (يورو)",
+          t: "حساب عام (درهم)",
           li: [
             "هدف حماية رأس المال (بعد الرسوم).",
             "عائد سنوي من شركة التأمين.",
@@ -7497,6 +7497,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
