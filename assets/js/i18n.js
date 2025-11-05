@@ -2513,15 +2513,15 @@ window.I18N = {
       subtitle: "End-to-end expertise",
       traites: {
         title: "Tailor-made treaties for portfolios: From design to claims settlement.",
-        desc: "We design clear, robust, and sustainable reinsurance programs aligned with your technical and financial objectives.",
+        desc: "We design clear and lasting reinsurance programs aligned with your technical and financial goals. Each treaty is built to ensure stability, transparency, and long-term performance.",
       },
       facultatives: {
         title: "Facultative Reinsurance Cessions: Your facultatives. Our expertise.",
-        desc: "Integrated reinsurance solutions — whether for the insured or the insurer — designed for performance and long-term stability.",
+        desc: "Integrated reinsurance solutions tailored to each insurer or insured’s specific needs. Our approach combines selective market placement, precise contractual terms, and exemplary follow-up.",
       },
       sinistres: {
         title: "Claims Management & 24/7 Support: Responsiveness, control, precision.",
-        desc: "From the moment a claim occurs, we mobilize a dedicated team to ensure accurate handling of assessments, transparent communication, and swift resolution.",
+        desc: "From the moment a loss occurs, our dedicated team coordinates assessments, ensures transparent communication, and delivers swift resolution. Every step strengthens trust and long-term partnership.",
       },
       cta: "Explore reinsurance",
     },
@@ -4936,15 +4936,15 @@ window.I18N = {
       subtitle: "إتقان شامل من البداية إلى النهاية",
       traites: {
         title: "اتفاقيات إعادة تأمين مُصمَّمة خصيصًا للمحافظ: من التصميم إلى التعويض.",
-        desc: "نُصمّم برامج إعادة تأمين واضحة، قوية، ومستدامة، ومتوافقة مع أهدافكم التقنية والمالية.",
+        desc: "نصمم برامج إعادة تأمين واضحة ومستدامة، متوافقة مع أهدافكم التقنية والمالية. كل اتفاقية مُعدة لضمان الاستقرار والشفافية والأداء المستدام على المدى الطويل.",
       },
       facultatives: {
         title: "التنازلات في إعادة التأمين الاختيارية: تنازلاتكم... خبرتنا.",
-        desc: "حلول إعادة تأمين متكاملة، سواء للمؤمَّن أو لشركة التأمين، مصمّمة لتحقيق الأداء والاستقرار الدائم.",
+        desc: "حلول إعادة تأمين متكاملة، مخصصة لاحتياجات كل مؤمَّن أو مؤمِّن. يقوم نهجنا على اختيار الأسواق بعناية، وصياغة بنود دقيقة، ومتابعة تعاقدية مثالية.",
       },
       sinistres: {
         title: "تدبير التعويضات والدعم على مدار الساعة: سرعة، إتقان، وانضباط.",
-        desc: "منذ وقوع الحادث، نقوم بتعبئة فريق مخصّص لضمان إدارة دقيقة للخبرات، وتواصل واضح، وتسوية سريعة للملفات.",
+        desc: "من لحظة وقوع الحادث، نقوم بتعبئة فريق مخصص لتنسيق الخبرات، وضمان تواصل واضح، وتحقيق تسوية سريعة. كل خطوة تعزز الثقة واستمرارية الشراكة.",
       },
       cta: "استكشاف إعادة التأمين",
     },
@@ -7317,6 +7317,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
