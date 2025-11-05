@@ -5215,49 +5215,49 @@ footer: {
       },
   footer: {
     col1: {
-      title: "Riskalia",
+      title: "ريسكاليا",
       address:
-        "Licensed insurance & strategy brokerage (ACAPS).<br/>Head office: 16 Rue de Terves, 2nd floor,<br/>Mers Sultan district, Casablanca.",
+        "شركة وساطة واستراتيجيات معتمدة من هيئة مراقبة التأمينات (ACAPS).<br/>المقر: 16 شارع تيرف، الطابق الثاني،<br/>حي مرس سلطان، الدار البيضاء.",
       notice:
-        "Insurance intermediary governed by Law 17-99 on the Insurance Code.<br/>Under decision No. COU5047.00000.0.C.2025.472."
+        "وسيط تأمين يخضع للقانون 17-99 المتعلق بمدونة التأمينات.<br/>بموجب القرار رقم COU5047.00000.0.C.2025.472."
     },
-    col2: { title: "Navigation" },
-    col3: { title: "Individual Insurance" },
-    col4: { title: "Corporate Insurance" },
+    col2: { title: "التنقل" },
+    col3: { title: "تأمين الأفراد" },
+    col4: { title: "تأمين الشركات" },
     col5: {
-      title: "Contact",
-      tel1label: "Phone:",
+      title: "الاتصال",
+      tel1label: "هاتف:",
       tel1: "+212 666 756 991",
-      tel2label: "Phone:",
+      tel2label: "هاتف:",
       tel2: "+212 675 208 909",
-      emailLabel: "Email:",
+      emailLabel: "البريد الإلكتروني:",
       email: "contact@riskalia.ma"
     },
-    copyright: "© " + new Date().getFullYear() + " Riskalia. All rights reserved."
+    copyright: "© " + new Date().getFullYear() + " ريسكاليا. جميع الحقوق محفوظة."
   },
 
   produits: {
-    auto: "Motor",
-    habitation: "Home",
-    sante: "Health",
-    alv: "Personal Accident",
-    vie: "Life",
-    retraite: "Retirement",
-    multirisques: "Business Package",
-    flotte: "Fleet",
-    rc: "Liability",
-    construction: "Construction",
-    santecollective: "Group Health",
-    transport: "Transport"
+    auto: "تأمين السيارات",
+    habitation: "تأمين السكن",
+    sante: "التأمين الصحي",
+    alv: "تأمين الحوادث الفردية",
+    vie: "تأمين الحياة",
+    retraite: "تأمين التقاعد",
+    multirisques: "تأمين متعدد الأخطار",
+    flotte: "تأمين الأسطول",
+    rc: "تأمين المسؤولية المدنية",
+    construction: "تأمين البناء",
+    santecollective: "تأمين صحي جماعي",
+    transport: "تأمين النقل"
   },
 
   nav: {
-    home: "Home",
-    solutions: "Solutions",
-    re: "Reinsurance",
-    climate: "Climate Risks",
-    esg: "ESG",
-    services: "Advisory Services"
+    home: "الرئيسية",
+    solutions: "الحلول",
+    re: "إعادة التأمين",
+    climate: "المخاطر المناخية",
+    esg: "البيئة والمجتمع والحوكمة",
+    services: "الخدمات والاستشارات"
   }
 },
     reinsurance: {
@@ -7416,6 +7416,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
