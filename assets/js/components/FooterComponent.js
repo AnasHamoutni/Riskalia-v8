@@ -24,65 +24,71 @@ getFooterHTML() {
   return `
     <footer class="footer-component bg-[#232b32] text-gray-200 py-10 text-sm">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-          
-          <!-- Col 1 : Identity -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+          <!-- Col 1 : Riskalia -->
           <div>
-            <h4 class="text-white text-lg font-bold mb-3">Riskalia</h4>
-            <p class="leading-relaxed mb-3">
+            <h4 class="text-white text-lg font-bold mb-3" data-i18n="footer.col1.title">Riskalia</h4>
+            <p class="leading-relaxed mb-3" data-i18n="footer.col1.address">
               Cabinet de courtage & stratégies agréé ACAPS.<br/>
-              Siège : 16, Rue de Terves, 2ème étage.<br/>
+              Siège : 16, Rue de Terves, 2ème étage,<br/>
               Quartier Mers Sultan, Casablanca.
             </p>
-            <p class="text-xs text-gray-400 italic">
+            <p class="text-xs text-gray-400 italic" data-i18n="footer.col1.notice">
               Intermédiaire d'assurance régi par la loi 17-99 portant code des assurances.<br/>
               Sous la décision n°COU5047.00000.0.C.2025.472.
             </p>
           </div>
 
           <!-- Col 2 : Navigation -->
-          <div class="md:pl-10">
-            <h4 class="text-white text-lg font-bold mb-3">Navigation</h4>
+          <div>
+            <h4 class="text-white text-lg font-bold mb-3" data-i18n="footer.col2.title">Navigation</h4>
             <ul class="space-y-2">
-              <li><a href="/solutions.html" class="hover:text-white">Solutions</a></li>
-              <li><a href="/reinsurance.html" class="hover:text-white">Réassurance</a></li>
-              <li><a href="/climate.html" class="hover:text-white">Risques climatiques</a></li>
-              <li><a href="/esg.html" class="hover:text-white">ESG</a></li>
-              <li><a href="/services.html" class="hover:text-white">Conseil & Stratégie</a></li>
+              <li><a href="/index.html" data-i18n="nav.home" class="hover:text-white">Accueil</a></li>
+              <li><a href="/solutions.html" data-i18n="nav.solutions" class="hover:text-white">Solutions</a></li>
+              <li><a href="/reinsurance.html" data-i18n="nav.re" class="hover:text-white">Réassurance</a></li>
+              <li><a href="/climate.html" data-i18n="nav.climate" class="hover:text-white">Risques climatiques</a></li>
+              <li><a href="/esg.html" data-i18n="nav.esg" class="hover:text-white">ESG</a></li>
+              <li><a href="/services.html" data-i18n="nav.services" class="hover:text-white">Conseil & Stratégie</a></li>
             </ul>
-            
-            <h5 class="text-white font-semibold mt-5 mb-2 text-sm">Produits d’assurance</h5>
-            <div class="grid grid-cols-2 gap-x-4 text-gray-300 text-sm">
-              <ul class="space-y-1">
-                <li><a href="/Produits/auto.html">Auto</a></li>
-                <li><a href="/Produits/flotte.html">Flotte</a></li>
-                <li><a href="/Produits/habitation.html">Habitation</a></li>
-                <li><a href="/Produits/multirisques.html">Multirisques</a></li>
-                <li><a href="/Produits/rc.html">Responsabilité Civile</a></li>
-                <li><a href="/Produits/construction.html">Construction</a></li>
-              </ul>
-              <ul class="space-y-1">
-                <li><a href="/Produits/transport.html">Transport</a></li>
-                <li><a href="/Produits/alv.html">Accidents de la vie</a></li>
-                <li><a href="/Produits/sante.html">Santé</a></li>
-                <li><a href="/Produits/santecollective.html">Santé collective</a></li>
-                <li><a href="/Produits/retraite.html">Retraite</a></li>
-                <li><a href="/Produits/vie.html">Vie</a></li>
-              </ul>
-            </div>
           </div>
 
-          <!-- Col 3 : Contact -->
+          <!-- Col 3 : Assurance Particuliers -->
           <div>
-            <h4 class="text-white text-lg font-bold mb-3">Contact</h4>
-            <p class="mb-3">
-              16, Rue de Terves, 2ème étage<br/>Casablanca, Maroc
-            </p>
+            <h4 class="text-white text-lg font-bold mb-3" data-i18n="footer.col3.title">Assurance Particuliers</h4>
+            <ul class="space-y-2">
+              <li><a href="/Produits/auto.html" data-i18n="produits.auto">Auto</a></li>
+              <li><a href="/Produits/habitation.html" data-i18n="produits.habitation">Habitation</a></li>
+              <li><a href="/Produits/sante.html" data-i18n="produits.sante">Santé</a></li>
+              <li><a href="/Produits/alv.html" data-i18n="produits.alv">Accidents de la vie</a></li>
+              <li><a href="/Produits/vie.html" data-i18n="produits.vie">Vie</a></li>
+              <li><a href="/Produits/retraite.html" data-i18n="produits.retraite">Retraite</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4 : Assurance Entreprises -->
+          <div>
+            <h4 class="text-white text-lg font-bold mb-3" data-i18n="footer.col4.title">Assurance Entreprises</h4>
+            <ul class="space-y-2">
+              <li><a href="/Produits/multirisques.html" data-i18n="produits.multirisques">Multirisques</a></li>
+              <li><a href="/Produits/flotte.html" data-i18n="produits.flotte">Flotte automobile</a></li>
+              <li><a href="/Produits/rc.html" data-i18n="produits.rc">Responsabilité Civile</a></li>
+              <li><a href="/Produits/construction.html" data-i18n="produits.construction">Construction</a></li>
+              <li><a href="/Produits/santecollective.html" data-i18n="produits.santecollective">Santé collective</a></li>
+              <li><a href="/Produits/transport.html" data-i18n="produits.transport">Transport</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 5 : Contact -->
+          <div>
+            <h4 class="text-white text-lg font-bold mb-3" data-i18n="footer.col5.title">Contact</h4>
             <p>
-              <strong>Tél :</strong> +212 666 756 991<br/>
-              <strong>Tél :</strong> +212 675 208 909<br/>
-              <strong>Email :</strong>
-              <a href="mailto:contact@riskalia.ma" class="underline hover:text-white">contact@riskalia.ma</a>
+              <strong data-i18n="footer.col5.tel1label">Tél :</strong>
+              <span data-i18n="footer.col5.tel1">+212 666 756 991</span><br/>
+              <strong data-i18n="footer.col5.tel2label">Tél :</strong>
+              <span data-i18n="footer.col5.tel2">+212 675 208 909</span><br/>
+              <strong data-i18n="footer.col5.emailLabel">Email :</strong>
+              <a href="mailto:contact@riskalia.ma" class="underline hover:text-white" data-i18n="footer.col5.email">contact@riskalia.ma</a>
             </p>
             <div class="flex gap-4 mt-4 text-lg text-gray-400">
               <a href="#" aria-label="LinkedIn" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
@@ -93,9 +99,9 @@ getFooterHTML() {
           </div>
         </div>
 
-        <!-- Bottom -->
-        <div class="text-center text-gray-500 mt-8 border-t border-gray-700 pt-4 text-xs">
-          © 2025 Riskalia. Tous droits réservés.
+        <!-- Footer Bottom -->
+        <div class="text-center text-gray-500 mt-10 border-t border-gray-700 pt-4 text-xs">
+          <p data-i18n="footer.copyright">© 2025 Riskalia. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
@@ -182,6 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = FooterComponent;
 }
+
 
 
 
