@@ -56,7 +56,7 @@ window.I18N = {
       title: "Réassurance en Traités & Cessions Facultatives :",
       subtitle: "Une maîtrise de bout en bout",
       traites: {
-        title: "Traités sur mesure pour vos portefeuilles : De la conception à l’indemnisation, une chaîne maîtrisée",
+        title: "Traités sur mesure pour portefeuilles : une maîtrise de la conception à l’indemnisation",
         desc: "Nous concevons des programmes de réassurance clairs, robustes et pérennes, alignés sur vos objectifs techniques et financiers.",
       },
       facultatives: {
@@ -7317,6 +7317,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
