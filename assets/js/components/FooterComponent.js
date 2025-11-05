@@ -28,7 +28,11 @@ getFooterHTML() {
 
           <!-- Col 1 : Riskalia -->
           <div>
-            <h4 class="text-white text-lg font-bold mb-3" data-i18n="footer.col1.title">Riskalia</h4>
+              <img 
+    src="/assets/logo-riskalia-light.png" 
+    alt="Riskalia" 
+    class="h-10 w-auto"
+  />
             <p class="leading-relaxed mb-3" data-i18n="footer.col1.address">
               Cabinet de courtage & stratégies agréé ACAPS.<br/>
               Siège : 16, Rue de Terves, 2ème étage,<br/>
@@ -188,6 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = FooterComponent;
 }
+
 
 
 
