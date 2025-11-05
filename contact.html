@@ -405,29 +405,25 @@
 
     <!-- Footer Component Script -->
     <script src="assets/js/components/FooterComponent.js"></script>
- <!-- EmailJS SDK -->
+<!-- EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-  // Initialize EmailJS
   (function () {
-    emailjs.init({ publicKey: "zNiKD3DUIXJB_LXeO" }); // <-- replace with your EmailJS public key
+    emailjs.init({ publicKey: "zNiKD3DUIXJB_LXeO" }); // 🔑 replace with your EmailJS public key
   })();
 
-  // Handle the form submission
   document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("#contact-form");
+    const form = document.getElementById("contact-form");
 
     if (form) {
       form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        // Send the form
         emailjs.sendForm("service_k1ob3bf", "template_lmbrfrb", form)
           .then(() => {
             alert("✅ Message envoyé avec succès !");
             form.reset();
-            grecaptcha.reset();
           })
           .catch((err) => {
             console.error("❌ EmailJS error:", err);
@@ -440,6 +436,7 @@
 
   </body>
 </html>
+
 
 
 
