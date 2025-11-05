@@ -32,154 +32,215 @@
 
     <link rel="stylesheet" href="/assets/css/custom.css" />
 
-<style>
-animation: fadeUp 1s ease forwards;
-}
-.card-premium:nth-child(1) { animation-delay: 0.1s; }
-.card-premium:nth-child(2) { animation-delay: 0.3s; }
-.card-premium:nth-child(3) { animation-delay: 0.5s; }
+   <style>
+      :root {
+        --rk: rgba(0, 92, 115, 1);
+        --rk-90: rgba(0, 92, 115, 0.9);
+        --rk-70: rgba(0, 92, 115, 0.7);
+        --rk-20: rgba(0, 92, 115, 0.2);
+      }
+      body { font-family: 'Montserrat', sans-serif; }
 
+      /* Premium card effects */
+      .card-premium {
+        position: relative;
+        background: white;
+        border-radius: 1.25rem;
+        border: 1px solid rgba(0,92,115,0.1);
+        box-shadow: 0 8px 22px rgba(0,92,115,0.08);
+        overflow: hidden;
+        transition: all .4s ease;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 1s ease forwards;
+      }
+      .card-premium:nth-child(1) { animation-delay: 0.1s; }
+      .card-premium:nth-child(2) { animation-delay: 0.3s; }
+      .card-premium:nth-child(3) { animation-delay: 0.5s; }
 
-@keyframes fadeUp {
-to { opacity: 1; transform: translateY(0); }
-}
+      @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+      }
 
+      .card-premium::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(135deg, rgba(0,92,115,0.6), rgba(0,92,115,0.1));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+        transition: opacity .4s ease;
+        opacity: 0;
+      }
+      .card-premium:hover::before {
+        opacity: 1;
+      }
 
-.card-premium::before {
-content: '';
-position: absolute;
-inset: 0;
-border-radius: inherit;
-padding: 1px;
-background: linear-gradient(135deg, rgba(0,92,115,0.6), rgba(0,92,115,0.1));
--webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
--webkit-mask-composite: xor;
-mask-composite: exclude;
-pointer-events: none;
-transition: opacity .4s ease;
-opacity: 0;
-}
-.card-premium:hover::before {
-opacity: 1;
-}
+      .card-premium::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+        transform: translateX(-100%);
+        transition: transform 0.7s ease;
+      }
+      .card-premium:hover::after {
+        transform: translateX(100%);
+      }
+      .card-premium:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0,92,115,0.18);
+      }
 
-
-.card-premium::after {
-content: '';
-position: absolute;
-inset: 0;
-background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
-transform: translateX(-100%);
-transition: transform 0.7s ease;
-}
-.card-premium:hover::after {
-transform: translateX(100%);
-}
-.card-premium:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 30px rgba(0,92,115,0.18);
-}
-
-
-.icon-pulse {
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 3rem;
-height: 3rem;
-}
-.icon-pulse::before {
-content: '';
-position: absolute;
-inset: 0;
-border-radius: 0.75rem;
-background: rgba(0,92,115,0.1);
-animation: pulse-bg 2s infinite;
-}
-@keyframes pulse-bg {
-0%, 100% { transform: scale(1); opacity: 0.8; }
-50% { transform: scale(1.2); opacity: 0.4; }
-}
-</style></noscript
-    >
+      .icon-pulse {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+      }
+      .icon-pulse::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 0.75rem;
+        background: rgba(0,92,115,0.1);
+        animation: pulse-bg 2s infinite;
+      }
+      @keyframes pulse-bg {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.2); opacity: 0.4; }
+      }
+    </style>
   </head>
-  <body class="spacious">
-    <!-- Navigation Container -->
+
+  <body class="bg-gray-50 text-gray-800">
     <div id="navigation-container"></div>
 
-<!-- Hero -->
-<section class="relative h-[60vh] flex items-center justify-center text-center overflow-hidden">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80" alt="Assurance automobile Riskalia" class="absolute inset-0 w-full h-full object-cover" />
-<div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,92,115,0.85)] to-[rgba(0,92,115,0.6)]"></div>
-<div class="relative z-10 max-w-3xl px-6">
-<h1 class="text-white text-4xl md:text-5xl font-bold mb-4">RISKALIA Auto</h1>
-<p class="text-white/90 text-lg md:text-xl mb-6">Rigoureux. Transparent. Réactif.</p>
-<div class="flex flex-wrap justify-center gap-3">
-<span class="bg-white/10 border border-white/30 px-4 py-2 rounded-full text-white text-sm">Assistance 24/7</span>
-<span class="bg-white/10 border border-white/30 px-4 py-2 rounded-full text-white text-sm">Réseau agréé</span>
-<span class="bg-white/10 border border-white/30 px-4 py-2 rounded-full text-white text-sm">Suivi digitalisé</span>
-</div>
-</div>
-</section>
+    <!-- Hero -->
+    <section class="relative h-[60vh] flex items-center justify-center text-center overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80" alt="Assurance automobile Riskalia" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,92,115,0.85)] to-[rgba(0,92,115,0.6)]"></div>
+      <div class="relative z-10 max-w-3xl px-6">
+        <h1 class="text-white text-4xl md:text-5xl font-bold mb-4">RISKALIA Auto</h1>
+        <p class="text-white/90 text-lg md:text-xl mb-6">Rigoureux. Transparent. Réactif.</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-white/10 border border-white/30 px-4 py-2 rounded-full text-white text-sm">Assistance 24/7</span>
+          <span class="bg-white/10 border border-white/30 px-4 py-2 rounded-full text-white text-sm">Réseau agréé</span>
+          <span class="bg-white/10 border border-white/30 px-4 py-2 rounded-full text-white text-sm">Suivi digitalisé</span>
+        </div>
+      </div>
+    </section>
 
+    <!-- Intro -->
+    <section class="max-w-6xl mx-auto px-6 py-12 text-center">
+      <h2 class="text-3xl font-bold text-[var(--rk-90)] mb-4">Une couverture adaptée à votre véhicule et à votre usage</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Trois niveaux clairs pour répondre à tous les besoins : <strong>Tiers+</strong> pour l’essentiel et le budget, <strong>Dommage Collision</strong> pour une sécurité renforcée, et <strong>Tous Risques Premium</strong> pour une protection complète et sans compromis.
+      </p>
+    </section>
 
-<!-- Intro -->
-<section class="max-w-6xl mx-auto px-6 py-12 text-center">
-<h2 class="text-3xl font-bold text-[var(--rk-90)] mb-4">Une couverture adaptée à votre véhicule et à votre usage</h2>
-<p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-Trois niveaux clairs pour répondre à tous les besoins : <strong>Tiers+</strong> pour l’essentiel et le budget, <strong>Dommage Collision</strong> pour une sécurité renforcée, et <strong>Tous Risques Premium</strong> pour une protection complète et sans compromis.
-</p>
-</section>
+    <!-- Premium Cards -->
+    <section class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 mb-12">
+      <!-- Card 1 -->
+      <div class="card-premium p-6">
+        <div class="icon-pulse mb-4">
+          <i class="fas fa-shield-alt text-[var(--rk-90)] text-xl relative z-10"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 bg-gradient-to-r from-[var(--rk-90)] to-cyan-500 bg-clip-text text-transparent">Tiers +</h3>
+        <ul class="text-gray-700 space-y-1">
+          <li>• Responsabilité Civile obligatoire</li>
+          <li>• Défense &amp; Recours</li>
+          <li>• Bris de glaces</li>
+          <li>• Incendie</li>
+          <li>• Option Vol</li>
+        </ul>
+        <div class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-600">
+          <strong>Services :</strong> Assistance 24/7, réseau agréé, suivi sinistre digitalisé.<br />
+          <strong>Éligibilité :</strong> véhicules ≤ 20 ans, usage privé ou pro léger.
+        </div>
+      </div>
 
+      <!-- Card 2 -->
+      <div class="card-premium p-6">
+        <div class="icon-pulse mb-4">
+          <i class="fas fa-car-crash text-[var(--rk-90)] text-xl relative z-10"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 bg-gradient-to-r from-[var(--rk-90)] to-cyan-500 bg-clip-text text-transparent">Dommage Collision</h3>
+        <ul class="text-gray-700 space-y-1">
+          <li>• Garanties Tiers +</li>
+          <li>• Dommages au véhicule (collision avec tiers identifié)</li>
+          <li>• Protection juridique</li>
+        </ul>
+        <div class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-600">
+          <strong>Services :</strong> Assistance renforcée, véhicule de remplacement*, gestion prioritaire sinistre.<br />
+          <strong>Éligibilité :</strong> véhicules ≤ 15 ans, bonus/malus conforme ACAPS.
+        </div>
+      </div>
 
-<!-- Premium Cards -->
-<section class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 mb-12">
-<!-- Card 1 -->
-<div class="card-premium p-6">
-<div class="icon-pulse mb-4">
-<i class="fas fa-shield-alt text-[var(--rk-90)] text-xl relative z-10"></i>
-</div>
-<h3 class="text-xl font-semibold mb-3 bg-gradient-to-r from-[var(--rk-90)] to-cyan-500 bg-clip-text text-transparent">Tiers +</h3>
-<ul class="text-gray-700 space-y-1">
-<li>• Responsabilité Civile obligatoire</li>
-<li>• Défense &amp; Recours</li>
-<li>• Bris de glaces</li>
-<li>• Incendie</li>
-<li>• Option Vol</li>
-</ul>
-<div class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-600">
-<strong>Services :</strong> Assistance 24/7, réseau agréé, suivi sinistre digitalisé.<br />
-<strong>Éligibilité :</strong> véhicules ≤ 20 ans, usage privé ou pro léger.
-</div>
-</div>
+      <!-- Card 3 -->
+      <div class="card-premium p-6">
+        <div class="icon-pulse mb-4">
+          <i class="fas fa-star text-[var(--rk-90)] text-xl relative z-10"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 bg-gradient-to-r from-[var(--rk-90)] to-cyan-500 bg-clip-text text-transparent">Tous Risques Premium</h3>
+        <ul class="text-gray-700 space-y-1">
+          <li>• Garanties Dommage Collision +</li>
+          <li>• Dommages tous accidents</li>
+          <li>• Vol, incendie, bris de glaces, événements naturels</li>
+          <li>• Valeur à neuf / majorée</li>
+          <li>• Protection conducteur &amp; passagers</li>
+        </ul>
+        <div class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-600">
+          <strong>Services :</strong> Zéro franchise bris de glaces, véhicule de remplacement immédiat, assistance Maroc & Étranger.<br />
+          <strong>Éligibilité :</strong> véhicules ≤ 7 ans, conduite privée / flotte.
+        </div>
+      </div>
+    </section>
 
+    <!-- Valeur ajoutée -->
+    <section class="bg-white border-y border-gray-100 py-12">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-[var(--rk-90)] mb-10">Valeur ajoutée RISKALIA Auto</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition-all">
+            <h3 class="font-semibold text-lg mb-2 text-[var(--rk-90)]">Audit du profil conducteur & usage véhicule</h3>
+            <p class="text-gray-600">Identification des garanties pertinentes et réduction des coûts inutiles.</p>
+          </div>
+          <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition-all">
+            <h3 class="font-semibold text-lg mb-2 text-[var(--rk-90)]">Gestion sinistres & suivi digitalisé</h3>
+            <p class="text-gray-600">Transparence, rapidité et traçabilité du règlement.</p>
+          </div>
+          <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition-all">
+            <h3 class="font-semibold text-lg mb-2 text-[var(--rk-90)]">Conseil & prévention du risque</h3>
+            <p class="text-gray-600">Optimisation bonus/malus et accompagnement post-sinistre.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- Card 2 -->
-<div class="card-premium p-6">
-<div class="icon-pulse mb-4">
-<i class="fas fa-car-crash text-[var(--rk-90)] text-xl relative z-10"></i>
-</div>
-<h3 class="text-xl font-semibold mb-3 bg-gradient-to-r from-[var(--rk-90)] to-cyan-500 bg-clip-text text-transparent">Dommage Collision</h3>
-<ul class="text-gray-700 space-y-1">
-<li>• Garanties Tiers +</li>
-<li>• Dommages au véhicule (collision avec tiers identifié)</li>
-<li>• Protection juridique</li>
-</ul>
-<div class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-600">
-<strong>Services :</strong> Assistance renforcée, véhicule de remplacement*, gestion prioritaire sinistre.<br />
-<strong>Éligibilité :</strong> véhicules ≤ 15 ans, bonus/malus conforme ACAPS.
-</div>
-</div>
+    <!-- CTA -->
+    <section class="text-center py-16 bg-gradient-to-r from-[rgba(0,92,115,1)] to-[rgba(0,92,115,0.8)] text-white">
+      <h3 class="text-3xl font-bold mb-4">Obtenir une proposition personnalisée</h3>
+      <p class="max-w-2xl mx-auto text-white/90 mb-8">
+        Nous calibrons votre niveau de couverture selon l’âge du véhicule, l’usage et votre historique conducteur.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="../contact.html" class="bg-white text-[var(--rk-90)] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-50 transition">Obtenir un devis</a>
+        <a href="../contact.html" class="bg-transparent border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-[var(--rk-90)] transition">Parler à un conseiller</a>
+      </div>
+    </section>
 
-
-<!-- Card 3 -->
-<div class="card-premium p-6">
-<div class="icon-pulse mb-4">
-<i class="fas fa-star text-[var(--rk-90)] text-xl relative z-10"></i>
-</div>
-</section>
-      <div>
+    <!-- Slogan -->
+    <section class="text-center py-10">
+      <p class="text-xl md:text-2xl font-bold text-gray-800">RISKALIA Auto — <span class="text-[var(--rk-90)]">Rigoureux.</span> <span class="text-[var(--rk-90)]">Transparent.</span> <span class="text-[var(--rk-90)]">Réactif.</span></p>
+    </section>
+    
     <section>
         <!-- Liens produits (précédent/suivant) -->
         <article
@@ -204,7 +265,6 @@ Trois niveaux clairs pour répondre à tous les besoins : <strong>Tiers+</strong
             >
           </p>
         </article>
-      </div>
     </section>
 
     <!-- Footer Container -->
