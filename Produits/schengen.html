@@ -2,6 +2,73 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>
+      Riskalia — Voyage Schengen — Assurance voyage conforme visa avec
+      attestation
+    </title>
+    <meta
+      name="description"
+      content="Assurance Voyage Schengen : attestation conforme visa, frais médicaux dès 30 000 €, hospitalisation, assistance & rapatriement, bagages, options annulation."
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts + global CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="/assets/css/components/navigation.css" />
+    <link rel="stylesheet" href="/assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+
+    <style>
+      /* Tab panel display logic */
+      .tabpanel {
+        display: none;
+      }
+      .tabpanel.active {
+        display: block;
+      }
+
+      /* Sticky tabs */
+      @media (min-width: 768px) {
+        .tabs.sticky {
+          top: 66px;
+        }
+      }
+    </style>
+
+    <noscript
+      ><style>
+        .tabpanel {
+          display: block;
+        }
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style></noscript
+    >
+  </head>
+  <body class="spacious">
+    <!-- Navigation Container -->
+    <div id="navigation-container"></div>
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RISKALIA Auto — Assurance automobile premium</title>
     <meta name="description" content="RISKALIA Auto : Tiers+, Dommage Collision et Tous Risques Premium. Rigoureux. Transparent. Réactif. Assistance 24/7, réseau agréé, suivi sinistres digitalisé." />
@@ -136,28 +203,133 @@
       <p class="text-xl md:text-2xl font-bold text-gray-800">RISKALIA Auto — <span class="text-[var(--c1,#005c73)]">Rigoureux.</span> <span class="text-[var(--c1,#005c73)]">Transparent.</span> <span class="text-[var(--c1,#005c73)]">Réactif.</span></p>
     </section>
 
-    <!-- Footer -->
+      <div>
+    <section>
+        <!-- Liens produits (précédent/suivant) -->
+        <article
+          class="bg-white rounded-xl shadow-lg border border-gray-200 p-6 mt-6 text-center"
+        >
+          <p class="text-gray-600">
+            <a
+              class="hover:underline"
+              style="color: rgba(0, 92, 115, 0.9)"
+              href="./vie.html"
+              >←
+              <span data-i18n="schengen.nav.prev"
+                >Assurance-vie & placements</span
+              ></a
+            >
+            &nbsp;|&nbsp;
+            <a
+              class="hover:underline"
+              style="color: rgba(0, 92, 115, 0.9)"
+              href="./retraite.html"
+              ><span data-i18n="schengen.nav.next">Retraite</span> →</a
+            >
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer Container -->
     <div id="footer-container"></div>
 
-    <!-- Scripts -->
-    <script src="assets/js/components/SearchComponent.js"></script>
-    <script src="assets/js/components/NavigationComponent.js"></script>
-    <script src="assets/js/components/FooterComponent.js"></script>
+    <!-- FAQ SEO -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "RISKALIA Auto",
-        "provider": { "@type": "Organization", "name": "RISKALIA" },
-        "serviceType": "Assurance automobile",
-        "areaServed": "MA",
-        "description": "Trois niveaux de couverture : Tiers+, Dommage Collision, Tous Risques Premium. Assistance 24/7, réseau agréé, suivi sinistres digitalisé.",
-        "offers": [
-          { "@type": "Offer", "name": "Tiers +" },
-          { "@type": "Offer", "name": "Dommage Collision" },
-          { "@type": "Offer", "name": "Tous Risques Premium" }
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quel plafond pour le visa Schengen ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un minimum de 30 000 € de frais médicaux & rapatriement est requis. Nous proposons des formules supérieures si besoin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quand recevoir l'attestation ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Généralement sous 24h ouvrées après validation des informations et du paiement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Puis-je prolonger ma couverture ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, sur demande avant l'expiration initiale (selon conditions de l'assureur)."
+            }
+          }
         ]
       }
     </script>
+
+    <script>
+      /* ================== Tab Management ================== */
+      function bindTabs() {
+        const tabs = document.querySelectorAll(".tabs .tab");
+        const panels = document.querySelectorAll(".tabpanel");
+
+        function show(id, push = true) {
+          tabs.forEach((btn) => {
+            const act = btn.dataset.tab === id;
+            btn.classList.toggle("active", act);
+            btn.setAttribute("aria-selected", act ? "true" : "false");
+
+            // Update tab styling
+            if (act) {
+              btn.style.backgroundColor = "rgba(0, 92, 115, 0.9)";
+              btn.style.color = "white";
+              btn.classList.remove("bg-gray-100", "text-gray-700");
+              btn.classList.add("text-white");
+            } else {
+              btn.style.backgroundColor = "";
+              btn.style.color = "";
+              btn.classList.remove("text-white");
+              btn.classList.add("bg-gray-100", "text-gray-700");
+            }
+          });
+          panels.forEach((p) => p.classList.toggle("active", p.id === id));
+          if (push) history.replaceState(null, "", "#" + id);
+        }
+
+        tabs.forEach((btn) =>
+          btn.addEventListener("click", () => show(btn.dataset.tab))
+        );
+
+        function fromHash() {
+          const id = (location.hash || "#over").slice(1);
+          const known = ["over", "cov", "doc", "lim", "claim", "faq"];
+          show(known.includes(id) ? id : "over", false);
+        }
+
+        window.addEventListener("hashchange", fromHash);
+        fromHash();
+      }
+
+      function initUI() {
+        bindTabs();
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Use global translation functions from i18n.js
+        if (typeof window.applyTexts === "function") {
+          window.applyTexts();
+        }
+        initUI();
+      });
+    </script>
+
+    <!-- Global I18N Script -->
+    <script src="/assets/js/i18n.js"></script>
+
+    <!-- Component Scripts -->
+    <script src="/assets/js/components/SearchComponent.js"></script>
+    <script src="/assets/js/components/NavigationComponent.js"></script>
+    <script src="/assets/js/components/FooterComponent.js"></script>
   </body>
 </html>
