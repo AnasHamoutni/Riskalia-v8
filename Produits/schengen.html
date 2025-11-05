@@ -278,62 +278,6 @@
     }
     </script>
 
-    <script>
-      /* ================== Tab Management ================== */
-      function bindTabs() {
-        const tabs = document.querySelectorAll(".tabs .tab");
-        const panels = document.querySelectorAll(".tabpanel");
-
-        function show(id, push = true) {
-          tabs.forEach((btn) => {
-            const act = btn.dataset.tab === id;
-            btn.classList.toggle("active", act);
-            btn.setAttribute("aria-selected", act ? "true" : "false");
-
-            // Update tab styling
-            if (act) {
-              btn.style.backgroundColor = "rgba(0, 92, 115, 0.9)";
-              btn.style.color = "white";
-              btn.classList.remove("bg-gray-100", "text-gray-700");
-              btn.classList.add("text-white");
-            } else {
-              btn.style.backgroundColor = "";
-              btn.style.color = "";
-              btn.classList.remove("text-white");
-              btn.classList.add("bg-gray-100", "text-gray-700");
-            }
-          });
-          panels.forEach((p) => p.classList.toggle("active", p.id === id));
-          if (push) history.replaceState(null, "", "#" + id);
-        }
-
-        tabs.forEach((btn) =>
-          btn.addEventListener("click", () => show(btn.dataset.tab))
-        );
-
-        function fromHash() {
-          const id = (location.hash || "#over").slice(1);
-          const known = ["over", "cov", "doc", "lim", "claim", "faq"];
-          show(known.includes(id) ? id : "over", false);
-        }
-
-        window.addEventListener("hashchange", fromHash);
-        fromHash();
-      }
-
-      function initUI() {
-        bindTabs();
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        // Use global translation functions from i18n.js
-        if (typeof window.applyTexts === "function") {
-          window.applyTexts();
-        }
-        initUI();
-      });
-    </script>
-
     <!-- Global I18N Script -->
     <script src="/assets/js/i18n.js"></script>
 
