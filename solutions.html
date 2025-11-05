@@ -1848,7 +1848,9 @@
 
       /* init */
       document.addEventListener("DOMContentLoaded", () => {
-        applyTexts();
+        applyI18n();
+        applyI18nAttrs();
+                syncLangButtons();
         initUI();
       });
     </script>
@@ -1892,14 +1894,6 @@
               applyTexts();
             }
 
-            // Update footer component translations
-            if (
-              window.footerComponent &&
-              typeof window.footerComponent.updateTranslations === "function"
-            ) {
-              window.footerComponent.updateTranslations();
-            }
-
             // Call any other language change handlers
             if (typeof window._onLangChanged === "function") {
               window._onLangChanged();
@@ -1923,10 +1917,7 @@
         }
 
         // Update footer component
-        if (
-          window.footerComponent &&
-          typeof window.footerComponent.updateTranslations === "function"
-        ) {
+        if (window.footerComponent) {
           window.footerComponent.updateTranslations();
         }
       };
