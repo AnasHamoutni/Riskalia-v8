@@ -289,20 +289,53 @@ window.I18N = {
         subtitle:
           "Commençons par un diagnostic rapide de vos expositions et opportunités.",
       },
-      footer: {
-        desc: "Cabinet de courtage & stratégies agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
-        links: "Liens",
-        contact: "Contact",
-        contactBlock: {
-          tel: "Tél 1 :",
-          telNum1: "+212-666-756991",
-          tel2: "Tél 2 :",
-          telNum2: "+212-675-208909",
-          infos: "Informations générales :",
-        },
-          copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés.",
-      },
+footer: {
+    col1: {
+      title: "Riskalia",
+      address:
+        "Cabinet de courtage & stratégies agréé ACAPS.<br/>Siège : 16, Rue de Terves, 2ème étage,<br/>Quartier Mers Sultan, Casablanca.",
+      notice:
+        "Intermédiaire d'assurance régi par la loi 17-99 portant code des assurances.<br/>Sous la décision n°COU5047.00000.0.C.2025.472."
     },
+    col2: { title: "Navigation" },
+    col3: { title: "Assurance Particuliers" },
+    col4: { title: "Assurance Entreprises" },
+    col5: {
+      title: "Contact",
+      tel1label: "Tél :",
+      tel1: "+212 666 756 991",
+      tel2label: "Tél :",
+      tel2: "+212 675 208 909",
+      emailLabel: "Email :",
+      email: "contact@riskalia.ma"
+    },
+    copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés."
+  },
+
+  produits: {
+    auto: "Auto",
+    habitation: "Habitation",
+    sante: "Santé",
+    alv: "Accidents de la vie",
+    vie: "Vie",
+    retraite: "Retraite",
+    multirisques: "Multirisques",
+    flotte: "Flotte automobile",
+    rc: "Responsabilité Civile",
+    construction: "Construction",
+    santecollective: "Santé collective",
+    transport: "Transport"
+  },
+
+  nav: {
+    home: "Accueil",
+    solutions: "Solutions",
+    re: "Réassurance",
+    climate: "Risques Climatiques",
+    esg: "ESG",
+    services: "Services de Conseil"
+  },
+},
     reinsurance: {
       hero: {
         title: "Réassurance — Programmes & Conseil",
@@ -2738,20 +2771,53 @@ window.I18N = {
         subtitle:
           "Let's start with a rapid assessment of your exposures and opportunities.",
       },
-      footer: {
-        desc: "Licensed brokerage & strategy firm (ACAPS). Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
-        links: "Links",
-        contact: "Contact",
-        contactBlock: {
-          tel: "Phone 1 :",
-          telNum1: "+212-666-756991",
-          tel2: "Phone 2 :",
-          telNum2: "+212-675-208909",
-          infos: "General Information :",
-        },
-        copyright:"© " + new Date().getFullYear() + " Riskalia. All rights reserved.",
-      },
+  footer: {
+    col1: {
+      title: "Riskalia",
+      address:
+        "Licensed insurance & strategy brokerage (ACAPS).<br/>Head office: 16 Rue de Terves, 2nd floor,<br/>Mers Sultan district, Casablanca.",
+      notice:
+        "Insurance intermediary governed by Law 17-99 on the Insurance Code.<br/>Under decision No. COU5047.00000.0.C.2025.472."
     },
+    col2: { title: "Navigation" },
+    col3: { title: "Individual Insurance" },
+    col4: { title: "Corporate Insurance" },
+    col5: {
+      title: "Contact",
+      tel1label: "Phone:",
+      tel1: "+212 666 756 991",
+      tel2label: "Phone:",
+      tel2: "+212 675 208 909",
+      emailLabel: "Email:",
+      email: "contact@riskalia.ma"
+    },
+    copyright: "© " + new Date().getFullYear() + " Riskalia. All rights reserved."
+  },
+
+  produits: {
+    auto: "Motor",
+    habitation: "Home",
+    sante: "Health",
+    alv: "Personal Accident",
+    vie: "Life",
+    retraite: "Retirement",
+    multirisques: "Business Package",
+    flotte: "Fleet",
+    rc: "Liability",
+    construction: "Construction",
+    santecollective: "Group Health",
+    transport: "Transport"
+  },
+
+  nav: {
+    home: "Home",
+    solutions: "Solutions",
+    re: "Reinsurance",
+    climate: "Climate Risks",
+    esg: "ESG",
+    services: "Advisory Services"
+  }
+},
     reinsurance: {
       hero: {
         title: "Reinsurance — Programs & Advisory",
@@ -5147,20 +5213,53 @@ window.I18N = {
         title: "مستعد لاستباق المخاطر المناخية؟",
         subtitle: "لنبدأ بتقييم سريع لتعرضاتكم وفرصكم.",
       },
-      footer: {
-        desc: "شركة وساطة واستشارات استراتيجية مرخصة (ACAPS). المقر الرئيسي: ١٦، شارع تيرف، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
-        links: "روابط",
-        contact: "تواصل",
-        contactBlock: {
-          tel: "هاتف 1 :",
-          telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
-          tel2: "هاتف 2 :",
-          telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
-          infos: "معلومات عامة :",
-        },
-          copyright: "© " + new Date().getFullYear() + " ريسكاليا. جميع الحقوق محفوظة.",
-      },
+  footer: {
+    col1: {
+      title: "Riskalia",
+      address:
+        "Licensed insurance & strategy brokerage (ACAPS).<br/>Head office: 16 Rue de Terves, 2nd floor,<br/>Mers Sultan district, Casablanca.",
+      notice:
+        "Insurance intermediary governed by Law 17-99 on the Insurance Code.<br/>Under decision No. COU5047.00000.0.C.2025.472."
     },
+    col2: { title: "Navigation" },
+    col3: { title: "Individual Insurance" },
+    col4: { title: "Corporate Insurance" },
+    col5: {
+      title: "Contact",
+      tel1label: "Phone:",
+      tel1: "+212 666 756 991",
+      tel2label: "Phone:",
+      tel2: "+212 675 208 909",
+      emailLabel: "Email:",
+      email: "contact@riskalia.ma"
+    },
+    copyright: "© " + new Date().getFullYear() + " Riskalia. All rights reserved."
+  },
+
+  produits: {
+    auto: "Motor",
+    habitation: "Home",
+    sante: "Health",
+    alv: "Personal Accident",
+    vie: "Life",
+    retraite: "Retirement",
+    multirisques: "Business Package",
+    flotte: "Fleet",
+    rc: "Liability",
+    construction: "Construction",
+    santecollective: "Group Health",
+    transport: "Transport"
+  },
+
+  nav: {
+    home: "Home",
+    solutions: "Solutions",
+    re: "Reinsurance",
+    climate: "Climate Risks",
+    esg: "ESG",
+    services: "Advisory Services"
+  }
+},
     reinsurance: {
       hero: {
         title: "إعادة التأمين — البرامج والاستشارة",
@@ -7317,6 +7416,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
