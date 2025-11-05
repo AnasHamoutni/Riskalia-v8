@@ -404,49 +404,95 @@
                   </ul>
                 </div>
 
-                <div
-                  class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 mb-6 border border-teal-100"
-                >
-                  <div
-                    class="text-[var(--c1)] font-bold mb-2 text-lg flex items-center gap-2"
-                    data-i18n="s2.innovative.title"
-                  >
-                    <i class="fas fa-rocket text-teal-600"></i>
-                    Facultatives ciblées pour la gestion de la couverture des risques complexes :
-                  </div>
-                  <div
-                    class="text-[var(--c1)] mb-4 text-md flex items-center gap-2"
-                    data-i18n="s2.innovative.subtitle"
-                  >
-                    <i class="text-gray-900"></i>
-                    Expertise technique. Marchés sélectifs.
-                  </div>
-                  <ul class="space-y-4">
-                    <li
-                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
-                    >
-                      <span class="text-teal-500 font-bold mt-1">•</span>
-                      <div>
-                        <strong class="text-gray-900">Facultatives</strong> :
-                        placement à l'unité pour un risque atypique ou hors
-                        cadre des traités.
-                      </div>
-                    </li>
-                    <li
-                      class="flex items-start gap-3 text-gray-700 leading-relaxed"
-                    >
-                      <span class="text-teal-500 font-bold mt-1">•</span>
-                      <div>
-                        <strong class="text-gray-900">Paramétriques</strong> :
-                        déclenchement sur indices objectifs (pluie, vent,
-                        séisme).<br />
-                        <em class="text-gray-600 italic">Utilité</em> : réponse
-                        rapide, utile quand la preuve de dommage est lente ou
-                        disputée.
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+<div
+  class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 mb-6 border border-teal-100"
+>
+  <!-- Title -->
+  <div
+    class="text-[var(--c1)] font-bold mb-2 text-lg flex items-center gap-2"
+    data-i18n="s2.facultatives.title"
+  >
+    <i class="fas fa-rocket text-teal-600"></i>
+    Facultatives ciblées pour la gestion de la couverture des risques complexes :
+  </div>
+
+  <!-- Subtitle -->
+  <div
+    class="text-[var(--c1)] mb-4 text-sm flex items-center gap-2"
+    data-i18n="s2.facultatives.subtitle"
+  >
+    <i class="text-gray-900"></i>
+    Expertise technique. Marchés sélectifs.
+  </div>
+
+  <!-- Main paragraph -->
+  <p
+    class="text-gray-700 leading-relaxed mb-4"
+    data-i18n="s2.facultatives.paragraph1"
+  >
+    Nous plaçons vos risques spécifiques — 
+    Property, RC, Énergie, Construction, Lignes financières, Transport — 
+    auprès de marchés notés A- et supérieur.
+  </p>
+
+  <!-- Supporting paragraph -->
+  <p
+    class="text-gray-700 leading-relaxed mb-4"
+    data-i18n="s2.facultatives.paragraph2"
+  >
+    Chaque placement repose sur un dossier technique solide, une négociation précise des clauses contractuelles 
+    et un suivi rigoureux jusqu’à la confirmation de couverture.
+  </p>
+
+  <!-- Subheading -->
+  <div
+    class="text-[var(--c1)] font-semibold mb-2 flex items-center gap-2"
+    data-i18n="s2.facultatives.benefitsTitle"
+  >
+    <i class="fas fa-check-circle text-teal-600"></i>
+    Bénéfices clés :
+  </div>
+
+  <!-- Benefit list -->
+  <ul class="space-y-2">
+    <li
+      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+      data-i18n="s2.facultatives.benefit1"
+    >
+      <span class="text-teal-500 font-bold mt-1">•</span>
+      Accès aux meilleurs marchés internationaux
+    </li>
+    <li
+      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+      data-i18n="s2.facultatives.benefit2"
+    >
+      <span class="text-teal-500 font-bold mt-1">•</span>
+      Solutions différenciantes et transparentes
+    </li>
+    <li
+      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+      data-i18n="s2.facultatives.benefit3"
+    >
+      <span class="text-teal-500 font-bold mt-1">•</span>
+      Suivi de placement
+    </li>
+    <li
+      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+      data-i18n="s2.facultatives.benefit4"
+    >
+      <span class="text-teal-500 font-bold mt-1">•</span>
+      Production contractuelle aux normes internationales
+    </li>
+    <li
+      class="flex items-start gap-3 text-gray-700 leading-relaxed"
+      data-i18n="s2.facultatives.benefit5"
+    >
+      <span class="text-teal-500 font-bold mt-1">•</span>
+      Maîtrise du risque de défaut
+    </li>
+  </ul>
+</div>
+
 
                 <div
                   class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-6 mb-6 border-l-4 border-indigo-400"
@@ -1504,11 +1550,13 @@
               aggregate:
                 "Aggregate XL / Stop-loss : capper la perte annuelle ou le ratio combiné.\nUtilité : maîtriser le P&L quand l'année est ponctuée de nombreux sinistres moyens.",
             },
-            innovative: {
+            facultatives: {
               title: "Facultatives ciblées pour la gestion de la couverture des risques complexes :",
               subtitle: "Expertise technique. Marchés sélectifs.",
-              Intro:
+              paragraph1:
                 "Nous plaçons vos risques spécifiques — Property, RC, Énergie, Construction, Lignes financières, Transport — auprès de marchés notés A- et supérieur. Chaque placement repose sur un dossier technique solide, une négociation précise des clauses contractuelles et un suivi contractuel rigoureux jusqu’à la confirmation de couverture.",
+              paragraph2:
+                "Chaque placement repose sur un dossier technique solide, une négociation précise des clauses contractuelles et un suivi rigoureux jusqu’à la confirmation de couverture.",
               benefits:{
                 title: "Bénéfices clés :",
                 item1: "Accès aux meilleurs marchés internationaux.",
@@ -1804,18 +1852,23 @@
               aggregate:
                 "Aggregate XL / Stop-loss: cap annual loss or combined ratio.\nUtility: control P&L when the year is punctuated by many medium claims.",
             },
-            innovative: {
-              title: "Targeted & innovative",
-              facultative:
-                "Facultative: unit placement for an atypical risk or outside the treaty framework.",
-              parametric:
-                "Parametric: trigger on objective indices (rain, wind, earthquake).\nUtility: quick response, useful when proof of damage is slow or disputed.",
-            },
-            benchmark: {
-              title: "Benchmark:",
-              text: "We choose the tool according to the problem: stability, capital, growth, exceptional shock... not the reverse.",
-            },
-          },
+facultatives: {
+  title: "Targeted facultative placements for managing complex risk coverage:",
+  subtitle: "Technical expertise. Select markets.",
+  paragraph1:
+    "We place your specific risks — Property, Liability, Energy, Construction, Financial Lines, Transport — with markets rated A- and above. Each placement is based on a solid technical file, precise negotiation of contractual clauses, and rigorous contract follow-up until coverage confirmation.",
+  paragraph2:
+    "Each placement relies on a solid technical file, precise negotiation of contractual clauses, and rigorous monitoring until coverage confirmation.",
+  benefits:{
+    title: "Key benefits:",
+    item1: "Access to the best international markets.",
+    item2: "Differentiated and transparent solutions.",
+    item3: "Placement follow-up.",
+    item4: "Contract production meeting international standards.",
+    item5: "Control of default risk.",
+  },
+}
+,
           s3: {
             title: "Access the best markets, under the best conditions",
             strategy: {
@@ -2095,18 +2148,22 @@
               aggregate:
                 "إجمالي XL / وقف الخسارة: وضع حد أقصى للخسارة السنوية أو النسبة المجمعة.\nالفائدة: التحكم في الأرباح والخسائر عندما تكون السنة مليئة بالعديد من المطالبات المتوسطة.",
             },
-            innovative: {
-              title: "مستهدف ومبتكر",
-              facultative:
-                "الاختيارية: الوضع الوحدوي لخطر غير نمطي أو خارج إطار المعاهدات.",
-              parametric:
-                "البارامترية: التفعيل على المؤشرات الموضوعية (المطر، الرياح، الزلزال).\nالفائدة: الاستجابة السريعة، مفيد عندما يكون إثبات الضرر بطيئًا أو متنازعًا عليه.",
-            },
-            benchmark: {
-              title: "معيار:",
-              text: "نختار الأداة وفقًا للمشكلة: الاستقرار، رأس المال، النمو، الصدمة الاستثنائية... وليس العكس.",
-            },
-          },
+facultatives: {
+  title: "عمليات اختيارية موجهة لإدارة تغطية المخاطر المعقدة:",
+  subtitle: "خبرة تقنية. أسواق انتقائية.",
+  paragraph1:
+    "نقوم بوضع مخاطرِكم الخاصة — الممتلكات، المسؤولية المدنية، الطاقة، البناء، الخطوط المالية، النقل — لدى أسواق تحمل تصنيفًا لا يقل عن A-. ويستند كل ترتيب إلى ملف تقني متين، وتفاوض دقيق على البنود التعاقدية، ومتابعة صارمة حتى تأكيد التغطية.",
+  paragraph2:
+    "كل عملية ترتيب تستند إلى ملف تقني متين، وتفاوض دقيق على البنود التعاقدية، ومتابعة صارمة حتى تأكيد التغطية.",
+  benefits:{
+    title: "الفوائد الرئيسية:",
+    item1: "الوصول إلى أفضل الأسواق الدولية.",
+    item2: "حلول متميزة وشفافة.",
+    item3: "متابعة عمليات الترتيب.",
+    item4: "إعداد العقود وفق المعايير الدولية.",
+    item5: "التحكم في مخاطر التعثر.",
+  },
+},
           s3: {
             title: "الوصول إلى أفضل الأسواق، في أفضل الظروف",
             strategy: {
