@@ -57,15 +57,15 @@ window.I18N = {
       subtitle: "Une maîtrise de bout en bout",
       traites: {
         title: "Traités sur mesure pour portefeuilles : De la conception à l’indemnisation",
-        desc: "Nous concevons des programmes de réassurance clairs, robustes et pérennes, alignés sur vos objectifs techniques et financiers.",
+        desc: "Nous concevons des programmes de réassurance clairs et pérennes, alignés sur vos objectifs techniques et financiers. Chaque traité est pensé pour garantir la stabilité, la transparence et la performance durable.",
       },
       facultatives: {
         title: "Cessions en réassurance facultatives : Vos facultatives. Notre expertise.",
-        desc: "Des solutions de réassurance intégrées assuré ou assureur, pensées pour la performance et la stabilité durable.",
+        desc: "Des solutions de réassurance intégrées, adaptées aux besoins de chaque assuré ou assureur. Notre approche repose sur la sélection rigoureuse des marchés, la précision des clauses et un suivi contractuel exemplaire.",
       },
       sinistres: {
         title: "Gestion des Sinistres & accompagnement 24/7 : Réactivité, maitrise, rigueur",
-        desc: "Dès la survenance du sinistre, nous mobilisons une équipe dédiée pour assurer un pilotage précis des expertises, une communication claire et une résolution rapide.",
+        desc: "Dès la survenance du sinistre, nous mobilisons une équipe dédiée pour piloter les expertises, assurer une communication claire et garantir une résolution rapide. Chaque intervention renforce la confiance et la continuité du partenariat.",
       },
       cta: "Explorer la réassurance",
     },
@@ -7317,6 +7317,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
