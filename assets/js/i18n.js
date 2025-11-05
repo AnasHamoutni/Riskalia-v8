@@ -2816,7 +2816,7 @@ footer: {
     climate: "Climate Risks",
     esg: "ESG",
     services: "Advisory Services"
-  }
+  },
 },
     reinsurance: {
       hero: {
@@ -5258,7 +5258,7 @@ footer: {
     climate: "المخاطر المناخية",
     esg: "البيئة والمجتمع والحوكمة",
     services: "الخدمات والاستشارات"
-  }
+  },
 },
     reinsurance: {
       hero: {
