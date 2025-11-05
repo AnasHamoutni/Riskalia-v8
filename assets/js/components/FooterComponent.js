@@ -29,7 +29,7 @@ getFooterHTML() {
           <!-- Col 1 : Riskalia -->
           <div>
               <img 
-    src="/assets/logo-riskalia-light.png" 
+    src="../assets/logo-transparent.png" 
     alt="Riskalia" 
     class="h-10 w-auto"
   />
@@ -61,12 +61,12 @@ getFooterHTML() {
           <div>
             <h4 class="text-white text-lg font-bold mb-3" data-i18n="footer.col3.title">Assurance Particuliers</h4>
             <ul class="space-y-2">
-              <li><a href="/Produits/auto.html" data-i18n="produits.auto">Auto</a></li>
-              <li><a href="/Produits/habitation.html" data-i18n="produits.habitation">Habitation</a></li>
-              <li><a href="/Produits/sante.html" data-i18n="produits.sante">Santé</a></li>
-              <li><a href="/Produits/alv.html" data-i18n="produits.alv">Accidents de la vie</a></li>
-              <li><a href="/Produits/vie.html" data-i18n="produits.vie">Vie</a></li>
-              <li><a href="/Produits/retraite.html" data-i18n="produits.retraite">Retraite</a></li>
+              <li><a href="/Produits/auto.html" data-i18n="footer.produits.auto">Auto</a></li>
+              <li><a href="/Produits/habitation.html" data-i18n="footer.produits.habitation">Habitation</a></li>
+              <li><a href="/Produits/sante.html" data-i18n="footer.produits.sante">Santé</a></li>
+              <li><a href="/Produits/alv.html" data-i18n="footer.produits.alv">Accidents de la vie</a></li>
+              <li><a href="/Produits/vie.html" data-i18n="footer.produits.vie">Vie</a></li>
+              <li><a href="/Produits/retraite.html" data-i18n="footer.produits.retraite">Retraite</a></li>
             </ul>
           </div>
 
@@ -74,12 +74,12 @@ getFooterHTML() {
           <div>
             <h4 class="text-white text-lg font-bold mb-3" data-i18n="footer.col4.title">Assurance Entreprises</h4>
             <ul class="space-y-2">
-              <li><a href="/Produits/multirisques.html" data-i18n="produits.multirisques">Multirisques</a></li>
-              <li><a href="/Produits/flotte.html" data-i18n="produits.flotte">Flotte automobile</a></li>
-              <li><a href="/Produits/rc.html" data-i18n="produits.rc">Responsabilité Civile</a></li>
-              <li><a href="/Produits/construction.html" data-i18n="produits.construction">Construction</a></li>
-              <li><a href="/Produits/santecollective.html" data-i18n="produits.santecollective">Santé collective</a></li>
-              <li><a href="/Produits/transport.html" data-i18n="produits.transport">Transport</a></li>
+              <li><a href="/Produits/multirisques.html" data-i18n="footer.produits.multirisques">Multirisques</a></li>
+              <li><a href="/Produits/flotte.html" data-i18n="footer.produits.flotte">Flotte automobile</a></li>
+              <li><a href="/Produits/rc.html" data-i18n="footer.produits.rc">Responsabilité Civile</a></li>
+              <li><a href="/Produits/construction.html" data-i18n="footer.produits.construction">Construction</a></li>
+              <li><a href="/Produits/santecollective.html" data-i18n="footer.produits.santecollective">Santé collective</a></li>
+              <li><a href="/Produits/transport.html" data-i18n="footer.produits.transport">Transport</a></li>
             </ul>
           </div>
 
@@ -192,6 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = FooterComponent;
 }
+
 
 
 
