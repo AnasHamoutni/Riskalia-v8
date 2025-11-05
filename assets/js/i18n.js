@@ -56,7 +56,7 @@ window.I18N = {
       title: "Réassurance en Traités & Cessions Facultatives :",
       subtitle: "Une maîtrise de bout en bout",
       traites: {
-        title: "Traités sur mesure pour portefeuilles : une maîtrise de la conception à l’indemnisation",
+        title: "Traités sur mesure pour portefeuilles : De la conception à l’indemnisation",
         desc: "Nous concevons des programmes de réassurance clairs, robustes et pérennes, alignés sur vos objectifs techniques et financiers.",
       },
       facultatives: {
@@ -2512,7 +2512,7 @@ window.I18N = {
       title: "Reinsurance in Treaties & Facultative Cessions:",
       subtitle: "End-to-end expertise",
       traites: {
-        title: "Tailor-made treaties for your portfolios: From design to claims, a fully controlled chain.",
+        title: "Tailor-made treaties for portfolios: From design to claims settlement.",
         desc: "We design clear, robust, and sustainable reinsurance programs aligned with your technical and financial objectives.",
       },
       facultatives: {
@@ -4935,7 +4935,7 @@ window.I18N = {
       title: "إعادة التأمين في المعاهدات والتنازلات الاختيارية:",
       subtitle: "إتقان شامل من البداية إلى النهاية",
       traites: {
-        title: "معاهدات مصممة خصيصًا لمحافظكم: من التصميم إلى التعويض، سلسلة مُتحكَّم فيها بالكامل.",
+        title: "اتفاقيات إعادة تأمين مُصمَّمة خصيصًا للمحافظ: من التصميم إلى التعويض.",
         desc: "نُصمّم برامج إعادة تأمين واضحة، قوية، ومستدامة، ومتوافقة مع أهدافكم التقنية والمالية.",
       },
       facultatives: {
@@ -7317,6 +7317,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
