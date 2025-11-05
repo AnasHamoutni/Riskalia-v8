@@ -131,144 +131,61 @@
                 vers vous sous 1 jour ouvré.
               </p>
 
-              <form
-                class="space-y-4"
-                action="mailto:contact@riskalia.ma"
-                method="post"
-                enctype="text/plain"
-              >
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div class="space-y-2">
-                    <label
-                      for="fname"
-                      class="block text-sm font-medium text-gray-700"
-                      data-i18n="contact.form.fname"
-                      >Prénom</label
-                    >
-                    <input
-                      id="fname"
-                      name="Prénom"
-                      required
-                      placeholder="Ex. Sara"
-                      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
-                    />
-                  </div>
-                  <div class="space-y-2">
-                    <label
-                      for="lname"
-                      class="block text-sm font-medium text-gray-700"
-                      data-i18n="contact.form.lname"
-                      >Nom</label
-                    >
-                    <input
-                      id="lname"
-                      name="Nom"
-                      required
-                      placeholder="Ex. El Amrani"
-                      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
-                    />
-                  </div>
-                </div>
+<form id="contact-form" class="space-y-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="space-y-2">
+      <label for="fname" class="block text-sm font-medium text-gray-700">Prénom</label>
+      <input id="fname" name="fname" required placeholder="Ex. Sara"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm" />
+    </div>
+    <div class="space-y-2">
+      <label for="lname" class="block text-sm font-medium text-gray-700">Nom</label>
+      <input id="lname" name="lname" required placeholder="Ex. El Amrani"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm" />
+    </div>
+  </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div class="space-y-2">
-                    <label
-                      for="email"
-                      class="block text-sm font-medium text-gray-700"
-                      data-i18n="contact.form.email"
-                      >E-mail</label
-                    >
-                    <input
-                      id="email"
-                      type="email"
-                      name="Email"
-                      required
-                      placeholder="vous@exemple.com"
-                      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
-                    />
-                  </div>
-                  <div class="space-y-2">
-                    <label
-                      for="phone"
-                      class="block text-sm font-medium text-gray-700"
-                      data-i18n="contact.form.phone"
-                      >Téléphone</label
-                    >
-                    <input
-                      id="phone"
-                      type="tel"
-                      name="Téléphone"
-                      placeholder="+212 …"
-                      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
-                    />
-                  </div>
-                </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="space-y-2">
+      <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+      <input id="email" type="email" name="email" required placeholder="vous@exemple.com"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm" />
+    </div>
+    <div class="space-y-2">
+      <label for="phone" class="block text-sm font-medium text-gray-700">Téléphone</label>
+      <input id="phone" type="tel" name="phone" placeholder="+212 …"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm" />
+    </div>
+  </div>
 
-                <div class="space-y-2">
-                  <label
-                    for="topic"
-                    class="block text-sm font-medium text-gray-700"
-                    data-i18n="contact.form.topic"
-                    >Sujet</label
-                  >
-                  <select
-                    id="topic"
-                    name="Sujet"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
-                  >
-                    <option value="devis" data-i18n="contact.form.opt.quote">
-                      Demande de devis
-                    </option>
-                    <option value="rdv" data-i18n="contact.form.opt.meeting">
-                      Prendre rendez-vous
-                    </option>
-                    <option
-                      value="partenariat"
-                      data-i18n="contact.form.opt.partner"
-                    >
-                      Partenariat
-                    </option>
-                    <option value="autre" data-i18n="contact.form.opt.other">
-                      Autre
-                    </option>
-                  </select>
-                </div>
+  <div class="space-y-2">
+    <label for="topic" class="block text-sm font-medium text-gray-700">Sujet</label>
+    <select id="topic" name="topic"
+      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm">
+      <option value="devis">Demande de devis</option>
+      <option value="rdv">Prendre rendez-vous</option>
+      <option value="partenariat">Partenariat</option>
+      <option value="autre">Autre</option>
+    </select>
+  </div>
 
-                <div class="space-y-2">
-                  <label
-                    for="msg"
-                    class="block text-sm font-medium text-gray-700"
-                    data-i18n="contact.form.msg"
-                    >Message</label
-                  >
-                  <textarea
-                    id="msg"
-                    name="Message"
-                    required
-                    placeholder="Décrivez votre demande..."
-                    rows="4"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm resize-none"
-                  ></textarea>
-                </div>
+  <div class="space-y-2">
+    <label for="msg" class="block text-sm font-medium text-gray-700">Message</label>
+    <textarea id="msg" name="message" required placeholder="Décrivez votre demande..." rows="4"
+      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm resize-none"></textarea>
+  </div>
 
-                <div
-                  class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2"
-                >
-                  <button
-                    class="bg-gradient-to-r from-[var(--c3)] to-[var(--c2)] hover:from-[var(--c2)] hover:to-[var(--c1)] text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 shadow-lg hover:shadow-xl"
-                    type="submit"
-                    data-i18n="contact.form.submit"
-                  >
-                    Envoyer
-                  </button>
-                  <span
-                    class="text-xs text-gray-500"
-                    data-i18n="contact.form.note"
-                  >
-                    En cliquant "Envoyer", vous acceptez d'être recontacté(e).
-                  </span>
-                </div>
-              </form>
+  <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
+    <button
+      class="bg-gradient-to-r from-[var(--c3)] to-[var(--c2)] hover:from-[var(--c2)] hover:to-[var(--c1)] text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 shadow-lg hover:shadow-xl"
+      type="submit">Envoyer</button>
+    <span class="text-xs text-gray-500">
+      En cliquant "Envoyer", vous acceptez d'être recontacté(e).
+    </span>
+  </div>
+</form>
+
+
             </article>
 
             <!-- Contact Information -->
@@ -488,8 +405,42 @@
 
     <!-- Footer Component Script -->
     <script src="assets/js/components/FooterComponent.js"></script>
+ <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  // Initialize EmailJS
+  (function () {
+    emailjs.init({ publicKey: "6LcIjAMsAAAAAEUHP0EeF6lAZRPjfG1_-U-rTkeB" }); // <-- replace with your EmailJS public key
+  })();
+
+  // Handle the form submission
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("#contact-form");
+
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Send the form
+        emailjs.sendForm("service_k1ob3bf", "template_lmbrfrb", form)
+          .then(() => {
+            alert("✅ Message envoyé avec succès !");
+            form.reset();
+            grecaptcha.reset();
+          })
+          .catch((err) => {
+            console.error("❌ EmailJS error:", err);
+            alert("Une erreur s'est produite. Veuillez réessayer plus tard.");
+          });
+      });
+    }
+  });
+</script>
+
   </body>
 </html>
+
 
 
 
