@@ -2246,14 +2246,14 @@ window.I18N = {
         next: "Riskalia Auto",
       },
     },
-    schengen: {
+    auto: {
     title: "RISKALIA Auto",
     subtitle: "Assurance automobile — Tiers+, Collision, Tous Risques Premium.",
     desc: "Rigoureux. Transparent. Réactif. Trois niveaux de couverture adaptés à votre véhicule et à votre usage.",
     bullets: [
       "Assistance 24/7 & réseau agréé",
       "Protection du conducteur & du véhicule",
-      "Trois niveaux : Tiers+, Collision, Tous Risques Premium",
+      "3 niveaux : Tiers+, Collision, Tous Risques Premium",
     ],
     hero: {
       cta1: "En savoir plus",
@@ -4670,14 +4670,14 @@ window.I18N = {
         next: "Car",
       },
     },
-    schengen: {
+    auto: {
     title: "RISKALIA Auto",
     subtitle: "Car insurance — Third Party+, Collision, All-Risks Premium.",
     desc: "Rigorous. Transparent. Responsive. Three coverage levels tailored to your vehicle and usage.",
     bullets: [
       "24/7 roadside assistance & partner network",
       "Driver and vehicle protection",
-      "Three levels: Third+, Collision, All-Risks Premium",
+      "3 levels: Third+, Collision, All-Risks Premium",
     ],
     hero: {
       cta1: "Learn more",
@@ -7034,7 +7034,7 @@ window.I18N = {
         next: "سفر شنغن",
       },
     },
-    schengen: {
+    auto: {
     title: "ريسكاليا تأمين السيارات",
     subtitle: "تأمين السيارات — المسؤولية المدنية+، التصادم، جميع الأخطار.",
     desc: "دقة. شفافية. سرعة. ثلاث مستويات من التغطية مصممة حسب نوع السيارة والاستخدام.",
@@ -7317,6 +7317,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
