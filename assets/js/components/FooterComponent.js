@@ -102,7 +102,6 @@ getFooterHTML() {
   `;
 }
 
-
   setupEventListeners() {
     // Listen for language changes to update footer content
     document.addEventListener("languageChanged", (e) => {
@@ -183,6 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = FooterComponent;
 }
+
 
 
 
