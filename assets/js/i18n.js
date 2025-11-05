@@ -60,7 +60,7 @@ window.I18N = {
         desc: "Nous concevons des programmes de réassurance clairs, robustes et pérennes, alignés sur vos objectifs techniques et financiers.",
       },
       facultatives: {
-        title: "Cessions en réassurance facultatives : Vos facultatives. Notre expertise",
+        title: "Cessions en réassurance facultatives : Vos facultatives. Notre expertise.",
         desc: "Des solutions de réassurance intégrées assuré ou assureur, pensées pour la performance et la stabilité durable.",
       },
       sinistres: {
@@ -7317,6 +7317,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
