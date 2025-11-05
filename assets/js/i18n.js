@@ -42,11 +42,11 @@ window.I18N = {
       },
       particuliers: {
         title: "Particuliers",
-        item1: "Santé",
-        item2: "Accidents de la vie",
-        item3: "Biens (Habitation)",
-        item4: "Assurance-vie & placements",
-        item5: "Voyage Schengen",
+        item1: "Automobile",
+        item2: "Santé",
+        item3: "Accidents de la vie",
+        item4: "Biens (Habitation)",
+        item5: "Assurance-vie & placements",
         item6: "Retraite",
         link: "Voir toutes les solutions →",
       },
@@ -2243,121 +2243,60 @@ window.I18N = {
       },
       nav: {
         prev: "Biens (Habitation)",
-        next: "Voyage Schengen",
+        next: "Riskalia Auto",
       },
     },
     schengen: {
-      title: "Voyage Schengen",
-      subtitle:
-        "Attestation conforme visa • Frais médicaux & hospitalisation • Assistance & rapatriement • Bagages • Options annulation.",
-      badges: ["Certificat visa", "24/7 assistance", "Rapatriement"],
-      tabs: {
-        over: "Aperçu",
-        cov: "Garanties",
-        doc: "Documents & process",
-        lim: "Exclusions & limites",
-        claim: "Frais & sinistres",
-        faq: "FAQ",
-      },
-      over: {
-        t: "1. Aperçu",
-        p: "Assurance de voyage conforme aux exigences du visa Schengen : prise en charge des <strong>frais médicaux d'urgence</strong>, <strong>hospitalisation</strong> et <strong>rapatriement</strong>, avec attestation nominative.",
-        li: [
-          "Couverture dès 30 000 € de frais médicaux (minimum Schengen) ou plus selon formule.",
-          "Période courte/longue durée, multi-entrées en option.",
-          "Livraison de l'attestation pour dépôt du dossier visa.",
-        ],
-        k0: "Zone",
-        k0l: "Espace Schengen",
-        k1: "Plafond",
-        k1l: "≥ 30 000 €",
-        k2: "Service",
-        k2l: "Assistance 24/7",
-      },
-      cov: {
-        t: "2. Garanties principales",
-        c0: {
-          t: "Frais médicaux & hospitalisation",
-          li: [
-            "Urgences, actes médicaux et hospitalisation.",
-            "Transport sanitaire & soins d'urgence dentaires (plafonds).",
-          ],
-        },
-        c1: {
-          t: "Assistance & rapatriement",
-          li: [
-            "Rapatriement médical / corps, accompagnement proche.",
-            "Prolongation d'hôtel en cas de convalescence (plafonds).",
-          ],
-        },
-        c2: {
-          t: "Bagages & retard",
-          li: [
-            "Perte/vol/détérioration de bagages (franchises et limites).",
-            "Retard de vol/bagages (indemnité forfaitaire).",
-          ],
-        },
-        c3: {
-          t: "Options",
-          li: [
-            "Annulation/interruption de voyage (causes couvertes).",
-            "Responsabilité civile vie privée à l'étranger.",
-          ],
-        },
-      },
-      doc: {
-        t: "3. Documents & process",
-        li: [
-          "Passeport, dates et pays visités, motif & coordonnées.",
-          "Dates exactes de couverture = période du voyage/visa.",
-          "Émission de l'attestation nominative (PDF) pour le dossier.",
-        ],
-        note: "Délais rapides possibles. Multi-entrées et extensions à la demande.",
-      },
-      lim: {
-        t: "4. Exclusions & limites (exemples)",
-        li: [
-          "Maladies préexistantes non soudaines (selon conditions).",
-          "Sports extrêmes ou zones sous sanctions (si non optionnées).",
-          "Franchises et plafonds par garantie (voir notice).",
-        ],
-      },
-      claim: {
-        t: "5. Tarification & sinistres",
-        c0: {
-          t: "Tarification",
-          li: [
-            "Prime selon durée, âge, destination, options.",
-            "Réductions groupe / famille possibles.",
-          ],
-        },
-        c1: {
-          t: "Déclaration d'un sinistre",
-          li: [
-            "Assistance 24/7 (numéro sur l'attestation).",
-            "Conservez factures, rapports médicaux, preuves de retard/perte.",
-          ],
-        },
-      },
-      faq: {
-        t: "6. FAQ",
-        q0: "Quel plafond pour le visa Schengen ?",
-        a0: "Un minimum de 30 000 € de frais médicaux & rapatriement est requis. Nous proposons des formules supérieures si besoin.",
-        q1: "Quand recevoir l'attestation ?",
-        a1: "Généralement sous 24h ouvrées après validation des informations et du paiement.",
-        q2: "Puis-je prolonger ma couverture ?",
-        a2: "Oui, sur demande avant l'expiration initiale (selon conditions de l'assureur).",
-      },
-      cta: {
-        t: "Prêt pour votre départ ?",
-        p: "Nous émettons une attestation conforme et calibrons vos garanties selon la durée et les exigences de votre consulat.",
-        quote: "Obtenir un devis",
-        talk: "Parler à un conseiller",
-      },
-      nav: {
-        prev: "Assurance-vie & placements",
-        next: "Retraite",
-      },
+    title: "RISKALIA Auto",
+    subtitle: "Assurance automobile — Tiers+, Collision, Tous Risques Premium.",
+    desc: "Rigoureux. Transparent. Réactif. Trois niveaux de couverture adaptés à votre véhicule et à votre usage.",
+    bullets: [
+      "Assistance 24/7 & réseau agréé",
+      "Protection du conducteur & du véhicule",
+      "Trois niveaux : Tiers+, Collision, Tous Risques Premium",
+    ],
+    hero: {
+      cta1: "En savoir plus",
+      cta2: "Obtenir un devis",
+    },
+    table: {
+      title: "Tableau – Offre produit RISKALIA AUTO",
+      headers: [
+        "Niveau de couverture",
+        "Garanties principales",
+        "Services différenciants inclus / en option",
+        "Profil / conditions d’éligibilité",
+      ],
+    },
+    tiers: {
+      title: "Tiers +",
+      content: [
+        "Responsabilité Civile obligatoire",
+        "Défense & Recours",
+        "Bris de glaces",
+        "Incendie",
+        "Option Vol",
+      ],
+    },
+    collision: {
+      title: "Dommage Collision",
+      content: [
+        "Garanties Tiers +",
+        "Dommages au véhicule (collision avec tiers identifié)",
+        "Protection juridique",
+      ],
+    },
+    premium: {
+      title: "Tous Risques Premium",
+      content: [
+        "Garanties Dommage Collision +",
+        "Dommages tous accidents",
+        "Vol, incendie, bris de glaces, événements naturels",
+        "Valeur à neuf / majorée",
+        "Protection conducteur & passagers",
+      ],
+    },
+    slogan: "RISKALIA Auto — Rigoureux. Transparent. Réactif.",
     },
     retraite: {
       title: "Retraite (épargne longue)",
@@ -2493,7 +2432,7 @@ window.I18N = {
         talk: "Parler à un conseiller",
       },
       nav: {
-        prev: "Voyage Schengen",
+        prev: "Riskalia Auto",
         next: "Santé",
       },
     },
@@ -2559,11 +2498,11 @@ window.I18N = {
       },
       particuliers: {
         title: "Personal",
-        item1: "Health",
-        item2: "Personal accident",
-        item3: "Property (Home)",
-        item4: "Life insurance & investments",
-        item5: "Schengen travel",
+        item1: "Car",
+        item2: "Health",
+        item3: "Personal accident",
+        item4: "Property (Home)",
+        item5: "Life insurance & investments",
         item6: "Retirement",
         link: "View all solutions →",
       },
@@ -4728,121 +4667,60 @@ window.I18N = {
       },
       nav: {
         prev: "Home (Property)",
-        next: "Schengen Travel",
+        next: "Car",
       },
     },
     schengen: {
-      title: "Schengen Travel",
-      subtitle:
-        "Visa-compliant certificate • Medical & hospital cover • Assistance & repatriation • Baggage • Optional cancellation.",
-      badges: ["Visa certificate", "24/7 assistance", "Repatriation"],
-      tabs: {
-        over: "Overview",
-        cov: "Cover",
-        doc: "Documents & process",
-        lim: "Exclusions & limits",
-        claim: "Pricing & claims",
-        faq: "FAQ",
-      },
-      over: {
-        t: "1. Overview",
-        p: "Travel insurance compliant with Schengen visa requirements: emergency medical, hospitalisation and repatriation — with a named certificate.",
-        li: [
-          "Medical cover from €30,000 (Schengen minimum) or higher per plan.",
-          "Short/long stays, multi-entry optional.",
-          "Named certificate issued for the visa file.",
-        ],
-        k0: "Area",
-        k0l: "Schengen zone",
-        k1: "Limit",
-        k1l: "≥ €30,000",
-        k2: "Service",
-        k2l: "24/7 assistance",
-      },
-      cov: {
-        t: "2. Main cover",
-        c0: {
-          t: "Medical & hospital",
-          li: [
-            "Emergency treatment and hospitalisation.",
-            "Medical transport & urgent dental care (limits).",
-          ],
-        },
-        c1: {
-          t: "Assistance & repatriation",
-          li: [
-            "Medical/body repatriation, relative accompaniment.",
-            "Hotel extension during recovery (limits).",
-          ],
-        },
-        c2: {
-          t: "Baggage & delay",
-          li: [
-            "Loss/theft/damage (deductibles/limits).",
-            "Flight/baggage delay (lump-sum).",
-          ],
-        },
-        c3: {
-          t: "Options",
-          li: [
-            "Trip cancellation/interruption (named causes).",
-            "Personal liability abroad.",
-          ],
-        },
-      },
-      doc: {
-        t: "3. Documents & process",
-        li: [
-          "Passport, dates & countries, purpose & contacts.",
-          "Exact cover dates = trip/visa period.",
-          "Named PDF certificate issued for the file.",
-        ],
-        note: "Fast turnaround possible. Multi-entry and extensions available.",
-      },
-      lim: {
-        t: "4. Exclusions & limits (examples)",
-        li: [
-          "Non-sudden pre-existing conditions (per terms).",
-          "Extreme sports or sanctioned areas (unless opted).",
-          "Deductibles and sub-limits per section (policy).",
-        ],
-      },
-      claim: {
-        t: "5. Pricing & claims",
-        c0: {
-          t: "Pricing",
-          li: [
-            "Premium by duration, age, destination, options.",
-            "Group/family discounts available.",
-          ],
-        },
-        c1: {
-          t: "How to claim",
-          li: [
-            "24/7 assistance number on your certificate.",
-            "Keep bills, medical reports, proof of delay/loss.",
-          ],
-        },
-      },
-      faq: {
-        t: "6. FAQ",
-        q0: "What minimum limit for Schengen visa?",
-        a0: "At least €30,000 for medical & repatriation is required. Higher limits available.",
-        q1: "When will I receive the certificate?",
-        a1: "Typically within 1 business day after validation and payment.",
-        q2: "Can I extend my cover?",
-        a2: "Yes, on request before the initial expiry (insurer conditions apply).",
-      },
-      cta: {
-        t: "Ready for departure?",
-        p: "We issue a compliant certificate and tailor cover to your itinerary and consulate requirements.",
-        quote: "Get a quote",
-        talk: "Talk to an advisor",
-      },
-      nav: {
-        prev: "Life insurance & savings",
-        next: "Retirement",
-      },
+    title: "RISKALIA Auto",
+    subtitle: "Car insurance — Third Party+, Collision, All-Risks Premium.",
+    desc: "Rigorous. Transparent. Responsive. Three coverage levels tailored to your vehicle and usage.",
+    bullets: [
+      "24/7 roadside assistance & partner network",
+      "Driver and vehicle protection",
+      "Three levels: Third+, Collision, All-Risks Premium",
+    ],
+    hero: {
+      cta1: "Learn more",
+      cta2: "Get a quote",
+    },
+    table: {
+      title: "Table – RISKALIA AUTO Product Offer",
+      headers: [
+        "Coverage level",
+        "Main guarantees",
+        "Included / optional differentiating services",
+        "Profile / eligibility conditions",
+      ],
+    },
+    tiers: {
+      title: "Third Party +",
+      content: [
+        "Mandatory liability insurance",
+        "Legal defense & recourse",
+        "Glass breakage",
+        "Fire",
+        "Optional theft",
+      ],
+    },
+    collision: {
+      title: "Collision Damage",
+      content: [
+        "Third+ coverage",
+        "Vehicle damage (collision with identified third party)",
+        "Legal protection",
+      ],
+    },
+    premium: {
+      title: "All-Risks Premium",
+      content: [
+        "Collision Damage + guarantees",
+        "All accident coverage",
+        "Theft, fire, glass breakage, natural events",
+        "Replacement or new value",
+        "Driver & passenger protection",
+      ],
+    },
+    slogan: "RISKALIA Auto — Rigorous. Transparent. Responsive.",
     },
     retraite: {
       title: "Retirement (long-term savings)",
@@ -4978,7 +4856,7 @@ window.I18N = {
         talk: "Talk to an advisor",
       },
       nav: {
-        prev: "Schengen Travel",
+        prev: "Car",
         next: "Health",
       },
     },
@@ -7157,114 +7035,56 @@ window.I18N = {
       },
     },
     schengen: {
-      title: "سفر شنغن",
-      subtitle:
-        "شهادة مطابقة للتأشيرة • نفقات طبية وتنويم • مساعدة وإعادة للوطن • أمتعة • خيار إلغاء الرحلة.",
-      badges: ["شهادة التأشيرة", "مساعدة 24/7", "إعادة للوطن"],
-      tabs: {
-        over: "لمحة",
-        cov: "التغطيات",
-        doc: "المستندات والإجراء",
-        lim: "الاستثناءات والحدود",
-        claim: "التسعير والمطالبات",
-        faq: "الأسئلة الشائعة",
-      },
-      over: {
-        t: "١. لمحة",
-        p: "تأمين سفر مطابق لمتطلبات تأشيرة شنغن: نفقات طبية طارئة وتنويم وإعادة للوطن، مع شهادة بالاسم.",
-        li: [
-          "تغطية طبية من 30,000€ (الحد الأدنى لشنغن) أو أعلى حسب الخطة.",
-          "رحلات قصيرة/طويلة، دخول متعدد اختياري.",
-          "إصدار شهادة بالاسم لملف التأشيرة.",
-        ],
-        k0: "النطاق",
-        k0l: "منطقة شنغن",
-        k1: "الحد",
-        k1l: "≥ 30,000€",
-        k2: "الخدمة",
-        k2l: "مساعدة 24/7",
-      },
-      cov: {
-        t: "٢. التغطيات الأساسية",
-        c0: {
-          t: "نفقات طبية وتنويم",
-          li: [
-            "علاج طارئ وتنويم بالمستشفى.",
-            "نقل طبي وعلاج أسنان طارئ (حدود).",
-          ],
-        },
-        c1: {
-          t: "المساعدة والإعادة للوطن",
-          li: [
-            "إعادة طبية/جثمان ومرافقة قريب.",
-            "تمديد فندق أثناء التعافي (حدود).",
-          ],
-        },
-        c2: {
-          t: "الأمتعة والتأخير",
-          li: [
-            "فقدان/سرقة/تلف الأمتعة (خصومات/حدود).",
-            "تأخير الرحلة/الأمتعة (تعويض مقطوع).",
-          ],
-        },
-        c3: {
-          t: "خيارات",
-          li: ["إلغاء/قطع الرحلة (أسباب محددة).", "مسؤولية مدنية في الخارج."],
-        },
-      },
-      doc: {
-        t: "٣. المستندات والإجراء",
-        li: [
-          "جواز سفر، التواريخ والدول، الغرض وبيانات الاتصال.",
-          "تواريخ التغطية = فترة الرحلة/التأشيرة.",
-          "إصدار شهادة PDF بالاسم للملف.",
-        ],
-        note: "إمكانية إنجاز سريع. دخول متعدد وتمديدات متاحة.",
-      },
-      lim: {
-        t: "٤. الاستثناءات والحدود (أمثلة)",
-        li: [
-          "حالات سابقة غير مفاجئة (حسب الشروط).",
-          "رياضات خطرة أو مناطق خاضعة لعقوبات (ما لم تُختر).",
-          "خصومات وحدود فرعية لكل بند (البوليصة).",
-        ],
-      },
-      claim: {
-        t: "٥. التسعير والمطالبات",
-        c0: {
-          t: "التسعير",
-          li: [
-            "القسط حسب المدة والعمر والوجهة والخيارات.",
-            "خصومات للمجموعات/العائلات.",
-          ],
-        },
-        c1: {
-          t: "تقديم مطالبة",
-          li: [
-            "رقم المساعدة 24/7 موجود على الشهادة.",
-            "احتفظ بالفواتير والتقارير الطبية وأدلة التأخير/الفقد.",
-          ],
-        },
-      },
-      faq: {
-        t: "٦. الأسئلة الشائعة",
-        q0: "ما الحد الأدنى لتأشيرة شنغن؟",
-        a0: "على الأقل 30,000€ للنفقات الطبية والإعادة للوطن. تتوفر حدود أعلى.",
-        q1: "متى أحصل على الشهادة؟",
-        a1: "عادة خلال يوم عمل بعد التحقق والدفع.",
-        q2: "هل أستطيع تمديد التغطية؟",
-        a2: "نعم بطلب قبل انتهاء المدة الأولى (وفق شروط الشركة).",
-      },
-      cta: {
-        t: "جاهز للانطلاق؟",
-        p: "نصدر شهادة مطابقة ونلائم التغطية وفق رحلتك ومتطلبات القنصلية.",
-        quote: "اطلب عرضاً",
-        talk: "تحدث إلى مستشار",
-      },
-      nav: {
-        prev: "تأمين الحياة والادخار",
-        next: "التقاعد",
-      },
+    title: "ريسكاليا تأمين السيارات",
+    subtitle: "تأمين السيارات — المسؤولية المدنية+، التصادم، جميع الأخطار.",
+    desc: "دقة. شفافية. سرعة. ثلاث مستويات من التغطية مصممة حسب نوع السيارة والاستخدام.",
+    bullets: [
+      "مساعدة على مدار الساعة وشبكة معتمدة",
+      "حماية السائق والمركبة",
+      "ثلاث مستويات تغطية: المسؤولية المدنية+، التصادم، جميع الأخطار",
+    ],
+    hero: {
+      cta1: "اعرف المزيد",
+      cta2: "احصل على عرض",
+    },
+    table: {
+      title: "جدول – عرض منتج ريسكاليا للسيارات",
+      headers: [
+        "مستوى التغطية",
+        "الضمانات الأساسية",
+        "الخدمات المميزة المضمنة / الاختيارية",
+        "الملف الشخصي / شروط الأهلية",
+      ],
+    },
+    tiers: {
+      title: "المسؤولية المدنية +",
+      content: [
+        "تأمين المسؤولية المدنية الإجباري",
+        "الدفاع والمطالبة بالحقوق",
+        "كسر الزجاج",
+        "الحريق",
+        "خيار السرقة",
+      ],
+    },
+    collision: {
+      title: "أضرار التصادم",
+      content: [
+        "ضمانات المسؤولية المدنية +",
+        "أضرار بالمركبة (تصادم مع طرف محدد)",
+        "حماية قانونية",
+      ],
+    },
+    premium: {
+      title: "جميع الأخطار المميزة",
+      content: [
+        "ضمانات أضرار التصادم +",
+        "تغطية لجميع الحوادث",
+        "السرقة، الحريق، الكسر، الكوارث الطبيعية",
+        "قيمة جديدة / مضافة",
+        "حماية السائق والركاب",
+      ],
+    },
+    slogan: "ريسكاليا للسيارات — دقة. شفافية. سرعة.",
     },
     retraite: {
       title: "التقاعد (ادخار طويل الأجل)",
@@ -7497,6 +7317,7 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
 
 
 
