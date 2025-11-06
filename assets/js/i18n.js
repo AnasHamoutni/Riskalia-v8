@@ -289,53 +289,53 @@ window.I18N = {
         subtitle:
           "Commençons par un diagnostic rapide de vos expositions et opportunités.",
       },
-footer: {
-    col1: {
-      title: "Riskalia",
-      address:
-        "Cabinet de courtage & stratégies agréé ACAPS.<br/>Siège : 16, Rue de Terves, 2ème étage,<br/>Quartier Mers Sultan, Casablanca.",
-      notice:
-        "Intermédiaire d'assurance régi par la loi 17-99 portant code des assurances.<br/>Sous la décision n°COU5047.00000.0.C.2025.472."
     },
-    col2: { title: "Navigation" },
-    col3: { title: "Assurance Particuliers" },
-    col4: { title: "Assurance Entreprises" },
-    col5: {
-      title: "Contact",
-      tel1label: "Tél :",
-      tel1: "+212 666 756 991",
-      tel2label: "Tél :",
-      tel2: "+212 675 208 909",
-      emailLabel: "Email :",
-      email: "contact@riskalia.ma"
+    footer: {
+      col1: {
+        title: "Riskalia",
+        address:
+          "Cabinet de courtage & stratégies agréé ACAPS.<br/>Siège : 16, Rue de Terves, 2ème étage,<br/>Quartier Mers Sultan, Casablanca.",
+        notice:
+          "Intermédiaire d'assurance régi par la loi 17-99 portant code des assurances.<br/>Sous la décision n°COU5047.00000.0.C.2025.472."
+      },
+      col2: { title: "Navigation" },
+      col3: { title: "Assurance Particuliers" },
+      col4: { title: "Assurance Entreprises" },
+      col5: {
+        title: "Contact",
+        tel1label: "Tél :",
+        tel1: "+212 666 756 991",
+        tel2label: "Tél :",
+        tel2: "+212 675 208 909",
+        emailLabel: "Email :",
+        email: "contact@riskalia.ma"
+      },
+      copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés."
     },
-    copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés."
-  },
 
-  produits: {
-    auto: "Auto",
-    habitation: "Habitation",
-    sante: "Santé",
-    alv: "Accidents de la vie",
-    vie: "Vie",
-    retraite: "Retraite",
-    multirisques: "Multirisques",
-    flotte: "Flotte automobile",
-    rc: "Responsabilité Civile",
-    construction: "Construction",
-    santecollective: "Santé collective",
-    transport: "Transport"
-  },
+    produits: {
+      auto: "Auto",
+      habitation: "Habitation",
+      sante: "Santé",
+      alv: "Accidents de la vie",
+      vie: "Vie",
+      retraite: "Retraite",
+      multirisques: "Multirisques",
+      flotte: "Flotte automobile",
+      rc: "Responsabilité Civile",
+      construction: "Construction",
+      santecollective: "Santé collective",
+      transport: "Transport"
+    },
 
-  nav: {
-    home: "Accueil",
-    solutions: "Solutions",
-    re: "Réassurance",
-    climate: "Risques Climatiques",
-    esg: "ESG",
-    services: "Services de Conseil"
-  },
-},
+    nav: {
+      home: "Accueil",
+      solutions: "Solutions",
+      re: "Réassurance",
+      climate: "Risques Climatiques",
+      esg: "ESG",
+      services: "Services de Conseil"
+    },
     reinsurance: {
       hero: {
         title: "Réassurance — Programmes & Conseil",

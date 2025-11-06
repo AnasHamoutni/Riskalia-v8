@@ -18,6 +18,16 @@ class FooterComponent {
     if (!footerContainer) return;
 
     footerContainer.innerHTML = this.getFooterHTML();
+
+    // Apply translations immediately after rendering
+    // Use requestAnimationFrame to ensure DOM is updated first
+    requestAnimationFrame(() => {
+      if (typeof window.applyTexts === "function") {
+        window.applyTexts();
+      } else if (typeof window.applyI18n === "function") {
+        window.applyI18n();
+      }
+    });
   }
 
 getFooterHTML() {
