@@ -18,6 +18,11 @@ class FooterComponent {
     if (!footerContainer) return;
 
     footerContainer.innerHTML = this.getFooterHTML();
+
+    // Apply translations after rendering
+    setTimeout(() => {
+      this.updateTranslations();
+    }, 50);
   }
 
 getFooterHTML() {
@@ -118,10 +123,7 @@ getFooterHTML() {
       this.updateTranslations();
     });
 
-    // Update translations on initial load
-    setTimeout(() => {
-      this.updateTranslations();
-    }, 100);
+    // Translations are now applied in render() method
   }
 
   updateTranslations() {
