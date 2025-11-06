@@ -19,23 +19,9 @@ class FooterComponent {
 
     footerContainer.innerHTML = this.getFooterHTML();
 
-    // Wait for i18n to be loaded before translating (with timeout)
-    let attempts = 0;
-    const maxAttempts = 50; // Max 5 seconds
-
-    const waitForI18n = () => {
-      attempts++;
-      if (typeof window.I18N === "object" && typeof window.t === "function") {
-        this.updateTranslations();
-      } else if (attempts < maxAttempts) {
-        // Retry after a short delay
-        setTimeout(waitForI18n, 100);
-      } else {
-        console.error("FooterComponent: i18n.js failed to load after 5 seconds");
-      }
-    };
-
-    setTimeout(waitForI18n, 50);
+    // Don't call applyTexts here - it will be called by the page's initialization code
+    // when i18n is fully loaded. This prevents overwriting the default text with
+    // translation keys when i18n isn't ready yet.
   }
 
 getFooterHTML() {
@@ -46,9 +32,9 @@ getFooterHTML() {
 
           <!-- Col 1 : Riskalia -->
           <div>
-              <img
-    src="/assets/logo-transparent.png"
-    alt="Riskalia"
+              <img 
+    src="../assets/logo-transparent.png" 
+    alt="Riskalia" 
     class="h-10 w-auto"
   />
             <p class="leading-relaxed mb-3" data-i18n="footer.col1.address">
@@ -136,12 +122,18 @@ getFooterHTML() {
       this.updateTranslations();
     });
 
-    // Translations are now applied in render() method
+    // Update translations on initial load
+    setTimeout(() => {
+      this.updateTranslations();
+    }, 100);
   }
 
   updateTranslations() {
-    // Translate footer elements using window.t() directly
-    if (typeof window.t === "function" && typeof window.I18N === "object") {
+    // Apply translations if the translation system is available
+    if (typeof window.applyI18n === "function") {
+      window.applyI18n();
+    } else if (typeof window.t === "function") {
+      // Fallback translation update
       const elements = document.querySelectorAll(
         ".footer-component [data-i18n]"
       );
@@ -149,9 +141,8 @@ getFooterHTML() {
         const key = el.getAttribute("data-i18n");
         if (key) {
           const text = window.t(key);
-          // Only update if translation exists and is different from key
-          if (text && text !== key) {
-            if (/<br\s*\/?>/i.test(text)) {
+          if (text !== key) {
+            if (/<br\s*\/?>/i.test(el.innerHTML)) {
               el.innerHTML = text;
             } else {
               el.textContent = text;
