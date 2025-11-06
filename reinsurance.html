@@ -2379,7 +2379,20 @@ s4: {
 
       function t(path) {
         const ns = String(path).split(".");
-        let cur = window.I18N?.[lang];
+
+        // First try with reinsurance. prefix for page-specific content
+        let cur = window.I18N?.[lang]?.reinsurance;
+        for (const n of ns) {
+          if (cur == null || !(n in cur)) {
+            cur = null;
+            break;
+          }
+          cur = cur[n];
+        }
+        if (cur != null && (typeof cur === 'string' || Array.isArray(cur))) return cur;
+
+        // If not found in reinsurance, try the full path in I18N
+        cur = window.I18N?.[lang];
         for (const n of ns) {
           if (cur == null || !(n in cur)) return path;
           cur = cur[n];
