@@ -10,12 +10,39 @@ function t(path){
   return cur;
 }
 
+// Convert Western numerals to Arabic-Indic numerals
+function toArabicNumerals(str) {
+  const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+  return str.replace(/\d/g, (digit) => arabicNumerals[parseInt(digit)]);
+}
+
+// Expose toArabicNumerals globally
+window.toArabicNumerals = toArabicNumerals;
+
 function applyTexts(){
   document.documentElement.lang = lang;
   document.body.dir = (lang==='ar'?'rtl':'ltr');
-  document.querySelectorAll('[data-i18n]').forEach(el=>{ el.innerHTML = t(el.dataset.i18n); });
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const translatedText = t(el.dataset.i18n);
+    // Convert phone numbers to Arabic numerals if language is Arabic
+    if (lang === 'ar' && (translatedText.includes('+212') || translatedText.match(/\d{3}[-\s]?\d{3}[-\s]?\d{3}/))) {
+      el.innerHTML = toArabicNumerals(translatedText);
+    } else {
+      el.innerHTML = translatedText;
+    }
+  });
   document.querySelectorAll('[data-ph]').forEach(el=>{ el.placeholder = t(el.dataset.ph); });
   document.querySelectorAll('.lang-btn').forEach(b=> b.classList.toggle('active', b.dataset.lang===lang));
+
+  // Apply Arabic numerals to phone numbers when Arabic is selected
+  if (lang === 'ar') {
+    document.querySelectorAll('span[dir="ltr"]').forEach(el => {
+      if (el.textContent.match(/[\+\d\-\s]+/) && el.textContent.includes('+212')) {
+        const originalText = el.textContent;
+        el.textContent = toArabicNumerals(originalText);
+      }
+    });
+  }
 }
 
 function initLangSwitch(){

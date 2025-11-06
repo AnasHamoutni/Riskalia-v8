@@ -1903,6 +1903,58 @@ class ChatbotComponent {
       input.placeholder = placeholders[this.currentLang] || placeholders.fr;
     }
 
+    // Update static chatbot text elements
+    const chatbotTitle = document.querySelector(".chatbot-title");
+    if (chatbotTitle) {
+      const titles = {
+        fr: "Assistant Riskalia",
+        en: "Riskalia Assistant",
+        ar: "مساعد ريسكاليا",
+      };
+      chatbotTitle.textContent = titles[this.currentLang] || titles.fr;
+    }
+
+    const chatbotSubtitle = document.querySelector(".chatbot-subtitle");
+    if (chatbotSubtitle) {
+      const subtitles = {
+        fr: "Expert en assurance & réassurance",
+        en: "Insurance & reinsurance expert",
+        ar: "خبير التأمين وإعادة التأمين",
+      };
+      chatbotSubtitle.textContent = subtitles[this.currentLang] || subtitles.fr;
+    }
+
+    const typingText = document.querySelector(".chatbot-typing-text");
+    if (typingText) {
+      const typingTexts = {
+        fr: "Riskalia tape...",
+        en: "Riskalia typing...",
+        ar: "ريسكاليا تكتب...",
+      };
+      typingText.textContent = typingTexts[this.currentLang] || typingTexts.fr;
+    }
+
+    // Update welcome message
+    const welcomeMessage = document.querySelector(".chatbot-welcome .chatbot-message-bubble p");
+    if (welcomeMessage) {
+      const welcomeTexts = {
+        fr: "Bonjour ! Je suis votre assistant Riskalia. Comment puis-je vous aider avec vos besoins en assurance ou réassurance ?",
+        en: "Hello! I'm your Riskalia assistant. How can I help you with your insurance or reinsurance needs?",
+        ar: "مرحباً! أنا مساعد ريسكاليا. كيف يمكنني مساعدتك في احتياجاتك من التأمين أو إعادة التأمين؟",
+      };
+      welcomeMessage.textContent = welcomeTexts[this.currentLang] || welcomeTexts.fr;
+    }
+
+    const welcomeTime = document.querySelector(".chatbot-welcome .chatbot-message-time");
+    if (welcomeTime) {
+      const timeTexts = {
+        fr: "Maintenant",
+        en: "Now",
+        ar: "الآن",
+      };
+      welcomeTime.textContent = timeTexts[this.currentLang] || timeTexts.fr;
+    }
+
     // Reset decision tree navigation
     this.currentNode = "root";
     this.navigationHistory = [];

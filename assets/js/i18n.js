@@ -293,7 +293,7 @@ footer: {
     col1: {
       title: "Riskalia",
       address:
-        "Cabinet de courtage & stratégies agréé ACAPS.<br/>Siège : 16, Rue de Terves, 2ème étage,<br/>Quartier Mers Sultan, Casablanca.",
+        "Cabinet de courtage & stratégies agréé ACAPS.<br/>Siège : 16, Rue de Terves, 2ème étage, Quartier Mers Sultan, Casablanca.",
       notice:
         "Intermédiaire d'assurance régi par la loi 17-99 portant code des assurances.<br/>Sous la décision n°COU5047.00000.0.C.2025.472."
     },

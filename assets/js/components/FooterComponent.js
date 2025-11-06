@@ -133,15 +133,27 @@ getFooterHTML() {
       const elements = document.querySelectorAll(
         ".footer-component [data-i18n]"
       );
+      const currentLang = localStorage.getItem("riskalia_lang") || "fr";
+
       elements.forEach((el) => {
         const key = el.getAttribute("data-i18n");
         if (key) {
           const text = window.t(key);
           if (text !== key) {
-            if (/<br\s*\/?>/i.test(el.innerHTML)) {
-              el.innerHTML = text;
+            // Apply Arabic numerals for phone numbers if language is Arabic
+            if (currentLang === 'ar' && typeof window.toArabicNumerals === 'function' &&
+                (text.includes('+212') || text.match(/\d{3}[-\s]?\d{3}[-\s]?\d{3}/))) {
+              if (/<br\s*\/?>/i.test(el.innerHTML)) {
+                el.innerHTML = window.toArabicNumerals(text);
+              } else {
+                el.textContent = window.toArabicNumerals(text);
+              }
             } else {
-              el.textContent = text;
+              if (/<br\s*\/?>/i.test(el.innerHTML)) {
+                el.innerHTML = text;
+              } else {
+                el.textContent = text;
+              }
             }
           }
         }
