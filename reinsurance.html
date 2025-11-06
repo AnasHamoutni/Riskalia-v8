@@ -1439,8 +1439,14 @@
     <!-- Footer Component Container -->
     <div id="footer-container"></div>
 
+    <!-- Load external i18n dictionary -->
+    <script src="assets/js/i18n.js"></script>
+
     <script>
       /* ===================== I18N DICTIONARY (FR/EN/AR) ===================== */
+      // I18N is now loaded from external file
+      // Commenting out inline definition - using external assets/js/i18n.js
+      /*
       window.I18N = {
         fr: {
           meta: {
@@ -2351,7 +2357,8 @@ s4: {
           },
         },
       };
-      /* =================== END I18N DICTIONARY =================== */
+      */
+      /* =================== END I18N DICTIONARY (now external) =================== */
 
       /* ===================== SHARED HELPERS (NO REDECLARATION) ===================== */
       var lang = localStorage.getItem("riskalia_lang") || "fr";

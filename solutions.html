@@ -1003,19 +1003,14 @@
     <div id="footer-container"></div>
 
     <!-- ================== i18n & data ================== -->
+    <!-- Load external i18n dictionary -->
+    <script src="assets/js/i18n.js"></script>
+
     <script>
-      const I18N = {
+      // I18N is now loaded from external file as window.I18N
+      // Keeping local I18N for solutions-specific translations
+      const I18N_SOLUTIONS = {
         fr: {
-          nav: {
-            home: "Accueil",
-            solutions: "Solutions",
-            assurance: "Assurance",
-            re: "Réassurance",
-            climate: "Risques Climatiques",
-            services: "Services de Conseil",
-            esg: "ESG",
-            contact: "Contact",
-          },
           title: "Solutions d'assurance",
           subtitle:
             "Deux parcours : <strong>Entreprises</strong> et <strong>Particuliers</strong>. Produits inspirés des meilleures pratiques du marché (multirisques, transport, flotte, RC, construction… / auto, santé, habitation, vie, retraite).",
@@ -1034,19 +1029,6 @@
             quote: "Obtenir un devis",
             learn: "En savoir plus",
             more: "Parler à un conseiller",
-          },
-          footer: {
-            desc: "Cabinet de courtage & réassurance agréé ACAPS<br/>Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
-            links: "Liens",
-            contact: "Contact",
-            contactBlock: {
-              tel: "Tél 1 :",
-              telNum1: "+212-666-756991",
-              tel2: "Tél 2 :",
-              telNum2: "+212-675-208909",
-              nabil: "E-mail de Nabil :",
-              infos: "Informations générales :",
-            },
           },
           filters: {
             corp: [
@@ -1263,19 +1245,6 @@
             learn: "Learn more",
             more: "Talk to an advisor",
           },
-          footer: {
-            desc: "ACAPS-licensed brokerage & reinsurance<br/>Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
-            links: "Links",
-            contact: "Contact",
-            contactBlock: {
-              tel: "Phone 1 :",
-              telNum1: "+212-666-756991",
-              tel2: "Phone 2 :",
-              telNum2: "+212-675-208909",
-              nabil: "Nabil's e-mail :",
-              infos: "General Information :",
-            },
-          },
           filters: {
             corp: [
               ["all", "All"],
@@ -1486,19 +1455,6 @@
             learn: "تعرّف أكثر",
             more: "تحدث إلى مستشار",
           },
-          footer: {
-            desc: "مكتب وساطة وإعادة تأمين مرخص من ACAPS<br/>المقر: 16، شارع تيرفيس، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
-            links: "روابط",
-            contact: "اتصال",
-            contactBlock: {
-              tel: "هاتف 1 :",
-              tel2: "هاتف 2 :",
-              telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
-              telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
-              nabil: "بريد نبيل الإلكتروني :",
-              infos: "معلومات عامة :",
-            },
-          },
           filters: {
             corp: [
               ["all", "الكل"],
@@ -1688,7 +1644,17 @@
       const $$ = (s, root = document) => [...root.querySelectorAll(s)];
       function t(path) {
         const ns = path.split(".");
-        let cur = I18N[lang];
+
+        // Try external I18N first (common translations: footer, nav, produits, etc.)
+        let cur = window.I18N?.[lang];
+        for (const n of ns) {
+          if (cur == null || !(n in cur)) break;
+          cur = cur[n];
+        }
+        if (typeof cur === 'string' || Array.isArray(cur)) return cur;
+
+        // If not found, try page-specific translations
+        cur = I18N_SOLUTIONS?.[lang];
         for (const n of ns) {
           if (cur == null || !(n in cur)) return path;
           cur = cur[n];
