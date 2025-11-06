@@ -28,9 +28,9 @@ getFooterHTML() {
 
           <!-- Col 1 : Riskalia -->
           <div>
-              <img 
-    src="../assets/logo-transparent.png" 
-    alt="Riskalia" 
+              <img
+    src="/assets/logo-transparent.png"
+    alt="Riskalia"
     class="h-10 w-auto"
   />
             <p class="leading-relaxed mb-3" data-i18n="footer.col1.address">
