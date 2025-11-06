@@ -1064,8 +1064,9 @@
       /* ===================== I18N loaded from external /assets/js/i18n.js ===================== */
 
       /* Helpers */
-      let lang = localStorage.getItem("riskalia_lang") || "fr";
-      if (!["fr", "en", "ar"].includes(lang)) lang = "fr";
+      window.lang = localStorage.getItem("riskalia_lang") || "fr";
+      if (!["fr", "en", "ar"].includes(window.lang)) window.lang = "fr";
+      let lang = window.lang; // Local reference for page scripts
       const $ = (s, root = document) => root.querySelector(s);
       const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
 

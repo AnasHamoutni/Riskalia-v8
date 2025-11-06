@@ -1443,8 +1443,9 @@
       /* ===================== I18N loaded from external /assets/js/i18n.js ===================== */
 
       /* ===================== SHARED HELPERS ===================== */
-      var lang = localStorage.getItem("riskalia_lang") || "fr";
-      if (!["fr", "en", "ar"].includes(lang)) lang = "fr";
+      window.lang = localStorage.getItem("riskalia_lang") || "fr";
+      if (!["fr", "en", "ar"].includes(window.lang)) window.lang = "fr";
+      var lang = window.lang; // Local reference for page scripts
 
       // Flag to prevent scroll-based tab highlighting when user manually clicks
 

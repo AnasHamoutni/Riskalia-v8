@@ -1678,8 +1678,9 @@
       };
 
       /* ================== Helpers ================== */
-      let lang = localStorage.getItem("riskalia_lang") || "fr";
-      if (!["fr", "en", "ar"].includes(lang)) lang = "fr";
+      window.lang = localStorage.getItem("riskalia_lang") || "fr";
+      if (!["fr", "en", "ar"].includes(window.lang)) window.lang = "fr";
+      let lang = window.lang; // Local reference for page scripts
       let seg = "corp";
       let chip = "all";
       let query = "";

@@ -19,10 +19,23 @@ class FooterComponent {
 
     footerContainer.innerHTML = this.getFooterHTML();
 
-    // Apply translations after rendering
-    setTimeout(() => {
-      this.updateTranslations();
-    }, 50);
+    // Wait for i18n to be loaded before translating (with timeout)
+    let attempts = 0;
+    const maxAttempts = 50; // Max 5 seconds
+
+    const waitForI18n = () => {
+      attempts++;
+      if (typeof window.I18N === "object" && typeof window.t === "function") {
+        this.updateTranslations();
+      } else if (attempts < maxAttempts) {
+        // Retry after a short delay
+        setTimeout(waitForI18n, 100);
+      } else {
+        console.error("FooterComponent: i18n.js failed to load after 5 seconds");
+      }
+    };
+
+    setTimeout(waitForI18n, 50);
   }
 
 getFooterHTML() {
@@ -127,11 +140,8 @@ getFooterHTML() {
   }
 
   updateTranslations() {
-    // Apply translations if the translation system is available
-    if (typeof window.applyI18n === "function") {
-      window.applyI18n();
-    } else if (typeof window.t === "function") {
-      // Fallback translation update
+    // Translate footer elements using window.t() directly
+    if (typeof window.t === "function" && typeof window.I18N === "object") {
       const elements = document.querySelectorAll(
         ".footer-component [data-i18n]"
       );
@@ -139,8 +149,9 @@ getFooterHTML() {
         const key = el.getAttribute("data-i18n");
         if (key) {
           const text = window.t(key);
-          if (text !== key) {
-            if (/<br\s*\/?>/i.test(el.innerHTML)) {
+          // Only update if translation exists and is different from key
+          if (text && text !== key) {
+            if (/<br\s*\/?>/i.test(text)) {
               el.innerHTML = text;
             } else {
               el.textContent = text;
