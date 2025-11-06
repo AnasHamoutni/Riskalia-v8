@@ -1311,109 +1311,81 @@
     <!-- Footer Component Container -->
     <div id="footer-container"></div>
 
-    <!-- Scripts -->
 <script src="/assets/js/i18n.js"></script>
+<script>
+/* UI init */
+(function() {
+  'use strict';
+  
+  // Function to initialize all components and UI
+  function initializeApp() {
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Apply translations immediately
+      if (typeof window.applyI18n === 'function') {
+        window.applyI18n();
+      }
+      
+      // Initialize Navigation Component
+      if (typeof NavigationComponent !== 'undefined') {
+        window.navigationComponent = new NavigationComponent();
+      }
+      
+      // Initialize Footer Component
+      if (typeof FooterComponent !== 'undefined') {
+        window.footerComponent = new FooterComponent();
+      }
+      
+      // Initialize Chatbot Component
+      if (typeof ChatbotComponent !== 'undefined') {
+        window.chatbotComponent = new ChatbotComponent();
+      }
+      
+      // Update all components when language changes
+      document.addEventListener('languageChanged', function() {
+        if (typeof window.applyI18n === 'function') {
+          window.applyI18n();
+        }
+        
+        // Update footer translations
+        if (window.footerComponent && window.footerComponent.updateTranslations) {
+          window.footerComponent.updateTranslations();
+        }
+        
+        // Update navigation translations
+        if (window.navigationComponent && window.navigationComponent.updateTranslations) {
+          window.navigationComponent.updateTranslations();
+        }
+      });
+      
+      console.log('All components initialized');
+    });
+  }
+  
+  // Wait for i18n.js to load completely
+  function waitForI18n() {
+    if (typeof window.I18N !== 'undefined' && typeof window.applyI18n === 'function') {
+      console.log('i18n loaded successfully');
+      initializeApp();
+    } else {
+      console.log('Waiting for i18n...');
+      setTimeout(waitForI18n, 50);
+    }
+  }
+  
+  // Start waiting for i18n
+  waitForI18n();
+})();
+</script>
+
+<!-- Component Scripts -->
 <script src="/assets/js/components/SearchComponent.js"></script>
 <script src="/assets/js/components/NavigationComponent.js"></script>
 <script src="/assets/js/components/FooterComponent.js"></script>
 <script src="/assets/js/components/ChatbotComponent.js"></script>
-    <script>
-      // Use the global lang variable from i18n.js
-      // lang is already available globally from i18n.js
-
-      // Helper functions are already available globally from i18n.js
-
-      /* UI init */
-      function initUI() {
-        const rev = $$(".reveal");
-        const onScroll = () => {
-          const tr = window.innerHeight * 0.85;
-          rev.forEach((el) => {
-            if (el.getBoundingClientRect().top < tr) el.classList.add("active");
-          });
-        };
-        window.addEventListener("scroll", onScroll);
-        onScroll();
-        const firstReveal = document.querySelector(".main-wrapper .reveal");
-        if (firstReveal) firstReveal.classList.add("active");
-      }
-
-      // Update components when language changes from other sources
-      window._onLangChanged = function () {
-        // Update navigation component
-        if (window.navigationComponent) {
-          const currentLang = localStorage.getItem("riskalia_lang") || "fr";
-          window.navigationComponent.updateLanguage(currentLang);
-        }
-
-        // Update footer component
-        if (
-          window.footerComponent &&
-          typeof window.footerComponent.updateTranslations === "function"
-        ) {
-          window.footerComponent.updateTranslations();
-        }
-      };
-
-      // Language switching event listener - set up after DOM is ready
-      function setupLanguageListener() {
-        document.addEventListener("languageChanged", (e) => {
-          console.log("Language change event received:", e.detail.language);
-          window.lang = e.detail.language; // Update global lang variable
-          localStorage.setItem("riskalia_lang", window.lang);
-
-          // Apply translations to the main page
-          if (typeof window.applyTexts === "function") {
-            window.applyTexts();
-          } else if (typeof applyTexts === "function") {
-            applyTexts();
-          }
-
-          // Update components
-          if (
-            window.navigationComponent &&
-            typeof window.navigationComponent.updateTranslations === "function"
-          ) {
-            window.navigationComponent.updateTranslations();
-          }
-          if (
-            window.footerComponent &&
-            typeof window.footerComponent.updateTranslations === "function"
-          ) {
-            window.footerComponent.updateTranslations();
-          }
-
-          if (window._onLangChanged) window._onLangChanged();
-        });
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        try {
-          if (!window.I18N) throw new Error("I18N not loaded");
-
-          // Make translation functions available globally for components
-          window.applyI18n = window.applyTexts;
-          window.t = window.t;
-
-          // Apply initial translations
-          if (typeof window.applyTexts === "function") {
-            window.applyTexts();
-          } else if (typeof applyTexts === "function") {
-            applyTexts();
-          }
-
-          // Setup language change listener after everything is ready
-          setupLanguageListener();
-
-          initUI();
-        } catch (e) {
-          console.error(e);
-          document.documentElement.lang = "fr";
-        }
-      });
-    </script>
   </body>
 </html>
+
 
 
 
