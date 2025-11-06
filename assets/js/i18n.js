@@ -24,6 +24,215 @@ window.I18N = {
       cta1: "Nos Solutions",
       cta2: "Nous Contacter",
     },
+    solutionsPage: {
+      meta: {
+        title: "Riskalia — Solutions d'assurance",
+        desc: "Deux parcours : entreprises et particuliers. Assurance multirisques, transport, flotte, RC, construction, santé collective, auto, santé, habitation, vie et retraite.",
+      },
+      hero: {
+        title: "Solutions d'assurance",
+        subtitle:
+          "Deux parcours : <strong>Entreprises</strong> et <strong>Particuliers</strong>. Produits inspirés des meilleures pratiques du marché (multirisques, transport, flotte, RC, construction… / auto, santé, habitation, vie, retraite).",
+        badges: [
+          "Mise en concurrence",
+          "Gestion des sinistres",
+          "Transparence totale",
+        ],
+      },
+      tabs: { corp: "Entreprises", retail: "Particuliers" },
+      ui: {
+        clear: "Effacer",
+        search: "Rechercher…",
+        nores: "Aucun produit ne correspond à votre recherche.",
+      },
+      cta: {
+        quote: "Obtenir un devis",
+        learn: "En savoir plus",
+        more: "Parler à un conseiller",
+      },
+      filters: {
+        corp: [
+          ["all", "Tous"],
+          ["prop", "Biens"],
+          ["trans", "Transport"],
+          ["fleet", "Flotte"],
+          ["liab", "Responsabilité"],
+          ["const", "Construction"],
+          ["health", "Santé"],
+        ],
+        retail: [
+          ["all", "Tous"],
+          ["auto", "Auto"],
+          ["health", "Santé"],
+          ["acc", "Accident"],
+          ["home", "Habitation"],
+          ["life", "Vie & placements"],
+          ["ret", "Retraite"],
+        ],
+      },
+      products: {
+        corp: [
+          {
+            id: "multirisques",
+            url: "Produits/multirisques.html",
+            img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
+            cat: ["prop"],
+            t: "Multirisques Entreprise",
+            p: "Biens & pertes d'exploitation pour locaux, stocks, machines.",
+            bul: [
+              "Incendie, dégâts des eaux, bris de machines",
+              "Pertes d'exploitation (PDB)",
+              "Options CatNat & événements climatiques",
+            ],
+          },
+          {
+            id: "transport",
+            url: "Produits/transport.html",
+            img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
+            cat: ["trans"],
+            t: "Transport (marchandises)",
+            p: "Couvre vos expéditions import/export & logistique.",
+            bul: [
+              "Tous risques facultés",
+              "RC transporteur / commissionnaire",
+              "Paramétriques météo en option",
+            ],
+          },
+          {
+            id: "flotte",
+            url: "Produits/flotte.html",
+            img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
+            cat: ["fleet"],
+            t: "Automobile & Flotte",
+            p: "De 5 à 5 000 véhicules, gestion sinistres & télématique.",
+            bul: [
+              "Tiers / Tous risques / Bris de glace",
+              "Assistance & véhicules de remplacement",
+              "Tableaux de bord sinistres",
+            ],
+          },
+          {
+            id: "rc",
+            url: "Produits/rc.html",
+            img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
+            cat: ["liab"],
+            t: "Responsabilité Civile",
+            p: "RC Générale / Professionnelle / Pollution / Produits.",
+            bul: [
+              "RC exploitation et après livraison",
+              "RC professionnelle (PI)",
+              "RC environnementale",
+            ],
+          },
+          {
+            id: "construction",
+            url: "Produits/construction.html",
+            img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
+            cat: ["const"],
+            t: "Construction (CAR/EAR)",
+            p: "Tous risques chantier & décennale selon projet.",
+            bul: [
+              "Chantiers BTP, énergie, infrastructures",
+              "Pertes d'exploitation chantier",
+              "Couvertures par phase",
+            ],
+          },
+          {
+            id: "santecollective",
+            url: "Produits/santecollective.html",
+            img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
+            cat: ["health"],
+            t: "Santé collective & Prévoyance",
+            p: "Contrats pour salariés : frais médicaux et prévoyance.",
+            bul: [
+              "Réseaux de soins & tiers payant",
+              "Couvertures cadres/non-cadres",
+              "Pilotage coûts & prévention",
+            ],
+          },
+        ],
+        retail: [
+          {
+            id: "auto",
+            url: "Produits/auto.html",
+            img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=60",
+            cat: ["auto"],
+            t: "RISKALIA Auto",
+            p: "Assurance automobile : Tiers+, Collision, Tous Risques Premium.",
+            bul: [
+              "Assistance 24/7 & réseau agréé",
+              "Protection du conducteur & du véhicule",
+              "3 niveaux : Tiers+, Collision, Tous Risques Premium",
+            ],
+          },
+          {
+            id: "sante",
+            url: "Produits/sante.html",
+            img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
+            cat: ["health"],
+            t: "Santé",
+            p: "Remboursement soins, hospitalisation, optique & dentaire.",
+            bul: [
+              "Réseau partenaires & tiers payant",
+              "Formules modulaires",
+              "Assistance 24/7",
+            ],
+          },
+          {
+            id: "alv",
+            url: "Produits/alv.html",
+            img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
+            cat: ["acc"],
+            t: "Accidents de la vie",
+            p: "Indemnisation des accidents domestiques & loisirs.",
+            bul: [
+              "Incapacité & invalidité",
+              "Rente éducation",
+              "Assistance à domicile",
+            ],
+          },
+          {
+            id: "habitation",
+            url: "Produits/habitation.html",
+            img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
+            cat: ["home"],
+            t: "Biens (Habitation)",
+            p: "Incendie, vol, dégâts des eaux, RC vie privée.",
+            bul: [
+              "Valeur à neuf selon options",
+              "Protection juridique",
+              "Objets de valeur",
+            ],
+          },
+          {
+            id: "vie",
+            url: "Produits/vie.html",
+            img: "https://img.freepik.com/photos-gratuite/famille-islamique-maison-vue-face_23-2149887070.jpg",
+            cat: ["life"],
+            t: "Assurance-vie & placements",
+            p: "Épargne, transmission & capitalisation.",
+            bul: [
+              "Fonds dirhams & unités de compte",
+              "Arbitrages & fiscalité",
+              "Options bénéficiaires",
+            ],
+          },
+          {
+            id: "retraite",
+            url: "Produits/retraite.html",
+            img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
+            cat: ["ret"],
+            t: "Retraite",
+            p: "Constitution d'une rente/épargne long terme.",
+            bul: [
+              "Versements programmés",
+              "Avantages fiscaux (selon cadre)",
+              "Options réversibilité",
+            ],
+          },
+        ],
+      },
+    },
     assurance: {
       label: "ASSURANCE",
       title: "Assurance",
@@ -717,6 +926,13 @@ footer: {
         msg: "Message",
         submit: "Envoyer",
         note: 'En cliquant "Envoyer", vous acceptez d\'être recontacté(e).',
+        placeholders: {
+          fname: "Ex. Sara",
+          lname: "Ex. El Amrani",
+          email: "vous@exemple.com",
+          phone: "+212 …",
+          msg: "Décrivez votre demande...",
+        },
         opt: {
           quote: "Demande de devis",
           meeting: "Prendre rendez-vous",
@@ -730,7 +946,16 @@ footer: {
           t: "Adresse:",
           v: "16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
         },
+        phone1: { label: "Tél :", value: "+212-666-756991" },
+        phone2: { label: "Tél :", value: "+212-675-208909" },
+        email: {
+          label: "Informations générales :",
+          value: "contact@riskalia.ma",
+        },
         hours: "Lun–Ven, 9:00–18:00 (UTC+1)",
+        mapLabel: "Carte du cabinet Riskalia",
+        mapTitle: "Carte — Riskalia, 16 Rue de Terves, Casablanca",
+        mapBtn: "Ouvrir dans Google Maps",
       },
       cta: {
         title: "Parlons de votre besoin",
@@ -874,21 +1099,6 @@ footer: {
         climate: "Risques Climatiques",
         contact: "Contact",
       },
-    },
-        footer: {
-      company: "Riskalia",
-      desc: "Cabinet de courtage & stratégies agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
-      links: "Liens",
-      contact: "Contact",
-      contactBlock: {
-        tel: "Tél1:",
-        telNum1: "+212-666-756991",
-        tel2: "Tél2:",
-        telNum2: "+212-675-208909",
-        infos: "Informations générales :",
-
-      },
-          copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés.",
     },
     // Multirisques page specific translations
     multirisques: {
@@ -2280,56 +2490,93 @@ footer: {
       },
     },
     auto: {
-    title: "RISKALIA Auto",
-    subtitle: "Assurance automobile — Tiers+, Collision, Tous Risques Premium.",
-    desc: "Rigoureux. Transparent. Réactif. Trois niveaux de couverture adaptés à votre véhicule et à votre usage.",
-    bullets: [
-      "Assistance 24/7 & réseau agréé",
-      "Protection du conducteur & du véhicule",
-      "3 niveaux : Tiers+, Collision, Tous Risques Premium",
-    ],
-    hero: {
-      cta1: "En savoir plus",
-      cta2: "Obtenir un devis",
-    },
-    table: {
-      title: "Tableau – Offre produit RISKALIA AUTO",
-      headers: [
-        "Niveau de couverture",
-        "Garanties principales",
-        "Services différenciants inclus / en option",
-        "Profil / conditions d’éligibilité",
+      title: "RISKALIA Auto",
+      subtitle: "Assurance automobile — Tiers+, Collision, Tous Risques Premium.",
+      desc: "Rigoureux. Transparent. Réactif. Trois niveaux de couverture adaptés à votre véhicule et à votre usage.",
+      bullets: [
+        "Assistance 24/7 & réseau agréé",
+        "Protection du conducteur & du véhicule",
+        "3 niveaux : Tiers+, Collision, Tous Risques Premium",
       ],
-    },
-    tiers: {
-      title: "Tiers +",
-      content: [
-        "Responsabilité Civile obligatoire",
-        "Défense & Recours",
-        "Bris de glaces",
-        "Incendie",
-        "Option Vol",
-      ],
-    },
-    collision: {
-      title: "Dommage Collision",
-      content: [
-        "Garanties Tiers +",
-        "Dommages au véhicule (collision avec tiers identifié)",
-        "Protection juridique",
-      ],
-    },
-    premium: {
-      title: "Tous Risques Premium",
-      content: [
-        "Garanties Dommage Collision +",
-        "Dommages tous accidents",
-        "Vol, incendie, bris de glaces, événements naturels",
-        "Valeur à neuf / majorée",
-        "Protection conducteur & passagers",
-      ],
-    },
-    slogan: "RISKALIA Auto — Rigoureux. Transparent. Réactif.",
+      hero: {
+        cta1: "En savoir plus",
+        cta2: "Obtenir un devis",
+      },
+      cards: {
+        tiers: {
+          title: "Tiers +",
+          coverage: [
+            "Responsabilité Civile obligatoire",
+            "Défense & Recours",
+            "Bris de glaces",
+            "Incendie",
+            "Option Vol",
+          ],
+          services:
+            "<strong>Services inclus :</strong> Assistance 24/7, réseau agréé, suivi sinistre digitalisé.",
+          eligibility:
+            "<strong>Éligibilité :</strong> Tous véhicules particuliers • ≤ 20 ans • Usage privé ou professionnel léger.",
+        },
+        collision: {
+          title: "Dommage Collision",
+          coverage: [
+            "Garanties Tiers +",
+            "Dommages au véhicule (collision avec tiers identifié)",
+            "Protection juridique",
+          ],
+          services:
+            "<strong>Services inclus :</strong> Assistance renforcée (remorquage + dépannage sur site), véhicule de remplacement* (selon conditions), gestion prioritaire sinistre.",
+          eligibility:
+            "<strong>Éligibilité :</strong> Véhicules ≤ 15 ans • Bonus/malus conforme ACAPS • Souscription simple via courtier.",
+        },
+        premium: {
+          title: "Tous Risques Premium",
+          coverage: [
+            "Garanties Dommage Collision +",
+            "Dommages tous accidents",
+            "Vol, incendie, bris de glaces, événements naturels",
+            "Valeur à neuf / majorée",
+            "Protection conducteur & passagers",
+          ],
+          services:
+            "<strong>Services inclus :</strong> Valeur à neuf/majorée jusqu'à 36 mois, véhicule de remplacement premium (selon options), indemnisation accélérée.",
+          eligibility:
+            "<strong>Éligibilité :</strong> Véhicules récents/haut de gamme • Financement LOA/LLD • Conducteurs expérimentés ou flotte dirigeant.",
+        },
+      },
+      intro: {
+        title: "Une couverture adaptée à votre véhicule et à votre usage",
+        text:
+          "Trois niveaux clairs : <span class=\"font-semibold\">Tiers+</span> pour l’essentiel et le budget, <span class=\"font-semibold\">Dommage Collision</span> pour protéger votre véhicule en cas de choc avec tiers identifié, et <span class=\"font-semibold\">Tous Risques Premium</span> pour une protection étendue (tous accidents, valeur à neuf/majorée).",
+      },
+      value: {
+        items: [
+          {
+            title: "Audit du profil conducteur & usage véhicule",
+            text: "Identification des garanties pertinentes et réduction des coûts inutiles.",
+          },
+          {
+            title: "Gestion sinistres & suivi digitalisé",
+            text: "Transparence, rapidité et traçabilité du règlement.",
+          },
+          {
+            title: "Conseil & prévention du risque",
+            text: "Optimisation bonus/malus et accompagnement post-sinistre.",
+          },
+        ],
+      },
+      cta: {
+        title: "Obtenir une proposition personnalisée",
+        text: "Nous calibrons votre niveau de couverture selon l’âge du véhicule, l’usage et votre historique conducteur.",
+        quote: "Obtenir un devis",
+        talk: "Parler à un conseiller",
+      },
+      slogan:
+        "RISKALIA Auto — <span class=\"rk-accent\">Rigoureux.</span> <span class=\"rk-accent\">Transparent.</span> <span class=\"rk-accent\">Réactif.</span>",
+      nav: {
+        prev: "← Assurance-vie & placements",
+        next: "Retraite →",
+      },
     },
     retraite: {
       title: "Retraite (épargne longue)",
@@ -2512,6 +2759,215 @@ footer: {
       sub: "All-lines insurance broking · Reinsurance · Climate Risks · Risk Management Advisory",
       cta1: "Our Solutions",
       cta2: "Contact Us",
+    },
+    solutionsPage: {
+      meta: {
+        title: "Riskalia — Insurance Solutions",
+        desc: "Two journeys: business and personal insurance. Property, cargo, fleet, liability, construction, group health, car, health, home, life and retirement.",
+      },
+      hero: {
+        title: "Insurance solutions",
+        subtitle:
+          "Two paths: <strong>Businesses</strong> and <strong>Individuals</strong>. Products aligned with market best practices (property, cargo, fleet, liability, construction… / car, health, home, life & savings, retirement).",
+        badges: [
+          "Market benchmarking",
+          "Claims handling",
+          "Full transparency",
+        ],
+      },
+      tabs: { corp: "Businesses", retail: "Individuals" },
+      ui: {
+        clear: "Clear",
+        search: "Search…",
+        nores: "No product matches your search.",
+      },
+      cta: {
+        quote: "Get a quote",
+        learn: "Learn more",
+        more: "Talk to an advisor",
+      },
+      filters: {
+        corp: [
+          ["all", "All"],
+          ["prop", "Property"],
+          ["trans", "Cargo"],
+          ["fleet", "Fleet"],
+          ["liab", "Liability"],
+          ["const", "Construction"],
+          ["health", "Health"],
+        ],
+        retail: [
+          ["all", "All"],
+          ["auto", "Auto"],
+          ["health", "Health"],
+          ["acc", "Accident"],
+          ["home", "Home"],
+          ["life", "Life & savings"],
+          ["ret", "Retirement"],
+        ],
+      },
+      products: {
+        corp: [
+          {
+            id: "multirisques",
+            url: "Produits/multirisques.html",
+            img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
+            cat: ["prop"],
+            t: "Commercial Property (All Risks)",
+            p: "Assets & Business Interruption for premises, stock, machinery.",
+            bul: [
+              "Fire, water damage, machinery breakdown",
+              "Business interruption",
+              "NatCat & climate options",
+            ],
+          },
+          {
+            id: "transport",
+            url: "Produits/transport.html",
+            img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
+            cat: ["trans"],
+            t: "Cargo / Transport",
+            p: "Covers imports/exports and logistics chain.",
+            bul: [
+              "All-risks cargo",
+              "Carrier/Freight forwarder liability",
+              "Optional weather parametrics",
+            ],
+          },
+          {
+            id: "flotte",
+            url: "Produits/flotte.html",
+            img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
+            cat: ["fleet"],
+            t: "Motor & Fleet",
+            p: "From 5 to 5,000 vehicles, claims & telematics.",
+            bul: [
+              "TPL / Comprehensive / Glass",
+              "Roadside assistance",
+              "Claims dashboards",
+            ],
+          },
+          {
+            id: "rc",
+            url: "Produits/rc.html",
+            img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
+            cat: ["liab"],
+            t: "General / Professional Liability",
+            p: "GL, PI, pollution, product liability.",
+            bul: [
+              "Operations & post-delivery",
+              "Professional indemnity",
+              "Environmental liability",
+            ],
+          },
+          {
+            id: "construction",
+            url: "Produits/construction.html",
+            img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
+            cat: ["const"],
+            t: "Construction (CAR/EAR)",
+            p: "Project all-risks and delay in start-up.",
+            bul: [
+              "Civil works, energy & infrastructure",
+              "Business interruption on projects",
+              "Phase-by-phase covers",
+            ],
+          },
+          {
+            id: "santecollective",
+            url: "Produits/santecollective.html",
+            img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
+            cat: ["health"],
+            t: "Group Health & Benefits",
+            p: "Employee medical plans and risk benefits.",
+            bul: [
+              "Provider networks & cashless",
+              "Executive & non-executive tiers",
+              "Cost control & prevention",
+            ],
+          },
+        ],
+        retail: [
+          {
+            id: "auto",
+            url: "Produits/auto.html",
+            img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=60",
+            cat: ["auto"],
+            t: "RISKALIA Auto",
+            p: "Car insurance — Third Party+, Collision, or All-Risks Premium.",
+            bul: [
+              "24/7 roadside & partner network",
+              "Driver and vehicle protection",
+              "3 coverage levels: Third+, Collision, All-Risks Premium",
+            ],
+          },
+          {
+            id: "sante",
+            url: "Produits/sante.html",
+            img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
+            cat: ["health"],
+            t: "Health",
+            p: "Outpatient, inpatient, optical & dental.",
+            bul: [
+              "Partner networks & cashless",
+              "Modular plans",
+              "24/7 assistance",
+            ],
+          },
+          {
+            id: "alv",
+            url: "Produits/alv.html",
+            img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
+            cat: ["acc"],
+            t: "Personal Accident",
+            p: "Lump sums for domestic and leisure accidents.",
+            bul: [
+              "Disability benefits",
+              "Education annuity",
+              "Home assistance",
+            ],
+          },
+          {
+            id: "habitation",
+            url: "Produits/habitation.html",
+            img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
+            cat: ["home"],
+            t: "Home (Property)",
+            p: "Fire, theft, water damage, personal liability.",
+            bul: [
+              "New-for-old options",
+              "Legal protection",
+              "Valuables cover",
+            ],
+          },
+          {
+            id: "vie",
+            url: "Produits/vie.html",
+            img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1200&q=60",
+            cat: ["life"],
+            t: "Life Insurance & Savings",
+            p: "Wealth, succession & capital growth.",
+            bul: [
+              "Dirham funds & unit-linked",
+              "Switches & tax guidance",
+              "Beneficiary options",
+            ],
+          },
+          {
+            id: "retraite",
+            url: "Produits/retraite.html",
+            img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
+            cat: ["ret"],
+            t: "Retirement",
+            p: "Build long-term income/savings.",
+            bul: [
+              "Programmed contributions",
+              "Tax efficiency (framework)",
+              "Reversion options",
+            ],
+          },
+        ],
+      },
     },
     assurance: {
       label: "INSURANCE",
@@ -3188,6 +3644,13 @@ footer: {
         msg: "Message",
         submit: "Send",
         note: 'By clicking "Send", you agree to be contacted.',
+        placeholders: {
+          fname: "e.g. Sara",
+          lname: "e.g. El Amrani",
+          email: "you@example.com",
+          phone: "+212 …",
+          msg: "Describe your request...",
+        },
         opt: {
           quote: "Quote request",
           meeting: "Schedule appointment",
@@ -3201,7 +3664,16 @@ footer: {
           t: "Address:",
           v: "16, Rue de Terves, 2nd Floor. Mers Sultan District, Casablanca",
         },
+        phone1: { label: "Phone:", value: "+212-666-756991" },
+        phone2: { label: "Phone:", value: "+212-675-208909" },
+        email: {
+          label: "General information:",
+          value: "contact@riskalia.ma",
+        },
         hours: "Mon–Fri, 9:00–18:00 (UTC+1)",
+        mapLabel: "Map of Riskalia office",
+        mapTitle: "Map — Riskalia, 16 Rue de Terves, Casablanca",
+        mapBtn: "Open in Google Maps",
       },
       cta: {
         title: "Let's discuss your needs",
@@ -3346,19 +3818,6 @@ footer: {
         contact: "Contact",
       },
     },
-          footer: {
-        desc: "Licensed brokerage & strategy firm (ACAPS). Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
-        links: "Links",
-        contact: "Contact",
-        contactBlock: {
-          tel: "Phone 1 :",
-          telNum1: "+212-666-756991",
-          tel2: "Phone 2 :",
-          telNum2: "+212-675-208909",
-          infos: "General Information :",
-        },
-        copyright:"© " + new Date().getFullYear() + " Riskalia. All rights reserved.",
-      },
     // Multirisques page specific translations
     multirisques: {
       title: "Commercial Property & Business Interruption",
@@ -4737,56 +5196,93 @@ footer: {
       },
     },
     auto: {
-    title: "RISKALIA Auto",
-    subtitle: "Car insurance — Third Party+, Collision, All-Risks Premium.",
-    desc: "Rigorous. Transparent. Responsive. Three coverage levels tailored to your vehicle and usage.",
-    bullets: [
-      "24/7 roadside assistance & partner network",
-      "Driver and vehicle protection",
-      "3 levels: Third+, Collision, All-Risks Premium",
-    ],
-    hero: {
-      cta1: "Learn more",
-      cta2: "Get a quote",
-    },
-    table: {
-      title: "Table – RISKALIA AUTO Product Offer",
-      headers: [
-        "Coverage level",
-        "Main guarantees",
-        "Included / optional differentiating services",
-        "Profile / eligibility conditions",
+      title: "RISKALIA Auto",
+      subtitle: "Car insurance — Third Party+, Collision, All-Risks Premium.",
+      desc: "Rigorous. Transparent. Responsive. Three coverage levels tailored to your vehicle and usage.",
+      bullets: [
+        "24/7 roadside assistance & partner network",
+        "Driver and vehicle protection",
+        "3 levels: Third+, Collision, All-Risks Premium",
       ],
-    },
-    tiers: {
-      title: "Third Party +",
-      content: [
-        "Mandatory liability insurance",
-        "Legal defense & recourse",
-        "Glass breakage",
-        "Fire",
-        "Optional theft",
-      ],
-    },
-    collision: {
-      title: "Collision Damage",
-      content: [
-        "Third+ coverage",
-        "Vehicle damage (collision with identified third party)",
-        "Legal protection",
-      ],
-    },
-    premium: {
-      title: "All-Risks Premium",
-      content: [
-        "Collision Damage + guarantees",
-        "All accident coverage",
-        "Theft, fire, glass breakage, natural events",
-        "Replacement or new value",
-        "Driver & passenger protection",
-      ],
-    },
-    slogan: "RISKALIA Auto — Rigorous. Transparent. Responsive.",
+      hero: {
+        cta1: "Learn more",
+        cta2: "Get a quote",
+      },
+      cards: {
+        tiers: {
+          title: "Third Party +",
+          coverage: [
+            "Mandatory liability insurance",
+            "Legal defense & recourse",
+            "Glass breakage",
+            "Fire",
+            "Optional theft",
+          ],
+          services:
+            "<strong>Included services:</strong> 24/7 roadside assistance, partner repair network, digital claims follow-up.",
+          eligibility:
+            "<strong>Eligibility:</strong> Private vehicles • ≤ 20 years old • Private or light professional use.",
+        },
+        collision: {
+          title: "Collision Damage",
+          coverage: [
+            "Third+ guarantees",
+            "Vehicle damage (collision with identified third party)",
+            "Legal protection",
+          ],
+          services:
+            "<strong>Included services:</strong> Enhanced assistance (tow truck + on-site repair), courtesy car* (per terms), priority claims handling.",
+          eligibility:
+            "<strong>Eligibility:</strong> Vehicles ≤ 15 years • Compliant bonus/malus • Streamlined onboarding via broker.",
+        },
+        premium: {
+          title: "All-Risks Premium",
+          coverage: [
+            "Collision Damage +",
+            "All accident coverage",
+            "Theft, fire, glass, natural events",
+            "Replacement or new value",
+            "Driver & passenger protection",
+          ],
+          services:
+            "<strong>Included services:</strong> New/replacement value up to 36 months, premium courtesy vehicle (per options), accelerated settlement pathway.",
+          eligibility:
+            "<strong>Eligibility:</strong> Recent or high-end vehicles • Leasing/financed cars • Experienced drivers or executive fleets.",
+        },
+      },
+      intro: {
+        title: "Coverage tailored to your vehicle and usage",
+        text:
+          "Three clear levels: <span class=\"font-semibold\">Third+</span> for essentials and budget, <span class=\"font-semibold\">Collision Damage</span> to protect your car against identified third parties, and <span class=\"font-semibold\">All-Risks Premium</span> for extended protection (all accidents, enhanced value).",
+      },
+      value: {
+        items: [
+          {
+            title: "Driver profile & usage review",
+            text: "Identifies relevant coverage and trims unnecessary costs.",
+          },
+          {
+            title: "Digital claims management",
+            text: "Transparency, speed, and traceable settlement steps.",
+          },
+          {
+            title: "Risk advisory & prevention",
+            text: "Optimised bonus/malus and post-claim support.",
+          },
+        ],
+      },
+      cta: {
+        title: "Get a tailored proposal",
+        text: "We right-size your coverage based on vehicle age, usage, and driving history.",
+        quote: "Get a quote",
+        talk: "Talk to an advisor",
+      },
+      slogan:
+        "RISKALIA Auto — <span class=\"rk-accent\">Rigorous.</span> <span class=\"rk-accent\">Transparent.</span> <span class=\"rk-accent\">Responsive.</span>",
+      nav: {
+        prev: "← Life insurance & savings",
+        next: "Retirement →",
+      },
     },
     retraite: {
       title: "Retirement (long-term savings)",
@@ -4969,6 +5465,211 @@ footer: {
       sub: "وساطة شاملة · إعادة التأمين · مخاطر المناخ · إدارة المخاطر",
       cta1: "حلولنا",
       cta2: "تواصل معنا",
+    },
+    solutionsPage: {
+      meta: {
+        title: "ريسكاليا — حلول التأمين",
+        desc: "مساران: حلول للشركات والأفراد. ممتلكات، نقل بضائع، أساطيل، مسؤولية، إنشاءات، تأمين صحي جماعي، سيارات، صحة، سكن، حياة وتقاعد.",
+      },
+      hero: {
+        title: "حلول التأمين",
+        subtitle:
+          "مساران: <strong>الشركات</strong> و<strong>الأفراد</strong>. منتجات وفق أفضل الممارسات (ممتلكات، نقل بضائع، أساطيل، مسؤولية، إنشاءات… / سيارة، صحة، سكن، حياة وادخار، تقاعد).",
+        badges: ["مقارنة عروض السوق", "إدارة المطالبات", "شفافية كاملة"],
+      },
+      tabs: { corp: "الشركات", retail: "الأفراد" },
+      ui: {
+        clear: "مسح",
+        search: "ابحث…",
+        nores: "لا توجد منتجات مطابقة لبحثك.",
+      },
+      cta: {
+        quote: "اطلب عرضاً",
+        learn: "تعرّف أكثر",
+        more: "تحدث إلى مستشار",
+      },
+      filters: {
+        corp: [
+          ["all", "الكل"],
+          ["prop", "ممتلكات"],
+          ["trans", "نقل"],
+          ["fleet", "أساطيل"],
+          ["liab", "مسؤولية"],
+          ["const", "إنشاءات"],
+          ["health", "صحة"],
+        ],
+        retail: [
+          ["all", "الكل"],
+          ["auto", "سيارة"],
+          ["health", "صحة"],
+          ["acc", "حوادث"],
+          ["home", "سكن"],
+          ["life", "حياة وادخار"],
+          ["ret", "تقاعد"],
+        ],
+      },
+      products: {
+        corp: [
+          {
+            id: "multirisques",
+            url: "Produits/multirisques.html",
+            img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
+            cat: ["prop"],
+            t: "تأمين الممتلكات والأعمال",
+            p: "يحمي الأصول وخسارة الأرباح للمقار والمخازن والآلات.",
+            bul: [
+              "حريق، أضرار مياه، كسر آلات",
+              "خسارة الأرباح (PDB)",
+              "خيارات الكوارث الطبيعية والمناخ",
+            ],
+          },
+          {
+            id: "transport",
+            url: "Produits/transport.html",
+            img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
+            cat: ["trans"],
+            t: "نقل البضائع",
+            p: "يغطي الواردات والصادرات وسلسلة الإمداد.",
+            bul: [
+              "تأمين جميع أخطار البضائع",
+              "مسؤولية الناقل/السمسار",
+              "حلول طقس معيارية اختيارية",
+            ],
+          },
+          {
+            id: "flotte",
+            url: "Produits/flotte.html",
+            img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
+            cat: ["fleet"],
+            t: "السيارات والأساطيل",
+            p: "من 5 إلى 5000 مركبة، إدارة مطالبات وتليماتيك.",
+            bul: [
+              "مسؤولية/شامل/زجاج",
+              "مساعدة وبدل مركبة",
+              "لوحات متابعة المطالبات",
+            ],
+          },
+          {
+            id: "rc",
+            url: "Produits/rc.html",
+            img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
+            cat: ["liab"],
+            t: "المسؤولية العامة/المهنية",
+            p: "مسؤولية عامة، مهنية، تلوث ومنتجات.",
+            bul: [
+              "تشغيل وما بعد التسليم",
+              "مسؤولية مهنية",
+              "مسؤولية بيئية",
+            ],
+          },
+          {
+            id: "construction",
+            url: "Produits/construction.html",
+            img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
+            cat: ["const"],
+            t: "الإنشاءات (CAR/EAR)",
+            p: "جميع أخطار المشاريع وضمان التأخير في التشغيل.",
+            bul: [
+              "مشاريع مدنية وطاقة وبنية تحتية",
+              "خسارة أرباح المشروع",
+              "تغطيات حسب مراحل المشروع",
+            ],
+          },
+          {
+            id: "santecollective",
+            url: "Produits/santecollective.html",
+            img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
+            cat: ["health"],
+            t: "تأمين صحي جماعي ومزايا",
+            p: "برامج طبية ومخاطر للموظفين.",
+            bul: [
+              "شبكات طبية وتيار دفع مباشر",
+              "خطط للمديرين والموظفين",
+              "إدارة التكاليف والوقاية",
+            ],
+          },
+        ],
+        retail: [
+          {
+            id: "auto",
+            url: "Produits/auto.html",
+            img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=60",
+            cat: ["auto"],
+            t: "ريسكاليا تأمين السيارات",
+            p: "تأمين السيارات — المسؤولية المدنية+، التصادم، جميع الأخطار.",
+            bul: [
+              "مساعدة 24/7 وشبكة معتمدة",
+              "حماية السائق والمركبة",
+              "ثلاث مستويات تغطية",
+            ],
+          },
+          {
+            id: "sante",
+            url: "Produits/sante.html",
+            img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
+            cat: ["health"],
+            t: "الصحة",
+            p: "عيادات، استشفاء، بصريات وأسنان.",
+            bul: [
+              "شبكات وشركات طبية",
+              "خطط مرنة",
+              "مساعدة 24/7",
+            ],
+          },
+          {
+            id: "alv",
+            url: "Produits/alv.html",
+            img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
+            cat: ["acc"],
+            t: "حوادث الحياة",
+            p: "تعويضات عن الحوادث المنزلية والترفيهية.",
+            bul: [
+              "تعويضات العجز",
+              "راتب التعليم",
+              "مساعدة منزلية",
+            ],
+          },
+          {
+            id: "habitation",
+            url: "Produits/habitation.html",
+            img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
+            cat: ["home"],
+            t: "السكن (الممتلكات)",
+            p: "حريق، سرقة، أضرار مياه، مسؤولية خاصة.",
+            bul: [
+              "قيمة جديدة حسب الخيارات",
+              "حماية قانونية",
+              "تغطية المقتنيات الثمينة",
+            ],
+          },
+          {
+            id: "vie",
+            url: "Produits/vie.html",
+            img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1200&q=60",
+            cat: ["life"],
+            t: "تأمين الحياة والادخار",
+            p: "ادخار، نقل ثروة ونمو رأس المال.",
+            bul: [
+              "صناديق بالدرهم ووحدات استثمار",
+              "تحويلات وإرشاد ضريبي",
+              "خيارات المستفيد",
+            ],
+          },
+          {
+            id: "retraite",
+            url: "Produits/retraite.html",
+            img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
+            cat: ["ret"],
+            t: "التقاعد",
+            p: "بناء دخل أو ادخار طويل الأجل.",
+            bul: [
+              "دفعات مجدولة",
+              "كفاءة ضريبية (حسب الإطار)",
+              "خيارات تحويل المعاش",
+            ],
+          },
+        ],
+      },
     },
     assurance: {
       label: "التأمين",
@@ -5619,6 +6320,13 @@ footer: {
         msg: "الرسالة",
         submit: "إرسال",
         note: 'بالنقر على "إرسال"، فإنك توافق على أن يتم الاتصال بك.',
+        placeholders: {
+          fname: "مثال: سارة",
+          lname: "مثال: العمراني",
+          email: "you@example.com",
+          phone: "+212 …",
+          msg: "صف طلبك...",
+        },
         opt: {
           quote: "طلب عرض أسعار",
           meeting: "حجز موعد",
@@ -5632,7 +6340,16 @@ footer: {
           t: "العنوان:",
           v: "16، شارع تيرفيس، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
         },
+        phone1: { label: "هاتف:", value: "+212-666-756991" },
+        phone2: { label: "هاتف:", value: "+212-675-208909" },
+        email: {
+          label: "معلومات عامة:",
+          value: "contact@riskalia.ma",
+        },
         hours: "الإثنين–الجمعة، 9:00–18:00 (UTC+1)",
+        mapLabel: "خريطة مقر ريسكاليا",
+        mapTitle: "خريطة — ريسكاليا، 16 شارع تيرفيس، الدار البيضاء",
+        mapBtn: "افتح في خرائط Google",
       },
       cta: {
         title: "لنناقش احتياجاتك",
@@ -5773,19 +6490,6 @@ footer: {
         contact: "اتصال",
       },
     },
-      footer: {
-        desc: "شركة وساطة واستشارات استراتيجية مرخصة (ACAPS). المقر الرئيسي: ١٦، شارع تيرف، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
-        links: "روابط",
-        contact: "تواصل",
-        contactBlock: {
-          tel: "هاتف 1 :",
-          telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
-          tel2: "هاتف 2 :",
-          telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
-          infos: "معلومات عامة :",
-        },
-          copyright: "© " + new Date().getFullYear() + " ريسكاليا. جميع الحقوق محفوظة.",
-      },
     // Multirisques page specific translations
     multirisques: {
       title: "المخاطر المتعددة للمؤسسات",
@@ -7134,56 +7838,93 @@ footer: {
       },
     },
     auto: {
-    title: "ريسكاليا تأمين السيارات",
-    subtitle: "تأمين السيارات — المسؤولية المدنية+، التصادم، جميع الأخطار.",
-    desc: "دقة. شفافية. سرعة. ثلاث مستويات من التغطية مصممة حسب نوع السيارة والاستخدام.",
-    bullets: [
-      "مساعدة على مدار الساعة وشبكة معتمدة",
-      "حماية السائق والمركبة",
-      "ثلاث مستويات تغطية: المسؤولية المدنية+، التصادم، جميع الأخطار",
-    ],
-    hero: {
-      cta1: "اعرف المزيد",
-      cta2: "احصل على عرض",
-    },
-    table: {
-      title: "جدول – عرض منتج ريسكاليا للسيارات",
-      headers: [
-        "مستوى التغطية",
-        "الضمانات الأساسية",
-        "الخدمات المميزة المضمنة / الاختيارية",
-        "الملف الشخصي / شروط الأهلية",
+      title: "ريسكاليا تأمين السيارات",
+      subtitle: "تأمين السيارات — المسؤولية المدنية+، التصادم، جميع الأخطار.",
+      desc: "دقة. شفافية. سرعة. ثلاث مستويات من التغطية مصممة حسب نوع السيارة والاستخدام.",
+      bullets: [
+        "مساعدة على مدار الساعة وشبكة معتمدة",
+        "حماية السائق والمركبة",
+        "ثلاث مستويات تغطية: المسؤولية المدنية+، التصادم، جميع الأخطار",
       ],
-    },
-    tiers: {
-      title: "المسؤولية المدنية +",
-      content: [
-        "تأمين المسؤولية المدنية الإجباري",
-        "الدفاع والمطالبة بالحقوق",
-        "كسر الزجاج",
-        "الحريق",
-        "خيار السرقة",
-      ],
-    },
-    collision: {
-      title: "أضرار التصادم",
-      content: [
-        "ضمانات المسؤولية المدنية +",
-        "أضرار بالمركبة (تصادم مع طرف محدد)",
-        "حماية قانونية",
-      ],
-    },
-    premium: {
-      title: "جميع الأخطار المميزة",
-      content: [
-        "ضمانات أضرار التصادم +",
-        "تغطية لجميع الحوادث",
-        "السرقة، الحريق، الكسر، الكوارث الطبيعية",
-        "قيمة جديدة / مضافة",
-        "حماية السائق والركاب",
-      ],
-    },
-    slogan: "ريسكاليا للسيارات — دقة. شفافية. سرعة.",
+      hero: {
+        cta1: "اعرف المزيد",
+        cta2: "احصل على عرض",
+      },
+      cards: {
+        tiers: {
+          title: "المسؤولية المدنية +",
+          coverage: [
+            "تأمين المسؤولية المدنية الإجباري",
+            "الدفاع والمطالبة بالحقوق",
+            "كسر الزجاج",
+            "الحريق",
+            "خيار السرقة",
+          ],
+          services:
+            "<strong>الخدمات المتضمنة:</strong> مساعدة 24/7، شبكة ورش معتمدة، متابعة المطالبات رقمياً.",
+          eligibility:
+            "<strong>الأهلية:</strong> سيارات خاصة • عمر ≤ 20 سنة • استخدام خاص أو مهني خفيف.",
+        },
+        collision: {
+          title: "أضرار التصادم",
+          coverage: [
+            "ضمانات المسؤولية المدنية +",
+            "أضرار بالمركبة (تصادم مع طرف محدد)",
+            "حماية قانونية",
+          ],
+          services:
+            "<strong>الخدمات المتضمنة:</strong> مساعدة معززة (سحب + إصلاح ميداني)، سيارة بديلة* (حسب الشروط)، أولوية في معالجة المطالبات.",
+          eligibility:
+            "<strong>الأهلية:</strong> سيارات ≤ 15 سنة • سجل مكافأة/خصم مطابق • اكتتاب مبسط عبر الوسيط.",
+        },
+        premium: {
+          title: "جميع الأخطار المميزة",
+          coverage: [
+            "ضمانات أضرار التصادم +",
+            "تغطية لجميع الحوادث",
+            "السرقة، الحريق، الكسر، الكوارث الطبيعية",
+            "قيمة جديدة / مضافة",
+            "حماية السائق والركاب",
+          ],
+          services:
+            "<strong>الخدمات المتضمنة:</strong> قيمة جديدة/مضافة حتى 36 شهراً، سيارة بديلة مميزة (حسب الخيارات)، مسار تعويض سريع.",
+          eligibility:
+            "<strong>الأهلية:</strong> سيارات حديثة أو فاخرة • تمويل إيجاري/قروض • سائقون ذوو خبرة أو أساطيل تنفيذية.",
+        },
+      },
+      intro: {
+        title: "تغطية تناسب سيارتك واستخدامك",
+        text:
+          "ثلاث مستويات واضحة: <span class=\"font-semibold\">المسؤولية المدنية+</span> للأساسيات والميزانية، <span class=\"font-semibold\">أضرار التصادم</span> لحماية مركبتك ضد طرف محدد، و<span class=\"font-semibold\">جميع الأخطار المميزة</span> لحماية موسعة (كل الحوادث، قيمة جديدة/مضافة).",
+      },
+      value: {
+        items: [
+          {
+            title: "تقييم ملف السائق واستخدام المركبة",
+            text: "تحديد الضمانات المناسبة وتقليل التكاليف غير الضرورية.",
+          },
+          {
+            title: "إدارة المطالبات رقمياً",
+            text: "شفافية وسرعة وتتبع واضح لمسار التعويض.",
+          },
+          {
+            title: "استشارة ووقاية من المخاطر",
+            text: "تحسين نظام المكافآت/الخصومات ودعم ما بعد الحوادث.",
+          },
+        ],
+      },
+      cta: {
+        title: "احصل على عرض مخصص",
+        text: "نضبط مستوى التغطية وفق عمر المركبة، الاستخدام، وسجل السائق.",
+        quote: "اطلب عرضاً",
+        talk: "تحدث إلى مستشار",
+      },
+      slogan:
+        "ريسكاليا للسيارات — <span class=\"rk-accent\">دقة.</span> <span class=\"rk-accent\">شفافية.</span> <span class=\"rk-accent\">سرعة.</span>",
+      nav: {
+        prev: "← تأمين الحياة والادخار",
+        next: "التقاعد →",
+      },
     },
     retraite: {
       title: "التقاعد (ادخار طويل الأجل)",
@@ -7416,6 +8157,21 @@ function applyTexts() {
 window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
+
+// Hoist shared footer/product labels out of the climate namespace so
+// site-wide components (footer, navigation lists) can resolve them.
+["fr", "en", "ar"].forEach((lng) => {
+  const pack = window.I18N?.[lng];
+  const climate = pack?.climate;
+  if (!climate || !pack) return;
+
+  ["footer", "produits"].forEach((key) => {
+    if (climate[key] && !pack[key]) {
+      pack[key] = climate[key];
+    }
+    if (climate[key]) delete climate[key];
+  });
+});
 
 
 

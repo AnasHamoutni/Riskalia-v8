@@ -920,30 +920,20 @@
       <div class="container">
         <h1
           class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-2 sm:mb-3 md:mb-4"
-          data-i18n="title"
+          data-i18n="solutionsPage.hero.title"
         >
           Solutions d'assurance
         </h1>
         <p
           class="text-white/95 text-sm sm:text-base md:text-lg lg:text-xl font-light mb-2 sm:mb-3 md:mb-4 max-w-4xl mx-auto leading-relaxed"
-          data-i18n="subtitle"
+          data-i18n="solutionsPage.hero.subtitle"
         >
           Deux parcours : <strong>Entreprises</strong> et
           <strong>Particuliers</strong>. Produits inspirés des meilleures
           pratiques du marché (multirisques, transport, flotte, RC,
           construction… / auto, santé, habitation, vie, retraite).
         </p>
-        <div class="badges">
-          <span class="badge text-xs sm:text-sm" data-i18n="badges.0"
-            >Mise en concurrence</span
-          >
-          <span class="badge text-xs sm:text-sm" data-i18n="badges.1"
-            >Gestion des sinistres</span
-          >
-          <span class="badge text-xs sm:text-sm" data-i18n="badges.2"
-            >Transparence totale</span
-          >
-        </div>
+        <div class="badges" id="solutions-badges"></div>
       </div>
     </section>
     <div class="section-wave" aria-hidden="true"></div>
@@ -956,20 +946,22 @@
             <button
               class="tab active"
               id="tab-corp"
+              type="button"
               role="tab"
               aria-selected="true"
               data-seg="corp"
-              data-i18n="tabs.corp"
+              data-i18n="solutionsPage.tabs.corp"
             >
               Entreprises
             </button>
             <button
               class="tab"
               id="tab-retail"
+              type="button"
               role="tab"
               aria-selected="false"
               data-seg="retail"
-              data-i18n="tabs.retail"
+              data-i18n="solutionsPage.tabs.retail"
             >
               Particuliers
             </button>
@@ -983,8 +975,14 @@
                 type="search"
                 placeholder="Rechercher…"
                 aria-label="Rechercher"
+                data-i18n-attr="placeholder:solutionsPage.ui.search,aria-label:solutionsPage.ui.search"
               />
-              <button class="btn" id="clear" type="button" data-i18n="ui.clear">
+              <button
+                class="btn"
+                id="clear"
+                type="button"
+                data-i18n="solutionsPage.ui.clear"
+              >
                 Effacer
               </button>
             </div>
@@ -1003,858 +1001,200 @@
     <div id="footer-container"></div>
 
     <!-- ================== i18n & data ================== -->
+    <script src="assets/js/i18n.js"></script>
     <script>
-      const I18N = {
-        fr: {
-          nav: {
-            home: "Accueil",
-            solutions: "Solutions",
-            assurance: "Assurance",
-            re: "Réassurance",
-            climate: "Risques Climatiques",
-            services: "Services de Conseil",
-            esg: "ESG",
-            contact: "Contact",
-          },
-          title: "Solutions d'assurance",
-          subtitle:
-            "Deux parcours : <strong>Entreprises</strong> et <strong>Particuliers</strong>. Produits inspirés des meilleures pratiques du marché (multirisques, transport, flotte, RC, construction… / auto, santé, habitation, vie, retraite).",
-          badges: [
-            "Mise en concurrence",
-            "Gestion des sinistres",
-            "Transparence totale",
-          ],
-          tabs: { corp: "Entreprises", retail: "Particuliers" },
-          ui: {
-            clear: "Effacer",
-            search: "Rechercher…",
-            nores: "Aucun produit ne correspond à votre recherche.",
-          },
-          cta: {
-            quote: "Obtenir un devis",
-            learn: "En savoir plus",
-            more: "Parler à un conseiller",
-          },
-          footer: {
-            desc: "Cabinet de courtage & réassurance agréé ACAPS<br/>Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
-            links: "Liens",
-            contact: "Contact",
-            contactBlock: {
-              tel: "Tél 1 :",
-              telNum1: "+212-666-756991",
-              tel2: "Tél 2 :",
-              telNum2: "+212-675-208909",
-              nabil: "E-mail de Nabil :",
-              infos: "Informations générales :",
-            },
-          },
-          filters: {
-            corp: [
-              ["all", "Tous"],
-              ["prop", "Biens"],
-              ["trans", "Transport"],
-              ["fleet", "Flotte"],
-              ["liab", "Responsabilité"],
-              ["const", "Construction"],
-              ["health", "Santé"],
-            ],
-            retail: [
-              ["all", "Tous"],
-              ["auto", "Auto"],
-              ["health", "Santé"],
-              ["acc", "Accident"],
-              ["home", "Habitation"],
-              ["life", "Vie & placements"],
-              ["ret", "Retraite"],
-            ],
-          },
-          products: {
-            corp: [
-              {
-                id: "multirisques",
-                url: "Produits/multirisques.html",
-                img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
-                cat: ["prop"],
-                t: "Multirisques Entreprise",
-                p: "Biens & pertes d'exploitation pour locaux, stocks, machines.",
-                bul: [
-                  "Incendie, dégâts des eaux, bris de machines",
-                  "Pertes d'exploitation (PDB)",
-                  "Options CatNat & événements climatiques",
-                ],
-              },
-              {
-                id: "transport",
-                url: "Produits/transport.html",
-                img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
-                cat: ["trans"],
-                t: "Transport (marchandises)",
-                p: "Couvre vos expéditions import/export & logistique.",
-                bul: [
-                  "Tous risques facultés",
-                  "RC transporteur / commissionnaire",
-                  "Paramétriques météo en option",
-                ],
-              },
-              {
-                id: "flotte",
-                url: "Produits/flotte.html",
-                img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
-                cat: ["fleet"],
-                t: "Automobile & Flotte",
-                p: "De 5 à 5 000 véhicules, gestion sinistres & télématique.",
-                bul: [
-                  "Tiers / Tous risques / Bris de glace",
-                  "Assistance & véhicules de remplacement",
-                  "Tableaux de bord sinistres",
-                ],
-              },
-              {
-                id: "rc",
-                url: "Produits/rc.html",
-                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
-                cat: ["liab"],
-                t: "Responsabilité Civile",
-                p: "RC Générale / Professionnelle / Pollution / Produits.",
-                bul: [
-                  "RC exploitation et après livraison",
-                  "RC professionnelle (PI)",
-                  "RC environnementale",
-                ],
-              },
-              {
-                id: "construction",
-                url: "Produits/construction.html",
-                img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
-                cat: ["const"],
-                t: "Construction (CAR/EAR)",
-                p: "Tous risques chantier & décennale selon projet.",
-                bul: [
-                  "Chantiers BTP, énergie, infrastructures",
-                  "Pertes d'exploitation chantier",
-                  "Couvertures par phase",
-                ],
-              },
-              {
-                id: "santecollective",
-                url: "Produits/santecollective.html",
-                img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
-                cat: ["health"],
-                t: "Santé collective & Prévoyance",
-                p: "Contrats pour salariés : frais médicaux et prévoyance.",
-                bul: [
-                  "Réseaux de soins & tiers payant",
-                  "Couvertures cadres/non-cadres",
-                  "Pilotage coûts & prévention",
-                ],
-              },
-            ],
-            retail: [
-              {
-  id: "auto",
-  url: "Produits/auto.html",
-  img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=60",
-  cat: ["auto"],
-  t: "RISKALIA Auto",
-  p: "Assurance automobile : Tiers+, Collision, Tous Risques Premium.",
-  bul: [
-    "Assistance 24/7 & réseau agréé",
-    "Protection du conducteur & du véhicule",
-    "3 niveaux : Tiers+, Collision, Tous Risques Premium",
-  ],
-},
-              {
-                id: "sante",
-                url: "Produits/sante.html",
-                img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
-                cat: ["health"],
-                t: "Santé",
-                p: "Remboursement soins, hospitalisation, optique & dentaire.",
-                bul: [
-                  "Réseau partenaires & tiers payant",
-                  "Formules modulaires",
-                  "Assistance 24/7",
-                ],
-              },
-              {
-                id: "alv",
-                url: "Produits/alv.html",
-                img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
-                cat: ["acc"],
-                t: "Accidents de la vie",
-                p: "Indemnisation des accidents domestiques & loisirs.",
-                bul: [
-                  "Incapacité & invalidité",
-                  "Rente éducation",
-                  "Assistance à domicile",
-                ],
-              },
-              {
-                id: "habitation",
-                url: "Produits/habitation.html",
-                img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
-                cat: ["home"],
-                t: "Biens (Habitation)",
-                p: "Incendie, vol, dégâts des eaux, RC vie privée.",
-                bul: [
-                  "Valeur à neuf selon options",
-                  "Protection juridique",
-                  "Objets de valeur",
-                ],
-              },
-              {
-                id: "vie",
-                url: "Produits/vie.html",
-                img: "https://img.freepik.com/photos-gratuite/famille-islamique-maison-vue-face_23-2149887070.jpg",
-                cat: ["life"],
-                t: "Assurance-vie & placements",
-                p: "Épargne, transmission & capitalisation.",
-                bul: [
-                  "Fonds dirhams & unités de compte",
-                  "Arbitrages & fiscalité",
-                  "Options bénéficiaires",
-                ],
-              },
-
-              {
-                id: "retraite",
-                url: "Produits/retraite.html",
-                img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
-                cat: ["ret"],
-                t: "Retraite",
-                p: "Constitution d'une rente/épargne long terme.",
-                bul: [
-                  "Versements programmés",
-                  "Avantages fiscaux (selon cadre)",
-                  "Options réversibilité",
-                ],
-              },
-            ],
-          },
-        },
-
-        en: {
-          nav: {
-            home: "Home",
-            solutions: "Solutions",
-            assurance: "Insurance",
-            re: "Reinsurance",
-            climate: "Climate Risk",
-            services: "Advisory Services",
-            esg: "ESG",
-            contact: "Contact",
-          },
-          title: "Insurance solutions",
-          subtitle:
-            "Two paths: <strong>Businesses</strong> and <strong>Individuals</strong>. Products aligned with market best practices (property, cargo, fleet, liability, construction… / car, health, home, life & savings, retirement).",
-          badges: [
-            "Market benchmarking",
-            "Claims handling",
-            "Full transparency",
-          ],
-          tabs: { corp: "Businesses", retail: "Individuals" },
-          ui: {
-            clear: "Clear",
-            search: "Search…",
-            nores: "No product matches your search.",
-          },
-          cta: {
-            quote: "Get a quote",
-            learn: "Learn more",
-            more: "Talk to an advisor",
-          },
-          footer: {
-            desc: "ACAPS-licensed brokerage & reinsurance<br/>Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
-            links: "Links",
-            contact: "Contact",
-            contactBlock: {
-              tel: "Phone 1 :",
-              telNum1: "+212-666-756991",
-              tel2: "Phone 2 :",
-              telNum2: "+212-675-208909",
-              nabil: "Nabil's e-mail :",
-              infos: "General Information :",
-            },
-          },
-          filters: {
-            corp: [
-              ["all", "All"],
-              ["prop", "Property"],
-              ["trans", "Cargo"],
-              ["fleet", "Fleet"],
-              ["liab", "Liability"],
-              ["const", "Construction"],
-              ["health", "Health"],
-            ],
-            retail: [
-              ["all", "All"],
-              ["auto", "Auto"],
-              ["health", "Health"],
-              ["acc", "Accident"],
-              ["home", "Home"],
-              ["life", "Life & savings"],
-              ["ret", "Retirement"],
-            ],
-          },
-          products: {
-            corp: [
-              {
-                id: "multirisques",
-                url: "Produits/multirisques.html",
-                img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
-                cat: ["prop"],
-                t: "Commercial Property (All Risks)",
-                p: "Assets & Business Interruption for premises, stock, machinery.",
-                bul: [
-                  "Fire, water damage, machinery breakdown",
-                  "Business interruption",
-                  "NatCat & climate options",
-                ],
-              },
-              {
-                id: "transport",
-                url: "Produits/transport.html",
-                img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
-                cat: ["trans"],
-                t: "Cargo / Transport",
-                p: "Covers imports/exports and logistics chain.",
-                bul: [
-                  "All-risks cargo",
-                  "Carrier/Freight forwarder liability",
-                  "Optional weather parametrics",
-                ],
-              },
-              {
-                id: "flotte",
-                url: "Produits/flotte.html",
-                img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
-                cat: ["fleet"],
-                t: "Motor & Fleet",
-                p: "From 5 to 5,000 vehicles, claims & telematics.",
-                bul: [
-                  "TPL / Comprehensive / Glass",
-                  "Roadside assistance",
-                  "Claims dashboards",
-                ],
-              },
-              {
-                id: "rc",
-                url: "Produits/rc.html",
-                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
-                cat: ["liab"],
-                t: "General / Professional Liability",
-                p: "GL, PI, pollution, product liability.",
-                bul: [
-                  "Operations & post-delivery",
-                  "Professional indemnity",
-                  "Environmental liability",
-                ],
-              },
-              {
-                id: "construction",
-                url: "Produits/construction.html",
-                img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
-                cat: ["const"],
-                t: "Construction (CAR/EAR)",
-                p: "All-risks projects & decennial where applicable.",
-                bul: [
-                  "BTP, energy, infrastructure",
-                  "Project delay/BI options",
-                  "Phase-based covers",
-                ],
-              },
-              {
-                id: "santecollective",
-                url: "Produits/santecollective.html",
-                img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
-                cat: ["health"],
-                t: "Group Health & Benefits",
-                p: "Employee medical + risk benefits packages.",
-                bul: [
-                  "Provider networks & direct billing",
-                  "Schemes by grade",
-                  "Cost control & prevention",
-                ],
-              },
-            ],
-            retail: [
-{
-  id: "auto",
-  url: "Produits/auto.html",
-  img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=60",
-  cat: ["auto"],
-  t: "RISKALIA Auto",
-  p: "Car insurance — Third Party+, Collision, or All-Risks Premium.",
-  bul: [
-    "24/7 roadside & partner network",
-    "Driver and vehicle protection",
-    "3 coverage levels: Third+, Collision, All-Risks Premium",
-  ],
-},
-              {
-                id: "sante",
-                url: "Produits/sante.html",
-                img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
-                cat: ["health"],
-                t: "Health",
-                p: "Outpatient, hospital, optical & dental.",
-                bul: [
-                  "Partner networks & cashless",
-                  "Modular plans",
-                  "24/7 assistance",
-                ],
-              },
-              {
-                id: "alv",
-                url: "Produits/alv.html",
-                img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
-                cat: ["acc"],
-                t: "Personal Accident",
-                p: "Indemnities for domestic/leisure accidents.",
-                bul: [
-                  "Disability benefits",
-                  "Education annuity",
-                  "Home assistance",
-                ],
-              },
-              {
-                id: "habitation",
-                url: "Produits/habitation.html",
-                img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
-                cat: ["home"],
-                t: "Home (Property)",
-                p: "Fire, theft, water damage, personal liability.",
-                bul: [
-                  "New-for-old options",
-                  "Legal protection",
-                  "Valuables cover",
-                ],
-              },
-              {
-                id: "vie",
-                url: "Produits/vie.html",
-                img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1200&q=60",
-                cat: ["life"],
-                t: "Life Insurance & Savings",
-                p: "Wealth, succession & capital growth.",
-                bul: [
-                  "Dirham funds & UC",
-                  "Arbitrage & tax",
-                  "Beneficiary options",
-                ],
-              },
-              {
-                id: "retraite",
-                url: "Produits/retraite.html",
-                img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
-                cat: ["ret"],
-                t: "Retirement",
-                p: "Build long-term income/savings.",
-                bul: [
-                  "Programmed contributions",
-                  "Tax efficiency (framework)",
-                  "Reversion options",
-                ],
-              },
-            ],
-          },
-        },
-
-        ar: {
-          nav: {
-            home: "الرئيسية",
-            solutions: "الحلول",
-            assurance: "التأمين",
-            re: "إعادة التأمين",
-            climate: "مخاطر المناخ",
-            services: "الخدمات الاستشارية",
-            esg: "الاستدامة",
-            contact: "اتصال",
-          },
-          title: "حلول التأمين",
-          subtitle:
-            "مساران: <strong>الشركات</strong> و<strong>الأفراد</strong>. منتجات وفق أفضل الممارسات (ممتلكات، نقل بضائع، أساطيل، مسؤولية، إنشاءات… / سيارة، صحة، سكن، حياة وادخار، تقاعد).",
-          badges: ["مقارنة عروض السوق", "إدارة المطالبات", "شفافية كاملة"],
-          tabs: { corp: "الشركات", retail: "الأفراد" },
-          ui: {
-            clear: "مسح",
-            search: "ابحث…",
-            nores: "لا توجد منتجات مطابقة لبحثك.",
-          },
-          cta: {
-            quote: "اطلب عرضاً",
-            learn: "تعرّف أكثر",
-            more: "تحدث إلى مستشار",
-          },
-          footer: {
-            desc: "مكتب وساطة وإعادة تأمين مرخص من ACAPS<br/>المقر: 16، شارع تيرفيس، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
-            links: "روابط",
-            contact: "اتصال",
-            contactBlock: {
-              tel: "هاتف 1 :",
-              tel2: "هاتف 2 :",
-              telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
-              telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
-              nabil: "بريد نبيل الإلكتروني :",
-              infos: "معلومات عامة :",
-            },
-          },
-          filters: {
-            corp: [
-              ["all", "الكل"],
-              ["prop", "ممتلكات"],
-              ["trans", "نقل"],
-              ["fleet", "أساطيل"],
-              ["liab", "مسؤولية"],
-              ["const", "إنشاءات"],
-              ["health", "صحة"],
-            ],
-            retail: [
-              ["all", "الكل"],
-              ["car", "سيارة"],
-              ["health", "صحة"],
-              ["acc", "حوادث"],
-              ["home", "سكن"],
-              ["life", "حياة وادخار"],
-              ["ret", "تقاعد"],
-            ],
-          },
-          products: {
-            corp: [
-              {
-                id: "multirisques",
-                url: "Produits/multirisques.html",
-                img: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=60",
-                cat: ["prop"],
-                t: "متعدد المخاطر للشركات",
-                p: "الممتلكات وخسارة الأرباح للمقار والمخازن والآلات.",
-                bul: [
-                  "حريق وتسرب مياه وكسر آلات",
-                  "خسارة الأرباح",
-                  "خيارات كوارث طبيعية ومناخ",
-                ],
-              },
-              {
-                id: "transport",
-                url: "Produits/transport.html",
-                img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=60",
-                cat: ["trans"],
-                t: "نقل البضائع",
-                p: "يغطي الاستيراد/التصدير وسلاسل الإمداد.",
-                bul: [
-                  "جميع الأخطار للبضائع",
-                  "مسؤولية الناقل/المخلّص",
-                  "بارامترية للطقس (اختياري)",
-                ],
-              },
-              {
-                id: "flotte",
-                url: "Produits/flotte.html",
-                img: "https://images.unsplash.com/photo-1704488473677-ae044ef0d289?auto=format&fit=crop&w=1200&q=60",
-                cat: ["fleet"],
-                t: "السيارات والأساطيل",
-                p: "من 5 إلى 5000 مركبة، إدارة مطالبات وتتبع.",
-                bul: [
-                  "طرف ثالث/شامل/زجاج",
-                  "مساعدة على الطريق",
-                  "لوحات مؤشرات للمطالبات",
-                ],
-              },
-              {
-                id: "rc",
-                url: "Produits/rc.html",
-                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=60",
-                cat: ["liab"],
-                t: "المسؤولية العامة/المهنية",
-                p: "عامة ومهنية وتلوث ومسؤولية المنتج.",
-                bul: [
-                  "أثناء التشغيل وبعد التسليم",
-                  "المسؤولية المهنية",
-                  "المسؤولية البيئية",
-                ],
-              },
-              {
-                id: "construction",
-                url: "Produits/construction.html",
-                img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60",
-                cat: ["const"],
-                t: "الإنشاءات (CAR/EAR)",
-                p: "جميع أخطار المشاريع والضمانات اللاحقة حيث تنطبق.",
-                bul: [
-                  "بناء وطاقة وبنية تحتية",
-                  "تأخير المشروع/خسارة الأرباح",
-                  "تغطيات حسب المراحل",
-                ],
-              },
-              {
-                id: "santecollective",
-                url: "Produits/santecollective.html",
-                img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1200&q=60",
-                cat: ["health"],
-                t: "الصحة الجماعية والمزايا",
-                p: "برامج طبية ومخاطر للموظفين.",
-                bul: [
-                  "شبكات مقدمي الخدمة والدفع المباشر",
-                  "خطط حسب الدرجات",
-                  "تحكم في التكاليف والوقاية",
-                ],
-              },
-            ],
-            retail: [
-              {
-  id: "auto",
-  url: "Products/auto.html",
-  img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=60",
-  cat: ["auto"],
-  t: "ريسكاليا تأمين السيارات",
-  p: "تأمين السيارات — المسؤولية المدنية، التصادم، جميع الأخطار.",
-  bul: [
-    "مساعدة على مدار الساعة وشبكة معتمدة",
-    "حماية السائق والمركبة",
-    "ثلاث مستويات تغطية: المسؤولية المدنية+، التصادم، جميع الأخطار",
-  ],
-},
-              {
-                id: "sante",
-                url: "Produits/sante.html",
-                img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=60",
-                cat: ["health"],
-                t: "الصحة",
-                p: "عيادات وتنويم ونظارات وأسنان.",
-                bul: ["شبكات شركاء ودفع مباشر", "خطط مرنة", "مساعدة 24/7"],
-              },
-              {
-                id: "alv",
-                url: "Produits/alv.html",
-                img: "https://images.unsplash.com/photo-1633158832532-f71e9c7ac6d6?auto=format&fit=crop&w=1200&q=60",
-                cat: ["acc"],
-                t: "حوادث الحياة",
-                p: "تعويض عن الحوادث المنزلية والترفيهية.",
-                bul: ["عوائد عجز", "راتب تعليم", "مساعدة منزلية"],
-              },
-              {
-                id: "habitation",
-                url: "Produits/habitation.html",
-                img: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=60",
-                cat: ["home"],
-                t: "السكن (الممتلكات)",
-                p: "حريق وسرقة وتسرب مياه ومسؤولية خاصة.",
-                bul: [
-                  "قيمة جديدة حسب الخيارات",
-                  "حماية قانونية",
-                  "تغطية المقتنيات الثمينة",
-                ],
-              },
-              {
-                id: "vie",
-                url: "Produits/vie.html",
-                img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1200&q=60",
-                cat: ["life"],
-                t: "تأمين الحياة والادخار",
-                p: "ادخار ونقل الثروة وتنمية رأس المال.",
-                bul: [
-                  "صناديق بالعملة المحلية ووحدات",
-                  "تحويلات وضريبة",
-                  "خيارات المستفيد",
-                ],
-              },
-
-              {
-                id: "retraite",
-                url: "Produits/retraite.html",
-                img: "https://images.unsplash.com/photo-1562557082-7f2785d741e7?auto=format&fit=crop&w=1200&q=60",
-                cat: ["ret"],
-                t: "التقاعد",
-                p: "بناء دخل/ادخار طويل الأجل.",
-                bul: [
-                  "مساهمات مبرمجة",
-                  "كفاءة ضريبية (حسب الإطار)",
-                  "خيارات الاستحقاق",
-                ],
-              },
-            ],
-          },
-        },
-      };
-
-      /* ================== Helpers ================== */
-      let lang = localStorage.getItem("riskalia_lang") || "fr";
-      if (!["fr", "en", "ar"].includes(lang)) lang = "fr";
-      let seg = "corp";
-      let chip = "all";
-      let query = "";
-
-      const $ = (s, root = document) => root.querySelector(s);
-      const $$ = (s, root = document) => [...root.querySelectorAll(s)];
-      function t(path) {
-        const ns = path.split(".");
-        let cur = I18N[lang];
-        for (const n of ns) {
-          if (cur == null || !(n in cur)) return path;
-          cur = cur[n];
-        }
-        return cur;
-      }
-
-      /* ================== Render ================== */
-      function renderChips() {
-        const wrap = $("#chips");
-        wrap.innerHTML = "";
-        const items = t("filters." + seg);
-        (items || []).forEach(([id, label]) => {
-          const b = document.createElement("button");
-          b.className = "chip" + (chip === id ? " active" : "");
-          b.dataset.id = id;
-          b.type = "button";
-          b.textContent = label;
-          b.addEventListener("click", () => {
-            chip = id;
-            renderGrid();
-            highlightChip();
-          });
-          wrap.appendChild(b);
-        });
-      }
-      function highlightChip() {
-        $$("#chips .chip").forEach((c) =>
-          c.classList.toggle("active", c.dataset.id === chip)
-        );
-      }
-
-      function renderGrid() {
-        const grid = $("#grid");
-        grid.innerHTML = "";
-        const list = t("products." + seg) || [];
-        const q = query.trim().toLowerCase();
-
-        const filtered = list.filter((it) => {
-          const okCat = chip === "all" || it.cat.includes(chip);
-          const okText =
-            !q ||
-            it.t.toLowerCase().includes(q) ||
-            (it.p || "").toLowerCase().includes(q) ||
-            (it.bul || []).some((b) => b.toLowerCase().includes(q));
-          return okCat && okText;
-        });
-
-        if (filtered.length === 0) {
-          const p = document.createElement("p");
-          p.className = "muted";
-          p.textContent = t("ui.nores");
-          grid.appendChild(p);
-          return;
-        }
-
-        filtered.forEach((it) => {
-          const img =
-            it.img ||
-            "https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?auto=format&fit=crop&w=1200&q=60";
-          const url = it.url || "contact.html";
-          const card = document.createElement("article");
-          card.className = "card";
-          card.innerHTML = `
-      <a href="${url}" aria-label="${it.t}" class="block">
-        <img class="illus" src="${img}" alt="${it.t}">
-      </a>
-      <div class="card-content">
-        <h3>${it.t}</h3>
-        <p>${it.p || ""}</p>
-        ${
-          it.bul && it.bul.length
-            ? `<ul>${it.bul.map((x) => `<li>${x}</li>`).join("")}</ul>`
-            : ""
-        }
-        <div class="actions">
-          <a class="btn" href="${url}">
-            <span>${t("cta.learn")}</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M7 17L17 7M17 7H7M17 7V17">
-            </svg>
-          </a>
-          <a class="btn secondary" href="contact.html">
-            <span>${t("cta.quote")}</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-            </svg>
-          </a>
-        </div>
-      </div>
-    `;
-          grid.appendChild(card);
-        });
-      }
-
-      function applyTexts() {
-        document.documentElement.lang = lang;
-        document.body.dir = lang === "ar" ? "rtl" : "ltr";
-
-        $$("[data-i18n]").forEach((el) => (el.innerHTML = t(el.dataset.i18n)));
-
-        $$(".lang-btn").forEach((b) =>
-          b.classList.toggle("active", b.dataset.lang === lang)
-        );
-        $("#q").placeholder = t("ui.search");
-        renderChips();
-        renderGrid();
-
-        $$(".tab").forEach((b) =>
-          b.classList.toggle("active", b.dataset.seg === seg)
-        );
-      }
-
-      // Make translation functions available globally for components
-      window.applyI18n = applyTexts;
-      window.t = t;
-
-      /* ================== UI ================== */
-      function initUI() {
-        // Mobile menu toggle removed - using NavigationComponent
-
-        $$(".lang-btn").forEach((btn) =>
-          btn.addEventListener("click", () => {
-            lang = btn.dataset.lang;
-            localStorage.setItem("riskalia_lang", lang);
-            applyTexts();
-          })
-        );
-
-        $$("#tab-corp,#tab-retail").forEach((btn) => {
-          btn.addEventListener("click", () => {
-            seg = btn.dataset.seg;
-            chip = "all";
-            query = "";
-            $("#q").value = "";
-            applyTexts();
-            btn.setAttribute("aria-selected", "true");
-            (btn.id === "tab-corp"
-              ? $("#tab-retail")
-              : $("#tab-corp")
-            ).setAttribute("aria-selected", "false");
-          });
-        });
-
-        $("#q").addEventListener("input", (e) => {
-          query = e.target.value;
-          renderGrid();
-        });
-        $("#clear").addEventListener("click", () => {
-          query = "";
-          $("#q").value = "";
-          renderGrid();
-        });
-      }
-
-      // Dropdown accessibility removed - using NavigationComponent
-
-      /* init */
       document.addEventListener("DOMContentLoaded", () => {
-        applyI18n();
-        applyI18nAttrs();
-                syncLangButtons();
-        initUI();
+        const state = { seg: "corp", chip: "all", query: "" };
+        const $ = (selector, root = document) => root.querySelector(selector);
+        const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+
+        const getLang = () => window.lang || localStorage.getItem("riskalia_lang") || "fr";
+        const getPack = () => window.I18N?.[getLang()]?.solutionsPage || {};
+        const text = (path) =>
+          (typeof window.t === "function"
+            ? window.t(`solutionsPage.${path}`)
+            : `solutionsPage.${path}`);
+
+        function applyMeta() {
+          const meta = getPack().meta;
+          if (!meta) return;
+          if (meta.title) {
+            document.title = meta.title;
+          }
+          if (meta.desc) {
+            let md = document.querySelector('meta[name="description"]');
+            if (!md) {
+              md = document.createElement("meta");
+              md.setAttribute("name", "description");
+              document.head.appendChild(md);
+            }
+            md.setAttribute("content", meta.desc);
+          }
+        }
+
+        function renderBadges() {
+          const wrap = $("#solutions-badges");
+          if (!wrap) return;
+          wrap.innerHTML = "";
+          const badges = getPack().hero?.badges || [];
+          badges.forEach((label) => {
+            const span = document.createElement("span");
+            span.className = "badge text-xs sm:text-sm";
+            span.textContent = label;
+            wrap.appendChild(span);
+          });
+        }
+
+        function highlightChip() {
+          $$("#chips .chip").forEach((chipEl) => {
+            chipEl.classList.toggle("active", chipEl.dataset.id === state.chip);
+          });
+        }
+
+        function renderChips() {
+          const wrap = $("#chips");
+          if (!wrap) return;
+          wrap.innerHTML = "";
+          const items = getPack().filters?.[state.seg] || [];
+          items.forEach(([id, label]) => {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "chip" + (state.chip === id ? " active" : "");
+            button.dataset.id = id;
+            button.textContent = label;
+            button.addEventListener("click", () => {
+              state.chip = id;
+              renderGrid();
+              highlightChip();
+            });
+            wrap.appendChild(button);
+          });
+          highlightChip();
+        }
+
+        function filterProducts(list) {
+          const q = state.query.trim().toLowerCase();
+          return list.filter((item) => {
+            const okCat =
+              state.chip === "all" || (item.cat || []).includes(state.chip);
+            if (!okCat) return false;
+            if (!q) return true;
+            const haystack = [item.t, item.p, ...(item.bul || [])]
+              .filter(Boolean)
+              .map((entry) => entry.toLowerCase());
+            return haystack.some((entry) => entry.includes(q));
+          });
+        }
+
+        function renderGrid() {
+          const grid = $("#grid");
+          if (!grid) return;
+          grid.innerHTML = "";
+          const products = getPack().products?.[state.seg] || [];
+          const filtered = filterProducts(products);
+
+          if (!filtered.length) {
+            const empty = document.createElement("p");
+            empty.className = "muted";
+            empty.textContent = text("ui.nores");
+            grid.appendChild(empty);
+            return;
+          }
+
+          filtered.forEach((item) => {
+            const img =
+              item.img ||
+              "https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?auto=format&fit=crop&w=1200&q=60";
+            const url = item.url || "contact.html";
+            const card = document.createElement("article");
+            card.className = "card";
+            const bullets = (item.bul || [])
+              .map((entry) => `<li>${entry}</li>`)
+              .join("");
+            card.innerHTML = `
+        <a href="${url}" aria-label="${item.t}" class="block">
+          <img class="illus" src="${img}" alt="${item.t}" />
+        </a>
+        <div class="card-content">
+          <h3>${item.t}</h3>
+          <p>${item.p || ""}</p>
+          ${bullets ? `<ul class="card-list list-disc list-inside space-y-2">${bullets}</ul>` : ""}
+          <div class="actions">
+            <a class="btn" href="${url}">
+              <span>${text("cta.learn")}</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+              </svg>
+            </a>
+            <a class="btn secondary" href="contact.html">
+              <span>${text("cta.quote")}</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      `;
+            grid.appendChild(card);
+          });
+        }
+
+        function syncTabs() {
+          $$("#tab-corp, #tab-retail").forEach((btn) => {
+            const active = btn.dataset.seg === state.seg;
+            btn.classList.toggle("active", active);
+            btn.setAttribute("aria-selected", active ? "true" : "false");
+          });
+        }
+
+        function updateUI() {
+          if (typeof window.applyI18n === "function") {
+            window.applyI18n();
+          }
+          applyMeta();
+          renderBadges();
+          renderChips();
+          renderGrid();
+          syncTabs();
+        }
+
+        $$("#tab-corp, #tab-retail").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const seg =
+              btn.dataset.seg || btn.getAttribute("data-seg") || "corp";
+            state.seg = seg;
+            state.chip = "all";
+            state.query = "";
+            const input = $("#q");
+            if (input) input.value = "";
+            updateUI();
+          });
+        });
+
+        const searchInput = $("#q");
+        if (searchInput) {
+          searchInput.addEventListener("input", (event) => {
+            state.query = event.target.value || "";
+            renderGrid();
+          });
+        }
+
+        const clearBtn = $("#clear");
+        if (clearBtn) {
+          clearBtn.addEventListener("click", () => {
+            state.query = "";
+            if (searchInput) searchInput.value = "";
+            renderGrid();
+          });
+        }
+
+        document.addEventListener("languageChanged", () => {
+          updateUI();
+        });
+
+        updateUI();
       });
     </script>
-
     <!-- NAV SEARCH Scripts removed - using NavigationComponent -->
 
     <!-- Component Scripts -->
@@ -1865,58 +1205,47 @@
     <!-- Initialize Components -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Initialize Navigation Component
         if (typeof NavigationComponent !== "undefined") {
           const nav = new NavigationComponent("navigation-container");
           nav.init();
-
-          // Make navigation component available globally for language changes
           window.navigationComponent = nav;
         }
 
-        // Initialize Footer Component
         if (typeof FooterComponent !== "undefined") {
-          const footer = new FooterComponent("footer-container");
-          footer.init();
-
-          // Make footer component available globally for language changes
+          const footer =
+            window.footerComponent || new FooterComponent("footer-container");
           window.footerComponent = footer;
         }
 
-        // Listen for language changes from the navigation component
-        document.addEventListener("languageChanged", function (e) {
-          if (e.detail && e.detail.language) {
-            // Update the global language variable
-            lang = e.detail.language;
+        document.addEventListener("languageChanged", function (event) {
+          const currentLang =
+            event?.detail?.language ||
+            window.lang ||
+            localStorage.getItem("riskalia_lang") || "fr";
 
-            // Call the existing language change function
-            if (typeof applyTexts === "function") {
-              applyTexts();
-            }
+          if (window.navigationComponent) {
+            window.navigationComponent.updateLanguage(currentLang);
+          }
 
-            // Call any other language change handlers
-            if (typeof window._onLangChanged === "function") {
-              window._onLangChanged();
-            }
+          if (window.footerComponent) {
+            window.footerComponent.updateTranslations();
           }
         });
       });
 
-      // Update components when language changes from other sources
-      const originalOnLangChanged = window._onLangChanged;
+      const previousOnLangChanged = window._onLangChanged;
       window._onLangChanged = function () {
-        // Call original language change handler
-        if (originalOnLangChanged) {
-          originalOnLangChanged();
+        if (typeof previousOnLangChanged === "function") {
+          previousOnLangChanged();
         }
 
-        // Update navigation component
+        const currentLang =
+          window.lang || localStorage.getItem("riskalia_lang") || "fr";
+
         if (window.navigationComponent) {
-          const currentLang = localStorage.getItem("riskalia_lang") || "fr";
           window.navigationComponent.updateLanguage(currentLang);
         }
 
-        // Update footer component
         if (window.footerComponent) {
           window.footerComponent.updateTranslations();
         }

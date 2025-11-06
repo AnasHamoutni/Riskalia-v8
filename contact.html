@@ -134,52 +134,129 @@
 <form id="contact-form" class="space-y-4">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="space-y-2">
-      <label for="fname" class="block text-sm font-medium text-gray-700">Prénom</label>
-      <input id="fname" name="fname" required placeholder="Ex. Sara"
-        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm" />
+      <label
+        for="fname"
+        class="block text-sm font-medium text-gray-700"
+        data-i18n="contact.form.fname"
+        >Prénom</label
+      >
+      <input
+        id="fname"
+        name="fname"
+        required
+        data-i18n-attr="placeholder:contact.form.placeholders.fname"
+        placeholder="Ex. Sara"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
+      />
     </div>
     <div class="space-y-2">
-      <label for="lname" class="block text-sm font-medium text-gray-700">Nom</label>
-      <input id="lname" name="lname" required placeholder="Ex. El Amrani"
-        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm" />
+      <label
+        for="lname"
+        class="block text-sm font-medium text-gray-700"
+        data-i18n="contact.form.lname"
+        >Nom</label
+      >
+      <input
+        id="lname"
+        name="lname"
+        required
+        data-i18n-attr="placeholder:contact.form.placeholders.lname"
+        placeholder="Ex. El Amrani"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
+      />
     </div>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="space-y-2">
-      <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
-      <input id="email" type="email" name="email" required placeholder="vous@exemple.com"
-        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm" />
+      <label
+        for="email"
+        class="block text-sm font-medium text-gray-700"
+        data-i18n="contact.form.email"
+        >E-mail</label
+      >
+      <input
+        id="email"
+        type="email"
+        name="email"
+        required
+        data-i18n-attr="placeholder:contact.form.placeholders.email"
+        placeholder="vous@exemple.com"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
+      />
     </div>
     <div class="space-y-2">
-      <label for="phone" class="block text-sm font-medium text-gray-700">Téléphone</label>
-      <input id="phone" type="tel" name="phone" placeholder="+212 …"
-        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm" />
+      <label
+        for="phone"
+        class="block text-sm font-medium text-gray-700"
+        data-i18n="contact.form.phone"
+        >Téléphone</label
+      >
+      <input
+        id="phone"
+        type="tel"
+        name="phone"
+        data-i18n-attr="placeholder:contact.form.placeholders.phone"
+        placeholder="+212 …"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
+      />
     </div>
   </div>
 
   <div class="space-y-2">
-    <label for="topic" class="block text-sm font-medium text-gray-700">Sujet</label>
-    <select id="topic" name="topic"
-      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm">
-      <option value="devis">Demande de devis</option>
-      <option value="rdv">Prendre rendez-vous</option>
-      <option value="partenariat">Partenariat</option>
-      <option value="autre">Autre</option>
+    <label
+      for="topic"
+      class="block text-sm font-medium text-gray-700"
+      data-i18n="contact.form.topic"
+      >Sujet</label
+    >
+    <select
+      id="topic"
+      name="topic"
+      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm"
+    >
+      <option value="devis" data-i18n="contact.form.opt.quote">
+        Demande de devis
+      </option>
+      <option value="rdv" data-i18n="contact.form.opt.meeting">
+        Prendre rendez-vous
+      </option>
+      <option value="partenariat" data-i18n="contact.form.opt.partner">
+        Partenariat
+      </option>
+      <option value="autre" data-i18n="contact.form.opt.other">
+        Autre
+      </option>
     </select>
   </div>
 
   <div class="space-y-2">
-    <label for="msg" class="block text-sm font-medium text-gray-700">Message</label>
-    <textarea id="msg" name="message" required placeholder="Décrivez votre demande..." rows="4"
-      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm resize-none"></textarea>
+    <label
+      for="msg"
+      class="block text-sm font-medium text-gray-700"
+      data-i18n="contact.form.msg"
+      >Message</label
+    >
+    <textarea
+      id="msg"
+      name="message"
+      required
+      rows="4"
+      data-i18n-attr="placeholder:contact.form.placeholders.msg"
+      placeholder="Décrivez votre demande..."
+      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--c3)] focus:border-transparent text-sm resize-none"
+    ></textarea>
   </div>
 
   <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
     <button
       class="bg-gradient-to-r from-[var(--c3)] to-[var(--c2)] hover:from-[var(--c2)] hover:to-[var(--c1)] text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 shadow-lg hover:shadow-xl"
-      type="submit">Envoyer</button>
-    <span class="text-xs text-gray-500">
+      type="submit"
+      data-i18n="contact.form.submit"
+    >
+      Envoyer
+    </button>
+    <span class="text-xs text-gray-500" data-i18n="contact.form.note">
       En cliquant "Envoyer", vous acceptez d'être recontacté(e).
     </span>
   </div>
@@ -209,13 +286,13 @@
                   <div>
                     <strong
                       class="text-sm font-medium text-gray-700"
-                      data-i18n="footer.contactBlock.tel"
-                      >Tél1:</strong
+                      data-i18n="contact.box.phone1.label"
+                      >Tél :</strong
                     >
                     <span
                       dir="ltr"
                       class="text-sm text-gray-600 ml-2"
-                      data-i18n="footer.contactBlock.telNum1"
+                      data-i18n="contact.box.phone1.value"
                       >+212-666-756991</span
                     >
                   </div>
@@ -230,13 +307,13 @@
                   <div>
                     <strong
                       class="text-sm font-medium text-gray-700"
-                      data-i18n="footer.contactBlock.tel2"
-                      >Tél2:</strong
+                      data-i18n="contact.box.phone2.label"
+                      >Tél :</strong
                     >
                     <span
                       dir="ltr"
                       class="text-sm text-gray-600 ml-2"
-                      data-i18n="footer.contactBlock.telNum2"
+                      data-i18n="contact.box.phone2.value"
                       >+212-675-208909</span
                     >
                   </div>
@@ -251,12 +328,13 @@
                   <div>
                     <strong
                       class="text-sm font-medium text-gray-700"
-                      data-i18n="footer.contactBlock.infos"
+                      data-i18n="contact.box.email.label"
                       >Infos:</strong
                     >
                     <a
                       href="mailto:contact@riskalia.ma"
                       class="text-sm text-[var(--c3)] ml-2 hover:underline"
+                      data-i18n="contact.box.email.value"
                       >contact@riskalia.ma</a
                     >
                   </div>
@@ -287,14 +365,16 @@
 
               <div
                 class="rounded-lg overflow-hidden mb-4"
+                data-i18n-attr="aria-label:contact.box.mapLabel"
                 aria-label="Carte du cabinet Riskalia"
               >
                 <iframe
-                  title="Carte — Riskalia, 16 Rue de Terves, Casablanca"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                   src="https://www.google.com/maps?q=16%20Rue%20de%20Terves%2C%20Casablanca&z=16&output=embed"
                   class="w-full h-48"
+                  data-i18n-attr="title:contact.box.mapTitle"
+                  title="Carte — Riskalia, 16 Rue de Terves, Casablanca"
                 >
                 </iframe>
               </div>
@@ -314,7 +394,7 @@
                 rel="noopener"
               >
                 <i class="fas fa-map-marker-alt mr-2"></i>
-                Ouvrir dans Google Maps
+                <span data-i18n="contact.box.mapBtn">Ouvrir dans Google Maps</span>
               </a>
             </aside>
           </div>
