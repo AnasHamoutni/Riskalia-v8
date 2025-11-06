@@ -2786,14 +2786,6 @@ window.I18N = {
       transport: "Transport"
     },
 
-    nav: {
-      home: "Home",
-      solutions: "Solutions",
-      re: "Reinsurance",
-      climate: "Climate Risks",
-      esg: "ESG",
-      services: "Advisory Services"
-    },
     reinsurance: {
       hero: {
         title: "Reinsurance — Programs & Advisory",
@@ -5215,14 +5207,6 @@ window.I18N = {
       transport: "تأمين النقل"
     },
 
-    nav: {
-      home: "الرئيسية",
-      solutions: "الحلول",
-      re: "إعادة التأمين",
-      climate: "المخاطر المناخية",
-      esg: "البيئة والمجتمع والحوكمة",
-      services: "الخدمات والاستشارات"
-    },
     reinsurance: {
       hero: {
         title: "إعادة التأمين — البرامج والاستشارة",
