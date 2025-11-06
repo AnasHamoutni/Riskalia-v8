@@ -8,15 +8,10 @@ class FooterComponent {
     this.init();
   }
 
-init() {
-  this.render();
-  this.setupEventListeners();
-
-  // 🔥 Fix: Apply translations immediately after rendering
-  if (typeof window.applyTexts === "function") {
-    window.applyTexts();
+  init() {
+    this.render();
+    this.setupEventListeners();
   }
-}
 
   render() {
     const footerContainer = document.getElementById("footer-container");
@@ -197,15 +192,6 @@ document.addEventListener("DOMContentLoaded", () => {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = FooterComponent;
 }
-
-
-
-
-
-
-
-
-
 
 
 
