@@ -1439,14 +1439,8 @@
     <!-- Footer Component Container -->
     <div id="footer-container"></div>
 
-    <!-- Load external i18n dictionary -->
-    <script src="assets/js/i18n.js"></script>
-
     <script>
       /* ===================== I18N DICTIONARY (FR/EN/AR) ===================== */
-      // I18N is now loaded from external file
-      // Commenting out inline definition - using external assets/js/i18n.js
-      /*
       window.I18N = {
         fr: {
           meta: {
@@ -2357,8 +2351,7 @@ s4: {
           },
         },
       };
-      */
-      /* =================== END I18N DICTIONARY (now external) =================== */
+      /* =================== END I18N DICTIONARY =================== */
 
       /* ===================== SHARED HELPERS (NO REDECLARATION) ===================== */
       var lang = localStorage.getItem("riskalia_lang") || "fr";
@@ -2379,20 +2372,7 @@ s4: {
 
       function t(path) {
         const ns = String(path).split(".");
-
-        // First try with reinsurance. prefix for page-specific content
-        let cur = window.I18N?.[lang]?.reinsurance;
-        for (const n of ns) {
-          if (cur == null || !(n in cur)) {
-            cur = null;
-            break;
-          }
-          cur = cur[n];
-        }
-        if (cur != null && (typeof cur === 'string' || Array.isArray(cur))) return cur;
-
-        // If not found in reinsurance, try the full path in I18N
-        cur = window.I18N?.[lang];
+        let cur = window.I18N?.[lang];
         for (const n of ns) {
           if (cur == null || !(n in cur)) return path;
           cur = cur[n];
