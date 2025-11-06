@@ -327,15 +327,6 @@ window.I18N = {
       santecollective: "Santé collective",
       transport: "Transport"
     },
-
-    nav: {
-      home: "Accueil",
-      solutions: "Solutions",
-      re: "Réassurance",
-      climate: "Risques Climatiques",
-      esg: "ESG",
-      services: "Services de Conseil"
-    },
     reinsurance: {
       hero: {
         title: "Réassurance — Programmes & Conseil",
@@ -874,21 +865,6 @@ window.I18N = {
         climate: "Risques Climatiques",
         contact: "Contact",
       },
-    },
-        footer: {
-      company: "Riskalia",
-      desc: "Cabinet de courtage & stratégies agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
-      links: "Liens",
-      contact: "Contact",
-      contactBlock: {
-        tel: "Tél1:",
-        telNum1: "+212-666-756991",
-        tel2: "Tél2:",
-        telNum2: "+212-675-208909",
-        infos: "Informations générales :",
-
-      },
-          copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés.",
     },
     // Multirisques page specific translations
     multirisques: {
