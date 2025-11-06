@@ -1060,12 +1060,8 @@
 
     <!-- ===== SCRIPTS i18n + UI ===== -->
 
-    <!-- Load global i18n first (contains footer, produits, base nav) -->
-    <script src="/assets/js/i18n.js"></script>
-
     <script>
-      /* ===================== PAGE-SPECIFIC I18N (merged with global) ===================== */
-      const pageI18N = {
+      window.I18N = {
         fr: {
           meta: {
             title: "Riskalia — Services de Conseil en Gestion des Risques",
@@ -2228,21 +2224,9 @@
         },
       };
 
-      /* =================== MERGE PAGE I18N WITH GLOBAL =================== */
-      // Merge page-specific translations into the global window.I18N from i18n.js
-      // This preserves global translations and adds/overrides page-specific ones
-      Object.keys(pageI18N).forEach(lang => {
-        if (window.I18N && window.I18N[lang]) {
-          window.I18N[lang] = { ...window.I18N[lang], ...pageI18N[lang] };
-        }
-      });
-      /* =================== END I18N MERGE =================== */
-
       /* Helpers */
-      // Set window.lang so external i18n.js functions can access it
-      window.lang = localStorage.getItem("riskalia_lang") || "fr";
-      if (!["fr", "en", "ar"].includes(window.lang)) window.lang = "fr";
-      let lang = window.lang; // Local reference for convenience
+      let lang = localStorage.getItem("riskalia_lang") || "fr";
+      if (!["fr", "en", "ar"].includes(lang)) lang = "fr";
       const $ = (s, root = document) => root.querySelector(s);
       const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
 
@@ -2485,9 +2469,9 @@
     </script>
 
     <!-- Component Scripts -->
-    <script src="/assets/js/components/SearchComponent.js"></script>
-    <script src="/assets/js/components/NavigationComponent.js"></script>
-    <script src="/assets/js/components/FooterComponent.js"></script>
+    <script src="assets/js/components/SearchComponent.js"></script>
+    <script src="assets/js/components/NavigationComponent.js"></script>
+    <script src="assets/js/components/FooterComponent.js"></script>
 
     <!-- Initialize Components -->
     <script>

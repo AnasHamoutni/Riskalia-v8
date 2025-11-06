@@ -1439,12 +1439,9 @@
     <!-- Footer Component Container -->
     <div id="footer-container"></div>
 
-    <!-- Load global i18n first (contains footer, produits, base nav) -->
-    <script src="/assets/js/i18n.js"></script>
-
     <script>
-      /* ===================== PAGE-SPECIFIC I18N (merged with global) ===================== */
-      const pageI18N = {
+      /* ===================== I18N DICTIONARY (FR/EN/AR) ===================== */
+      window.I18N = {
         fr: {
           meta: {
             title: "Riskalia — Réassurance (Programmes & Conseil)",
@@ -2375,22 +2372,11 @@ s4: {
           },
         },
       };
+      /* =================== END I18N DICTIONARY =================== */
 
-      /* =================== MERGE PAGE I18N WITH GLOBAL =================== */
-      // Merge page-specific translations into the global window.I18N from i18n.js
-      // This preserves footer, produits, and other global translations
-      Object.keys(pageI18N).forEach(lang => {
-        if (window.I18N && window.I18N[lang]) {
-          window.I18N[lang] = { ...window.I18N[lang], ...pageI18N[lang] };
-        }
-      });
-      /* =================== END I18N MERGE =================== */
-
-      /* ===================== SHARED HELPERS ===================== */
-      // Set window.lang so external i18n.js functions can access it
-      window.lang = localStorage.getItem("riskalia_lang") || "fr";
-      if (!["fr", "en", "ar"].includes(window.lang)) window.lang = "fr";
-      var lang = window.lang; // Local reference for convenience
+      /* ===================== SHARED HELPERS (NO REDECLARATION) ===================== */
+      var lang = localStorage.getItem("riskalia_lang") || "fr";
+      if (!["fr", "en", "ar"].includes(lang)) lang = "fr";
 
       // Flag to prevent scroll-based tab highlighting when user manually clicks
 
@@ -2572,8 +2558,8 @@ s4: {
     </script>
 
     <!-- Component JavaScript -->
-    <script src="/assets/js/components/SearchComponent.js"></script>
-    <script src="/assets/js/components/NavigationComponent.js"></script>
-    <script src="/assets/js/components/FooterComponent.js"></script>
+    <script src="assets/js/components/SearchComponent.js"></script>
+    <script src="assets/js/components/NavigationComponent.js"></script>
+    <script src="assets/js/components/FooterComponent.js"></script>
   </body>
 </html>
