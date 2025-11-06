@@ -3322,19 +3322,6 @@ window.I18N = {
         contact: "Contact",
       },
     },
-          footer: {
-        desc: "Licensed brokerage & strategy firm (ACAPS). Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
-        links: "Links",
-        contact: "Contact",
-        contactBlock: {
-          tel: "Phone 1 :",
-          telNum1: "+212-666-756991",
-          tel2: "Phone 2 :",
-          telNum2: "+212-675-208909",
-          infos: "General Information :",
-        },
-        copyright:"© " + new Date().getFullYear() + " Riskalia. All rights reserved.",
-      },
     // Multirisques page specific translations
     multirisques: {
       title: "Commercial Property & Business Interruption",
@@ -5749,19 +5736,6 @@ window.I18N = {
         contact: "اتصال",
       },
     },
-      footer: {
-        desc: "شركة وساطة واستشارات استراتيجية مرخصة (ACAPS). المقر الرئيسي: ١٦، شارع تيرف، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
-        links: "روابط",
-        contact: "تواصل",
-        contactBlock: {
-          tel: "هاتف 1 :",
-          telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
-          tel2: "هاتف 2 :",
-          telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
-          infos: "معلومات عامة :",
-        },
-          copyright: "© " + new Date().getFullYear() + " ريسكاليا. جميع الحقوق محفوظة.",
-      },
     // Multirisques page specific translations
     multirisques: {
       title: "المخاطر المتعددة للمؤسسات",
