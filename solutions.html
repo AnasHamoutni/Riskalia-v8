@@ -1768,9 +1768,17 @@
         );
       }
 
+      // Sync lang buttons with current language
+      function syncLangButtons() {
+        $$(".lang-btn").forEach((b) =>
+          b.classList.toggle("active", b.dataset.lang === lang)
+        );
+      }
+
       // Make translation functions available globally for components
       window.applyI18n = applyTexts;
       window.t = t;
+      window.syncLangButtons = syncLangButtons;
 
       /* ================== UI ================== */
       function initUI() {
