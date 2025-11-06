@@ -4,20 +4,23 @@
  */
 
 class FooterComponent {
-  constructor() {
+  constructor(containerId = "footer-container") {
+    this.containerId = containerId;
+    this.container = null;
     this.init();
   }
 
   init() {
     this.render();
     this.setupEventListeners();
+    this.ensureChatbotAssets();
   }
 
   render() {
-    const footerContainer = document.getElementById("footer-container");
-    if (!footerContainer) return;
+    this.container = document.getElementById(this.containerId);
+    if (!this.container) return;
 
-    footerContainer.innerHTML = this.getFooterHTML();
+    this.container.innerHTML = this.getFooterHTML();
   }
 
 getFooterHTML() {
@@ -178,12 +181,76 @@ getFooterHTML() {
       }
     }
   }
+
+  ensureChatbotAssets() {
+    const head = document.head || document.getElementsByTagName("head")[0];
+    if (!head) return;
+
+    // Ensure chatbot styles are loaded once
+    if (
+      !document.querySelector('link[data-chatbot-css]') &&
+      !document.querySelector('link[href*="chatbot.css"]')
+    ) {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = FooterComponent.resolveAssetUrl(
+        "../../css/components/chatbot.css"
+      );
+      link.setAttribute("data-chatbot-css", "true");
+      head.appendChild(link);
+    }
+
+    const instantiateChatbot = () => {
+      if (window.ChatbotComponent && !window.chatbotComponent) {
+        window.chatbotComponent = new ChatbotComponent();
+      }
+      if (typeof window.applyTexts === "function") {
+        window.applyTexts();
+      }
+    };
+
+    if (window.ChatbotComponent) {
+      instantiateChatbot();
+      return;
+    }
+
+    if (document.querySelector('script[data-chatbot-loader="true"]')) {
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = FooterComponent.resolveAssetUrl("ChatbotComponent.js");
+    script.defer = true;
+    script.setAttribute("data-chatbot-loader", "true");
+    script.addEventListener("load", instantiateChatbot, { once: true });
+    (document.body || document.documentElement).appendChild(script);
+  }
+
+  static resolveAssetUrl(relativePath) {
+    if (!FooterComponent.baseScriptUrl) {
+      const scripts = [...document.getElementsByTagName("script")];
+      const footerScript =
+        document.currentScript?.src?.includes("FooterComponent.js")
+          ? document.currentScript
+          : scripts
+              .reverse()
+              .find((s) => s.src && s.src.includes("FooterComponent.js"));
+
+      const baseUrl = footerScript
+        ? new URL(footerScript.getAttribute("src"), window.location.href)
+        : new URL("assets/js/components/FooterComponent.js", window.location.href);
+
+      FooterComponent.baseScriptUrl = baseUrl;
+    }
+
+    return new URL(relativePath, FooterComponent.baseScriptUrl).href;
+  }
 }
 
 // Auto-initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   // Only initialize if footer container exists
-  if (document.getElementById("footer-container")) {
+  if (document.getElementById("footer-container") && !window.footerComponent) {
     window.footerComponent = new FooterComponent();
   }
 });
@@ -191,6 +258,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // Export for manual initialization if needed
 if (typeof module !== "undefined" && module.exports) {
   module.exports = FooterComponent;
+}
+
+if (typeof window !== "undefined") {
+  window.FooterComponent = FooterComponent;
 }
 
 

@@ -717,6 +717,13 @@ footer: {
         msg: "Message",
         submit: "Envoyer",
         note: 'En cliquant "Envoyer", vous acceptez d\'être recontacté(e).',
+        placeholders: {
+          fname: "Ex. Sara",
+          lname: "Ex. El Amrani",
+          email: "vous@exemple.com",
+          phone: "+212 …",
+          msg: "Décrivez votre demande...",
+        },
         opt: {
           quote: "Demande de devis",
           meeting: "Prendre rendez-vous",
@@ -730,7 +737,16 @@ footer: {
           t: "Adresse:",
           v: "16, Rue de Terves, 2ème Etage. Quartier Mers Sultan, Casablanca",
         },
+        phone1: { label: "Tél :", value: "+212-666-756991" },
+        phone2: { label: "Tél :", value: "+212-675-208909" },
+        email: {
+          label: "Informations générales :",
+          value: "contact@riskalia.ma",
+        },
         hours: "Lun–Ven, 9:00–18:00 (UTC+1)",
+        mapLabel: "Carte du cabinet Riskalia",
+        mapTitle: "Carte — Riskalia, 16 Rue de Terves, Casablanca",
+        mapBtn: "Ouvrir dans Google Maps",
       },
       cta: {
         title: "Parlons de votre besoin",
@@ -874,21 +890,6 @@ footer: {
         climate: "Risques Climatiques",
         contact: "Contact",
       },
-    },
-        footer: {
-      company: "Riskalia",
-      desc: "Cabinet de courtage & stratégies agréé ACAPS. Siège : 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
-      links: "Liens",
-      contact: "Contact",
-      contactBlock: {
-        tel: "Tél1:",
-        telNum1: "+212-666-756991",
-        tel2: "Tél2:",
-        telNum2: "+212-675-208909",
-        infos: "Informations générales :",
-
-      },
-          copyright: "© " + new Date().getFullYear() + " Riskalia. Tous droits réservés.",
     },
     // Multirisques page specific translations
     multirisques: {
@@ -3188,6 +3189,13 @@ footer: {
         msg: "Message",
         submit: "Send",
         note: 'By clicking "Send", you agree to be contacted.',
+        placeholders: {
+          fname: "e.g. Sara",
+          lname: "e.g. El Amrani",
+          email: "you@example.com",
+          phone: "+212 …",
+          msg: "Describe your request...",
+        },
         opt: {
           quote: "Quote request",
           meeting: "Schedule appointment",
@@ -3201,7 +3209,16 @@ footer: {
           t: "Address:",
           v: "16, Rue de Terves, 2nd Floor. Mers Sultan District, Casablanca",
         },
+        phone1: { label: "Phone:", value: "+212-666-756991" },
+        phone2: { label: "Phone:", value: "+212-675-208909" },
+        email: {
+          label: "General information:",
+          value: "contact@riskalia.ma",
+        },
         hours: "Mon–Fri, 9:00–18:00 (UTC+1)",
+        mapLabel: "Map of Riskalia office",
+        mapTitle: "Map — Riskalia, 16 Rue de Terves, Casablanca",
+        mapBtn: "Open in Google Maps",
       },
       cta: {
         title: "Let's discuss your needs",
@@ -3346,19 +3363,6 @@ footer: {
         contact: "Contact",
       },
     },
-          footer: {
-        desc: "Licensed brokerage & strategy firm (ACAPS). Head office: 16, Rue de Terves, 2ème Etage. Quartier Mers Sutlan, Casablanca",
-        links: "Links",
-        contact: "Contact",
-        contactBlock: {
-          tel: "Phone 1 :",
-          telNum1: "+212-666-756991",
-          tel2: "Phone 2 :",
-          telNum2: "+212-675-208909",
-          infos: "General Information :",
-        },
-        copyright:"© " + new Date().getFullYear() + " Riskalia. All rights reserved.",
-      },
     // Multirisques page specific translations
     multirisques: {
       title: "Commercial Property & Business Interruption",
@@ -5619,6 +5623,13 @@ footer: {
         msg: "الرسالة",
         submit: "إرسال",
         note: 'بالنقر على "إرسال"، فإنك توافق على أن يتم الاتصال بك.',
+        placeholders: {
+          fname: "مثال: سارة",
+          lname: "مثال: العمراني",
+          email: "you@example.com",
+          phone: "+212 …",
+          msg: "صف طلبك...",
+        },
         opt: {
           quote: "طلب عرض أسعار",
           meeting: "حجز موعد",
@@ -5632,7 +5643,16 @@ footer: {
           t: "العنوان:",
           v: "16، شارع تيرفيس، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
         },
+        phone1: { label: "هاتف:", value: "+212-666-756991" },
+        phone2: { label: "هاتف:", value: "+212-675-208909" },
+        email: {
+          label: "معلومات عامة:",
+          value: "contact@riskalia.ma",
+        },
         hours: "الإثنين–الجمعة، 9:00–18:00 (UTC+1)",
+        mapLabel: "خريطة مقر ريسكاليا",
+        mapTitle: "خريطة — ريسكاليا، 16 شارع تيرفيس، الدار البيضاء",
+        mapBtn: "افتح في خرائط Google",
       },
       cta: {
         title: "لنناقش احتياجاتك",
@@ -5773,19 +5793,6 @@ footer: {
         contact: "اتصال",
       },
     },
-      footer: {
-        desc: "شركة وساطة واستشارات استراتيجية مرخصة (ACAPS). المقر الرئيسي: ١٦، شارع تيرف، الطابق الثاني. حي مرس السلطان، الدار البيضاء",
-        links: "روابط",
-        contact: "تواصل",
-        contactBlock: {
-          tel: "هاتف 1 :",
-          telNum1: "+٢١٢-٦٦٦-٧٥٦٩٩١",
-          tel2: "هاتف 2 :",
-          telNum2: "+٢١٢-٦٧٥-٢٠٨٩٠٩",
-          infos: "معلومات عامة :",
-        },
-          copyright: "© " + new Date().getFullYear() + " ريسكاليا. جميع الحقوق محفوظة.",
-      },
     // Multirisques page specific translations
     multirisques: {
       title: "المخاطر المتعددة للمؤسسات",

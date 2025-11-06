@@ -2466,8 +2466,8 @@
 
         // Initialize Footer Component
         if (typeof FooterComponent !== "undefined") {
-          const footer = new FooterComponent("footer-container");
-          footer.init();
+          const footer =
+            window.footerComponent || new FooterComponent("footer-container");
 
           // Make footer component available globally for language changes
           window.footerComponent = footer;
