@@ -7424,6 +7424,21 @@ window.applyTexts = applyTexts;
 window.t = t;
 window.applyI18n = applyTexts;
 
+// Hoist shared footer/product labels out of the climate namespace so
+// site-wide components (footer, navigation lists) can resolve them.
+["fr", "en", "ar"].forEach((lng) => {
+  const pack = window.I18N?.[lng];
+  const climate = pack?.climate;
+  if (!climate || !pack) return;
+
+  ["footer", "produits"].forEach((key) => {
+    if (climate[key] && !pack[key]) {
+      pack[key] = climate[key];
+    }
+    if (climate[key]) delete climate[key];
+  });
+});
+
 
 
 
